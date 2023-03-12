@@ -1,0 +1,24 @@
+body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-balance-card {
+  border-color: #586d7b; }
+  body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-balance-card h4 {
+    color: #fff; }
+  body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-balance-card div.account-balance-holder small {
+    color: #93b7d8; }
+  body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-balance-card hr {
+    border-color: #586d7b; }
+  body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-balance-card h5 {
+    color: #f3f3f3; }
+body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-wallet-history {
+  border-color: #586d7b; }
+  body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-wallet-history h4 {
+    color: #fff; }
+  body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-wallet-history div.wallet-transactions-history div.wallet-transactions-record {
+    border-color: #586d7b; }
+    body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-wallet-history div.wallet-transactions-history div.wallet-transactions-record div.mp div.amount span {
+      color: #fff; }
+    body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-wallet-history div.wallet-transactions-history div.wallet-transactions-record div.mp div.trans-info p {
+      color: #93b7d8; }
+    body.cl-app-wallet main.main-content-container div.main-content-container-inner div.timeline-container div.account-wallet-container div.account-wallet-history div.wallet-transactions-history div.wallet-transactions-record div.rp time {
+      color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

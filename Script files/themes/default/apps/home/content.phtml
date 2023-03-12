@@ -1,0 +1,85 @@
+<div class="timeline-container" data-app="homepage">
+	<div class="timeline-header" data-el="tl-header">
+		<div class="lp">
+			<div class="nav-link-holder">
+				<a href="<?php echo cl_link("/"); ?>" data-spa="true">
+					<?php echo cl_translate("Home"); ?>
+				</a>
+			</div>
+		</div>
+		<div class="cp">
+			<a href="<?php echo cl_link("/"); ?>">
+				<img src="{%config site_logo%}" alt="Logo">
+			</a>
+		</div>
+		<div class="rp">
+			<div class="nav-link-holder">
+				<a href="<?php echo cl_link("chats"); ?>" data-spa="true">
+					<?php echo cl_ikon('send'); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-timeline-pubbox-wrapper">
+		<?php $cl['pb_id'] = 1; echo cl_template('timeline/pubbox'); ?>
+	</div>
+
+	<div class="timeline-posts-container">
+		<div class="timeline-swifts-holder">
+			<div class="timeline-swifts-cr owl-carousel" data-an="homepage-swifts-slider">
+				<div class="swift-item" onclick="SMColibri.PS.new_swift.add_swift();">
+					<div class="swift-item-body create-swift">
+						<div class="avatar">
+							<img src="<?php echo($me['avatar']); ?>" alt="Avatar">
+						</div>
+						<span class="add-ikon">
+							<?php echo cl_ikon("plus"); ?>
+						</span>
+					</div>
+					<div class="swift-item-footer">
+						<span>
+							<?php echo cl_translate("Create new swift"); ?>
+						</span>
+					</div>
+				</div>
+				<?php if (not_empty($cl["tl_swifts"])): ?>
+					<?php foreach ($cl["tl_swifts"] as $swift_id => $swift_data): ?>
+						<div data-an="swift-item-<?php echo($swift_data['id']); ?>" class="swift-item <?php if(not_empty($swift_data['has_unseen'])) {echo('active');} ?>" onclick="SMColibri.PS.play_swift.show('<?php echo($swift_id); ?>');">
+							<div class="swift-item-body">
+								<div class="avatar">
+									<img src="<?php echo($swift_data['avatar']); ?>" alt="Avatar">
+								</div>
+							</div>
+							<div class="swift-item-footer">
+								<?php if (not_empty($swift_data["is_user"])): ?>
+									<span>
+										<?php echo cl_translate("Your swifts"); ?>
+									</span>
+								<?php else: ?>
+									<span>
+										<?php echo($swift_data['name']); ?>
+									</span>
+								<?php endif; ?>
+							</div>
+						</div>
+					<?php endforeach; ?>
+				<?php endif; ?>
+			</div>
+		</div>
+		<?php if (not_empty($cl["tl_feed"])): ?>
+			<div class="timeline-posts-ls" data-an="entry-list">		
+				<?php foreach ($cl["tl_feed"] as $cl["li"]): ?>
+					<?php echo cl_template('timeline/post'); ?>
+				<?php endforeach; ?>
+			</div>
+		<?php else: ?>
+			<?php echo cl_template('home/includes/no_posts'); ?>
+		<?php endif; ?>
+	</div>
+
+	<?php echo cl_template("home/modals/swift_lightbox"); ?>
+	<?php echo cl_template("home/modals/swift_pubbox"); ?>
+	<?php echo cl_template("main/includes/inline_statics/app_statics"); ?>
+	<?php echo cl_template("home/scripts/app_master_script"); ?>
+</div>

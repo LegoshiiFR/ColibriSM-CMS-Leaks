@@ -1,0 +1,83 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-guest{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.welcome-page-container{
+				div.welcome-page-content-container{
+					background: $dark_bg;
+
+					div.welcome-page-content{
+						div.logo{
+							a{
+								background-color: $dark_accent_bg;
+							}
+						}
+
+						div.welcome-text{
+							h1, p{
+								color: $dark_grey;
+							}
+						}
+
+						div.login-form{
+							div.login-or-signup{
+								small{
+									color: $dark_grey;
+								}
+							}
+
+							div.tos-agreement{
+								div.block-header{
+									span, a{
+										color: $dark_grey;
+									}
+								}
+
+								div.block-body{
+									border-color: $dark_border;
+
+									a{
+										color: $dark_grey;
+									}
+								}
+							}
+
+							button.btn-custom{
+								&.main-inline{
+									color: #fff;
+									background: $blue;
+								}
+
+								&.main-outline{
+									border-color: $blue;
+									color: $blue;
+									background: transparent;
+								}
+							}
+
+							input.form-control{
+								border-bottom: 2px solid $dark_border;
+								background: $dark_accent_bg !important;
+							}
+						}
+					}
+
+					div.welcome-footer{
+						border-color: $dark_border;
+					}
+				}
+			}
+		}
+	}
+}

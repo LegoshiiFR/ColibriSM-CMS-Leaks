@@ -1,0 +1,79 @@
+<div class="connectivity-list-item" data-list-item="<?php echo($cl['li']['offset_id']); ?>">
+	<div class="avatar">
+		<img src="<?php echo($cl['li']['avatar']); ?>" alt="Avatar">
+	</div>
+	<div class="user-info-holder">
+		<div class="d-flex">
+			<div class="flex-item flex-grow-1 flex-wn">
+				<div class="user-data" data-uinfo-lbox="<?php echo($cl['li']['id']); ?>" data-toggle="popover" data-placement="bottom">
+					<h4>
+						<span class="user-name-holder <?php if ($cl['li']['verified'] == '1') {echo('verified-badge');} ?>">
+							<?php echo cl_croptxt($cl['li']['name'], 15, '..'); ?>
+						</span>
+					</h4>
+					<a href="<?php echo($cl['li']['url']); ?>" data-spa="true">
+						<?php echo($cl['li']['username']); ?>
+					</a>
+					<p>
+						<?php echo cl_croptxt($cl['li']['about'], 120, '...'); ?>
+					</p>
+				</div>
+			</div>
+			<div class="flex-item">
+				<?php if (not_empty($cl["li"]["pending_req"])): ?>
+					<button class="dropleft">
+						<a href="#" class="dropdown-toggle icon" data-toggle="dropdown">
+							<?php echo cl_ikon('chevron-down'); ?>
+						</a>
+						<div class="dropdown-menu dropdown-icons">
+							<a class="dropdown-item" href="javascript:void(0);" onclick="CLFollowers.accept_request(<?php echo($cl['li']['offset_id']); ?>);">
+								<span class="flex-item dropdown-item-icon">
+									<?php echo cl_ikon('verified'); ?>
+								</span>
+								<span class="flex-item">
+									<?php echo cl_translate("Confirm"); ?>
+								</span>
+							</a>
+							<a class="dropdown-item col-red" href="javascript:void(0);"  onclick="CLFollowers.delete_request(<?php echo($cl['li']['offset_id']); ?>);">
+								<span class="flex-item dropdown-item-icon">
+									<?php echo cl_ikon('bin'); ?>
+								</span>
+								<span class="flex-item">
+									<?php echo cl_translate("Delete"); ?>
+								</span>
+							</a>
+						</div>
+					</button>
+				<?php else: ?>
+					<?php if (empty($cl['li']['is_user'])): ?>
+						<?php if ($cl['li']['follow_privacy'] == 'approved'): ?>
+							<?php if (not_empty($cl['li']['is_following'])): ?>
+								<button onclick="SMColibri.req_follow(this);" class="btn btn-custom main-inline md" data-action="unfollow" data-id="<?php echo($cl['li']['id']); ?>">
+									<?php echo cl_translate("Unfollow"); ?>
+								</button>
+							<?php elseif (not_empty($cl['li']['follow_requested'])): ?>
+								<button onclick="SMColibri.req_follow(this);" class="btn btn-custom main-inline md" data-action="cancel" data-id="<?php echo($cl['li']['id']); ?>">
+									<?php echo cl_translate("Pending"); ?>
+								</button>
+							<?php else: ?>
+								<button onclick="SMColibri.req_follow(this);" class="btn btn-custom main-outline md" data-action="follow" data-id="<?php echo($cl['li']['id']); ?>">
+									<?php echo cl_translate("Follow"); ?>
+								</button>
+							<?php endif; ?>
+						<?php else: ?>
+							<?php if (empty($cl['li']['is_following'])): ?>
+								<button onclick="SMColibri.follow(this);" class="btn btn-custom md main-outline" data-action="follow" data-id="<?php echo($cl['li']['id']); ?>">
+									<?php echo cl_translate("Follow"); ?>
+								</button>
+							<?php else: ?>
+								<button onclick="SMColibri.follow(this);" class="btn btn-custom md main-inline" data-action="unfollow" data-id="<?php echo($cl['li']['id']); ?>">
+									<?php echo cl_translate("Unfollow"); ?>
+								</button>
+							<?php endif; ?>
+						<?php endif; ?>
+					<?php endif; ?>
+				<?php endif; ?>
+			</div>
+		</div>
+	</div>
+</div>

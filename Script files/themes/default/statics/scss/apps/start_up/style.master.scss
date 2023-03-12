@@ -1,0 +1,278 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-start_up{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.main--profile-startup-container{
+					width: 100%;
+					display: block;
+					padding: 15px;
+
+					div.startup{
+						display: block;
+						border: 1px solid $border;
+						padding: 20px;
+						border-radius: 10px;
+
+						div.startup-body{
+							display: block;
+							width: 100%;
+
+							div.startup-body-title{
+								width: 100%;
+								display: block;
+								margin-bottom: 30px;
+
+								div.icon{
+									width: 100%;
+									display: flex;
+									align-items: center;
+									justify-content: center;
+									margin-bottom: 10px;
+
+									span{
+										width: 50px;
+										height: 50px;
+										min-width: 40px;
+
+										svg{
+											width: 100%;
+											stroke: $blue;
+											stroke-width: 0.8;
+										}
+									}
+								}
+
+								h1{
+									font-size: 22px;
+									line-height: 32px;
+									color: $blue;
+									text-align: center;
+									font-weight: 700;
+									text-transform: 	uppercase;
+								}
+
+								p{
+									font-size: 13px;
+									line-height: 18px;
+									color: $blue;
+									text-align: center;
+								}
+							}
+							
+							div.startup-body-content{
+								width: 100%;
+								display: block;
+								margin-bottom: 30px;
+
+								div.startup-avatar{
+									width: 100%;
+									display: block;
+
+									div.startup-avatar-inner{
+										width: 100%;
+										display: block;
+
+										div.avatar-imgholder{
+											width: 150px;
+											height: 150px;
+											border: none;
+											overflow: hidden;
+											border-radius: 10em;
+											
+											img{
+												width: 100%;
+												height: 100%;
+												object-fit: cover;
+												padding: 0;
+												margin: 0;
+											}
+										}
+
+										div.avatar-placeholder{
+											width: 150px;
+											height: 150px;
+											border: none;
+											box-shadow: none;
+											line-height: 0;
+
+											button.upload-avatar{
+												background-color: $blue;
+												border: none;
+												line-height: 0px;
+												padding: 0px;
+												width: 100%;
+												height: 100%;
+												border-radius: 10em;
+												display: flex;
+												flex-direction: row;
+												flex-wrap: nowrap;
+												cursor: pointer;
+												justify-content: center;
+												align-items: center;
+												transition: visibility 0.1s linear,opacity 0.1s linear;
+												box-shadow: $btn_shadow;
+												outline: 0;
+
+												svg{
+													width: 50px;
+													height: 50px;
+													stroke: #fff;
+													stroke-width: 1;
+													display: inline-block;
+												}
+
+												&:disabled{
+													cursor: wait !important;
+												}
+											}
+										}
+									}
+								}
+
+								div.startup-info{
+									display: block;
+									width: 100%;
+								}
+
+								div.startup-suggested{
+									display: block;
+									width: 100%;
+
+									div.suggested-list{
+										display: block;
+										width: 100%;
+										max-height: 400px;
+										overflow-x: hidden;
+										overflow-y: auto;
+										margin-bottom: 20px;
+
+										div.suggested-list-item{
+											width: 100%;
+											display: flex;
+											flex-direction: row;
+											flex-wrap: nowrap;
+											line-height: 0px;
+											border-bottom: 1px solid $border;
+											padding: 10px 15px;
+
+											div.avatar{
+												width: 40px;
+												height: 40px;
+												overflow: hidden;
+												min-width: 40px;
+												max-width: 40px;
+												border-radius: 10em;
+
+												img{
+													width: 100%;
+													height: 100%;
+													object-fit: cover;
+												}
+											}
+
+											div.user-info-holder{
+									 			flex: 1;
+									 			padding: 0 0 0 10px;
+									 			line-height: 0px;
+
+									 			h4{
+									 				font-size: 13px;
+									 				padding: 0;
+									 				margin: 0;
+									 				line-height: 13px;
+									 				font-weight: 700;
+									 				color: $black;
+									 				white-space: nowrap;
+									 			}
+
+									 			a{
+									 				display: block;
+									 				text-decoration: none;
+									 				color: $grey;
+									 				font-size: 13px;
+									 				line-height: 20px;
+									 				overflow: hidden;
+									 				white-space: nowrap;
+									 				text-overflow: ellipsis;
+									 				max-width: 140px;
+									 			}
+
+									 			p{
+									 				font-size: 13px;
+									 				line-height: 18px;
+									 				padding: 0;
+									 				margin: 5px 0 0 0;
+									 				padding-right: 40px;
+									 				word-wrap: break-word;
+									 				max-width: 100%;
+									 				overflow: hidden;
+									 				word-break: break-all;
+									 			}
+									 		}
+
+									 		&:hover,&:active{
+									 			background: $el_hovbg;
+									 		}
+
+									 		&:last-child{
+									 			border-bottom: none;
+									 		}
+										}
+									}
+								}
+							}
+
+							div.startup-body-ctrls{
+								width: 100%;
+								display: block;
+
+								p{
+									padding: 0;
+									margin: 0 0 20px 0;
+									font-size: 13px;
+									line-height: 20px;
+									color: $black;
+									text-transform: uppercase;
+									text-align: center;
+								}
+
+								button.btn-text{
+									border: none;
+									border-radius: 0px;
+									color: $grey;
+									font-size: 13px;
+									line-height: 13px;
+									font-weight: 500;
+									background: transparent;
+									transition: all 0.27s ease-in-out;
+									margin-top: 15px;
+									box-shadow: none;
+
+									&:hover, &:active, &:focus{
+										background: transparent;
+										border: none;
+										outline: 0;
+										box-shadow: none;
+										color: $blue;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

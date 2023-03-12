@@ -1,0 +1,293 @@
+<div class="timeline-pubbox-container">
+	<div class="lp">
+		<div class="avatar">
+			<img src="<?php echo($me['avatar']); ?>" alt="Avatar">
+		</div>
+	</div>
+	<div class="rp">
+		<form class="form" id="vue-pubbox-app-<?php echo($cl['pb_id']); ?>" v-on:submit="publish($event)">
+			<div class="input-holder">
+				<textarea ref="text_input" v-on:input.trim="text_input_trigger" v-on:blur="text_blur_trigger" class="autoresize" v-model="text" name="post_text" v-bind:placeholder="text_ph"></textarea>
+			</div>
+			<div class="input-autocomplete" v-if="hashtags.tags.length">
+				<div class="input-autocomplete__hashtags">
+					<div class="input-autocomplete__hashtags-list">
+						<div v-for="i in hashtags.tags" class="hashtag-list-item" v-on:click="hashtag_autocomplete(i.tag)">
+							<p>
+								{{i.tag}} <span>({{i.posts}})</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="input-autocomplete" v-if="mentions.users.length">
+				<div class="input-autocomplete__usernames">
+					<div class="input-autocomplete__username-list">
+						<div v-for="i in mentions.users" class="username-list-item" v-on:click="mention_autocomplete(i.username)">
+							<div class="d-flex flex-wn ov-h">
+								<div class="flex-item">
+									<div class="avatar">
+										<img v-bind:src="i.avatar" alt="IMG">
+									</div>
+								</div>
+								<div class="flex-item flex-grow-1 ov-h">
+									<div class="username">
+										<span class="user-name-holder verified-badge">
+											{{i.name}}
+										</span>
+										<span>
+											@{{i.username}}
+										</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="cl-emoticons" v-if="emoticons_picker.status">
+				<div class="emoticons-group-nav">
+					<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'people')}" v-on:click="emoticons_picker.active_group = 'people'">
+						<span class="emoji_group_icon">
+							😄
+						</span>
+					</span>
+					<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'nature')}" v-on:click="emoticons_picker.active_group = 'nature'">
+						<span class="emoji_group_icon">
+							🐶
+						</span>
+					</span>
+					<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'objects')}" v-on:click="emoticons_picker.active_group = 'objects'">
+						<span class="emoji_group_icon">
+							🍔
+						</span>
+					</span>
+					<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'places')}" v-on:click="emoticons_picker.active_group = 'places'">
+						<span class="emoji_group_icon">
+							🏠
+						</span>
+					</span>
+					<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'symbols')}" v-on:click="emoticons_picker.active_group = 'symbols'">
+						<span class="emoji_group_icon">
+							🕓
+						</span>
+					</span>
+					<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'flags')}" v-on:click="emoticons_picker.active_group = 'flags'">
+						<span class="emoji_group_icon">
+							🏁
+						</span>
+					</span>
+					<span class="emoticons-group-nav-item ml-auto" v-on:click="emoticons_picker.status = false">
+						<span class="emoji_group_icon">
+							<?php echo cl_ikon('close'); ?>
+						</span>
+					</span>
+				</div>
+				<div class="emoticons-group-ls">
+					<div class="emoticons-group" v-for="(emojies, emoji_group_name) in emoticons_picker.icons"  v-if="emoticons_picker.active_group == emoji_group_name">
+						<span v-for="(emoji_icon, emojiName) in emojies" v-bind:key="emojiName" v-on:click="emoticon_insert(emoji_icon)" v-bind:title="emojiName">
+							{{emoji_icon}}
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div v-if="show_og_data" class="preview-og-holder">
+				<div class="preview-og-holder-inner">
+					<div class="og-image" v-if="og_data.image">
+						<div class="og-image-holder">
+							<img v-bind:src="og_data.image" alt="IMG">
+						</div>
+					</div>
+					<div class="og-url-data">
+						<h5>
+							{{og_data.title}}
+						</h5>
+						<p>
+							{{og_data.description}}
+						</p>
+						<a v-bind:href="og_data.url" target="_blank">
+							{{og_data.url}}
+						</a>
+					</div>
+				</div>
+				<button type="button" class="delete-preview-og" v-on:click="rm_preview_og">
+					<?php echo cl_ikon('close'); ?>
+				</button>
+			</div>
+			<div v-if="active_media == 'image'" class="preview-images-holder">
+				<div class="preview-images-list" data-an="post-images">
+					<div v-for="img in images" class="preview-images-list-item" v-bind:style="{height: equal_height}">
+						<div class="li-inner-content">
+							<img v-bind:src="img.url" alt="Image">
+							<button type="button" class="delete-preview-image" v-on:click="delete_image(img.id)">
+								<?php echo cl_ikon('close'); ?>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div v-if="active_media == 'video'" class="preview-video-holder">
+				<div class="video-player" id="preview-video">
+					<video v-bind:poster="video.poster" data-el="colibrism-video" width="550" height="300" controls="true" type="video/mp4">
+						<source type="video/mp4" v-bind:src="video.source"/>
+					</video>
+				</div>
+				<button type="button" class="delete-preview-video" v-on:click="delete_video">
+					<?php echo cl_ikon('close'); ?>
+				</button>
+			</div>
+			<div v-if="active_media == 'poll'" class="preview-poll-holder">
+				<div class="poll-data-title">
+					<div class="d-flex align-items-center flex-wn justify-content-between">
+						<div class="flex-item">
+							<h5><?php echo cl_translate("Create a new poll"); ?></h5>
+						</div>
+						<div class="flex-item">
+							<button v-on:click="cancel_poll" type="button" class="cancel-poll" title="<?php echo cl_translate("Cancel poll"); ?>">
+								<?php echo cl_ikon('close'); ?>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="poll-data-inputs">
+					<div class="data-input-item" v-for="(v, k) in poll">
+						<input v-model.trim="v.value" type="text" v-bind:placeholder="v.title + (k += 1)" maxlength="25">
+						<small>{{v.value.length}}/25</small>
+					</div>
+				</div>
+				<div class="poll-data-ctrls">
+					<button v-bind:disabled="poll.length >= 4" type="button" class="btn btn-custom main-outline md" v-on:click="poll_option">
+						<?php echo cl_translate("Add option"); ?>
+					</button>
+				</div>
+			</div>
+			<div v-if="active_media == 'gifs'" class="preview-gifs-holder">
+				<div class="preview-original-gif loading" v-if="gif_source">
+					<img v-bind:src="gif_source" alt="GIF-Image" v-on:load="rm_gif_preloader($event)">
+					<div class="gif-preloader">
+						<?php echo cl_ikon('spinner-icon'); ?>
+					</div>
+					<button type="button" class="delete-preview-gif" v-on:click="rm_preview_gif">
+						<?php echo cl_ikon('close'); ?>
+					</button>
+				</div>
+				<div class="preview-gifs-loader" v-else-if="gifs">
+					<div class="search-bar-holder">
+						<input v-on:input="search_gifs($event)" type="text" class="form-control" placeholder="<?php echo cl_translate("Search GIF-files"); ?>">
+						<a href="#">
+							<?php echo cl_ikon('search'); ?>
+						</a>
+						<button type="button" v-on:click="close_gifs">
+							<?php echo cl_ikon('close'); ?>
+						</button>
+					</div>
+					<div class="preview-gifs-list" data-an="post-gifs">
+						<div class="row-column row-1">
+							<div v-for="gif_data in gifs_r1" class="preview-gifs-list-item">
+								<div class="li-inner-content loading">
+									<img v-on:click="preview_gif($event)" v-bind:src="gif_data.thumb" v-bind:data-source="gif_data.src" alt="GIF-Image" v-on:load="rm_gif_preloader($event)">
+									<div class="gif-preloader">
+										<?php echo cl_ikon('spinner-icon'); ?>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row-column row-2">
+							<div v-for="gif_data in gifs_r2" class="preview-gifs-list-item">
+								<div class="li-inner-content loading">
+									<img v-on:click="preview_gif($event)" v-bind:src="gif_data.thumb" v-bind:data-source="gif_data.src" alt="GIF-Image" v-on:load="rm_gif_preloader($event)">
+									<div class="gif-preloader">
+										<?php echo cl_ikon('spinner-icon'); ?>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="post-ctrls-holder">
+				<button type="button" class="ctrl-item" v-on:click="select_images" v-bind:disabled="image_ctrl != true">
+					<?php echo cl_ikon("image"); ?>
+				</button>
+				<button type="button" class="ctrl-item" v-on:click="select_video" v-bind:disabled="video_ctrl != true">
+					<?php echo cl_ikon("film"); ?>
+				</button>
+				<button v-on:click="emoticon_picker" type="button" class="ctrl-item">
+					<?php echo cl_ikon("happy-face"); ?>
+				</button>
+				<button type="button" class="ctrl-item" v-on:click="create_poll" v-bind:disabled="poll_ctrl != true">
+					<?php echo cl_ikon('poll'); ?>
+				</button>
+				<button type="button" class="ctrl-item" v-on:click="select_gifs" v-bind:disabled="gif_ctrl != true">
+					<?php echo cl_ikon('search'); ?>
+				</button>
+				<button type="button" class="ctrl-item text-length ml-auto">
+					<small v-show="text.length" v-bind:class="{'len-error': (text.length > settings.max_length) }">
+						{{text.length}}/{{settings.max_length}}
+					</small>
+				</button>
+			</div>
+			<div class="post-privacy-holder">
+				<div class="d-flex align-items-center flex-wn">
+					<div class="flex-item" v-if="post_privacy">
+						<button class="privacy-settings dropdown" type="button">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<span class="d-inline-flex align-items-center flex-wn">
+									<span class="flex-item icon" v-if="post_privacy == 'everyone'">
+										<?php echo cl_ikon('language'); ?>
+									</span>
+									<span class="flex-item icon" v-else-if="post_privacy == 'mentioned'">
+										<?php echo cl_ikon('ear'); ?>
+									</span>
+									<span class="flex-item icon" v-else>
+										<?php echo cl_ikon('people'); ?>
+									</span>
+									<span class="flex-item flex-grow-1 label">
+										{{sdds.privacy[post_privacy]}}
+									</span>
+								</span>
+							</a>
+							<div class="dropdown-menu dropdown-icons">
+								<a class="dropdown-item" href="javascript:void(0);" v-on:click="post_privacy = 'everyone'">
+									<span class="flex-item dropdown-item-icon">
+										<?php echo cl_ikon('language'); ?>
+									</span>
+									<span class="flex-item ">
+										<?php echo cl_translate('Everyone can reply'); ?>
+									</span>
+								</a>
+								<a class="dropdown-item" href="javascript:void(0);" v-on:click="post_privacy = 'mentioned'">
+									<span class="flex-item dropdown-item-icon">
+										<?php echo cl_ikon('ear'); ?>
+									</span>
+									<span class="flex-item ">
+										<?php echo cl_translate('Only mentioned people'); ?>
+									</span>
+								</a>
+								<a class="dropdown-item" href="javascript:void(0);" v-on:click="post_privacy = 'followers'">
+									<span class="flex-item dropdown-item-icon">
+										<?php echo cl_ikon('people'); ?>
+									</span>
+									<span class="flex-item ">
+										<?php echo cl_translate('Only my followers'); ?>
+									</span>
+								</a>
+							</div>
+						</button>
+					</div>
+					<div class="flex-item ml-auto">
+						<button v-bind:disabled="valid_form != true" type="submit" class="btn-custom main-inline md post-pub-btn">
+							<?php echo cl_translate("Publish"); ?>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<input multiple="multiple" type="file" class="d-none" data-an="images-input" accept="image/*" v-on:change="upload_images($event)">
+			<input type="file" class="d-none" data-an="video-input" accept="video/*" v-on:change="upload_video($event)">
+			<input type="hidden" class="d-none" value="<?php echo fetch_or_get($cl['csrf_token'],'none'); ?>" name="hash">
+		</form>
+	</div>
+</div>

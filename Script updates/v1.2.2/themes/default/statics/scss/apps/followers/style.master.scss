@@ -1,0 +1,300 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-connections{
+	main.main-content-container {
+		div.main-content-container-inner {
+			div.timeline-container{
+				div.timeline-header{
+					div.lp div.profile-name-holder{
+						display: block;
+						line-height: 0px;
+						padding: 0;
+						margin: 0;
+
+						h5{
+							padding: 0;
+							margin: 0;
+							font-size: 14px;
+							color: $black;
+							font-weight: 700;
+							line-height: 18px;
+						}
+
+						span{
+							padding: 0;
+							margin: 0;
+							font-size: 13px;
+							color: $grey;
+							font-weight: 400;
+							line-height: 18px;
+
+							svg{
+								width: 13px;
+								height: 13px;
+								display: inline-block;
+								vertical-align: middle;
+								stroke: $grey;
+							}
+						}
+					}
+				}
+				
+				div.profile--connectivity-list-navbar{
+					width: 100%;
+					overflow: hidden;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+					border-bottom: 1px solid $border;
+
+					a{
+						flex: 1;
+						text-decoration: none;
+						line-height: 0px;
+						outline: 0;
+
+						button.navbar-item-btn{
+							background: transparent;
+							font-size: 11px;
+							font-weight: 700;
+							color: $grey;
+							line-height: 13px;
+							box-shadow: none;
+							border: none;
+							padding: 15px 30px;
+							cursor: pointer;
+							width: 100%;
+							outline: 0;
+							text-transform: uppercase;
+
+							&.active{
+								border-bottom: 2px solid $blue;
+							}
+
+							&:hover,&:active,&:focus{
+								background: $el_hovbg;
+							}
+
+							&:disabled{
+								opacity: 0.5;
+								cursor: default;
+							}
+						}
+					}
+				}
+
+				div.profile--connectivity-list-container{
+					width: 100%;
+					line-height: 0px;
+					display: block;
+
+					div.connectivity-list{
+						width: 100%;
+						line-height: 0px;
+						display: block;
+						padding: 0;
+
+						div.connectivity-list-item{
+							width: 100%;
+							display: flex;
+							flex-direction: row;
+							flex-wrap: nowrap;
+							line-height: 0px;
+							border-bottom: 1px solid $border;
+							padding: 10px 15px;
+
+							&:first-child{
+								padding-top: 20px;
+							}
+
+							div.avatar{
+								width: 40px;
+								height: 40px;
+								overflow: hidden;
+								min-width: 40px;
+								max-width: 40px;
+								border-radius: 10em;
+
+								img{
+									width: 100%;
+									height: 100%;
+									object-fit: cover;
+								}
+							}
+
+							div.user-info-holder{
+					 			flex: 1;
+					 			padding: 0 0 0 10px;
+					 			line-height: 0px;
+					 			position: relative;
+
+					 			div.user-data{
+					 				width: 100%;
+					 				display: block;
+					 				
+						 			h4{
+						 				font-size: 13px;
+						 				padding: 0;
+						 				margin: 0;
+						 				line-height: 13px;
+						 				font-weight: 700;
+						 				color: $black;
+						 				white-space: nowrap;
+						 			}
+
+						 			a{
+						 				display: block;
+						 				text-decoration: none;
+						 				color: $grey;
+						 				font-size: 13px;
+						 				line-height: 20px;
+						 				overflow: hidden;
+						 				white-space: nowrap;
+						 				text-overflow: ellipsis;
+						 				max-width: 140px;
+						 			}
+
+						 			p{
+						 				font-size: 13px;
+						 				line-height: 18px;
+						 				padding: 0;
+						 				margin: 5px 0 0 0;
+						 				padding-right: 40px;
+						 			}
+					 			}
+
+
+					 			button.dropleft{
+					 				line-height: 0px;
+									background: transparent;
+									border: none;
+									box-shadow: none;
+									outline: none;
+									padding: 0;
+									margin: 0;
+									cursor: pointer;
+
+					 				a.icon{
+					 					display: inline-block;
+										vertical-align: middle;
+										padding: 0;
+										margin: 0;
+										line-height: 0px;
+
+										svg{
+											width: 18px;
+											height: 18px;
+											*{
+												stroke: $grey2;
+											}
+										}
+
+										&:before, &:after{
+										 	display: none;
+										}
+					 				}
+					 			}
+					 		}
+
+					 		&:hover,&:active{
+					 			background: $el_hovbg;
+					 		}
+						}
+					}
+
+					div.load-more{
+						width: 100%;
+						display: block;
+						line-height: 0;
+						padding: 20px;
+						text-align: center;
+
+						button{
+							padding-left: 30px;
+							padding-right: 30px;
+						}
+					}
+				}
+
+				div.profile--connectivity-empty-list{
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					flex-wrap: nowrap;
+					align-items: center;
+					line-height: 0px;
+					padding: 100px 50px;
+					height: calc(100vh - 120px);
+					overflow: hidden;
+
+			 		div.icon{
+			 			line-height: 0px;
+						margin-bottom: 20px;
+						width: 100%;
+						text-align: center;
+
+			 			svg{
+				 			width: 50px;
+				 			height: 50px;
+				 			stroke: $blue;
+				 		}
+			 		}
+
+			 		div.pl-message{
+						line-height: 0px;
+						width: 100%;
+						margin-bottom: 20px;
+
+						h4{
+							font-size: 20px;
+							padding: 0;
+							margin: 0 0 10px 0;
+							line-height: 20px;
+							color: $black;
+							font-weight: 700;
+							text-align: center;
+						}
+
+						p{
+							font-size: 13px;
+							line-height: 20px;
+							padding: 0;
+							margin: 0;
+							color: $grey;
+							text-align: center;
+							overflow-wrap: break-word;
+						}
+					}
+
+					div.c2action-single{
+						width: 100%;
+						line-height: 0px;
+						text-align: center;
+
+						a{
+							display: inline-block;
+							line-height: 0px;
+							text-decoration: none;
+
+							button{
+								padding-left: 40px;
+								padding-right: 40px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

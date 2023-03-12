@@ -1,0 +1,156 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-conversation{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container-inner{
+				div.timeline-container{
+					div.timeline-container-inner{
+						div.timeline-header{
+							div.lp{
+								div.profile-name-holder{
+									h5{
+										color: #fff;
+									}
+
+									span{
+										color: $dark_grey;
+
+										svg{
+											stroke: $dark_ikon_color;
+										}
+									}
+								}
+							}
+						}
+
+						div.vue-app-body{
+							div.vue-app-body-inner{
+								div.conversation--search-form-wrapper{
+									form{
+										border-color: $dark_border;
+
+										div.keyword-input{
+											input{
+												background: $dark_input_bg;
+												border-color: $dark_border;
+												color: #fff;
+
+												&::placeholder{
+													color: $dark_grey;
+												}
+											}
+
+											span.icon{
+												svg{
+													stroke: $dark_grey;
+												}
+											}
+										}
+									}
+								}
+
+								div.conversation--messages-list-wrapper{
+									div.conversation--messages-list{
+										background: $dark_bg;
+
+										div.conversation--messages-list-item{
+											div.message-data{
+
+												div.message-media{
+													a.image-wrapper{
+														border-color: $dark_border;
+													}
+												}
+
+												div.message-time{
+													time{
+														color: $dark_grey;
+													}
+												}
+											}
+										}
+									}
+								}
+
+								div.conversation--messages-form-wrapper{
+									border-color: $dark_border;
+
+									form.form{
+										div.message-inputs-holder{
+											div.message-input{
+												input{
+													color: #fff;
+													border-color: $dark_border;
+													background: $dark_input_bg;
+
+													&::placeholder{
+														color: $dark_grey;
+													}
+												}
+											}
+										}
+									}
+
+									div.conversation--messages-search-results{
+										background: $dark_accent_bg;
+
+										div.fc-row{
+											div.lp{
+												b{
+													color: #fff;
+												}
+
+												span{
+													color: $dark_grey;
+												}
+											}
+
+											div.rp{
+												button.sr-ctrls{
+													svg{
+														stroke: $dark_ikon_color;
+													}
+												}
+											}
+										}
+									}
+
+									div.ghost-form{
+										div.message-inputs-holder{
+											div.message-input{
+												input{
+													border: none;
+													background: $dark_input_bg;
+
+													&::placeholder{
+														color: $dark_grey;
+													}
+												}
+											}
+
+											button.btn-inline-controls{
+												border: none;
+												background: $dark_input_bg; 
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

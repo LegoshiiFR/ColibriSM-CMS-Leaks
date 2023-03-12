@@ -1,0 +1,304 @@
+body.cl-app-guest main.main-content-container div.main-content-container-inner {
+  display: block !important;
+  margin-left: auto;
+  margin-right: 0px !important;
+  max-width: 55vw !important; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.timeline-container-wrapper {
+    display: block !important;
+    max-width: 100% !important;
+    min-width: 100% !important;
+    border: none; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container {
+    display: block;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 10px 0px; }
+    body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.carousel.welcome-page-slider {
+      position: fixed;
+      width: 45vw;
+      height: 100vh;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      z-index: 1; }
+      body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.carousel.welcome-page-slider:after {
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        content: "";
+        background-color: rgba(79, 161, 243, 0.3); }
+      body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.carousel.welcome-page-slider div.carousel-inner {
+        width: 100%;
+        height: 100%; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.carousel.welcome-page-slider div.carousel-inner div.carousel-item {
+          width: 100%;
+          height: 100%;
+          background-size: cover; }
+    body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container {
+      width: 100%;
+      display: block;
+      position: relative;
+      z-index: 2;
+      background: #1ca1f3;
+      min-height: 100vh; }
+      body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content {
+        width: 100%;
+        display: block;
+        padding: 30px 100px; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.logo {
+          width: 100%;
+          display: block;
+          margin-bottom: 35px; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.logo a {
+            display: inline-block;
+            width: 70px;
+            min-width: 70px;
+            height: 70px;
+            background-color: #fff;
+            border-radius: 10em;
+            padding: 15px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 10px 0px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.logo a img {
+              width: 100%;
+              height: 100%; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text {
+          display: block;
+          width: 100%;
+          margin-bottom: 70px; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text h1 {
+            color: #fff;
+            font-size: 32px;
+            line-height: 1.4;
+            padding: 0;
+            margin: 0 0 30px 0;
+            font-weight: bold; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text p {
+            font-size: 18px;
+            line-height: 1.4;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            font-weight: 300; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form {
+          margin-bottom: 150px; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-form-holder {
+            display: block;
+            width: 100%; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-form-holder div.welcome-back {
+              width: 100%;
+              display: block;
+              margin-bottom: 20px; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-form-holder div.welcome-back h5 {
+                padding: 0;
+                margin: 0;
+                font-size: 18px;
+                line-height: 24px;
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 10px; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-form-holder div.welcome-back p {
+                font-size: 11px;
+                color: #fff;
+                padding: 0;
+                margin: 0;
+                line-height: 11px;
+                text-transform: uppercase; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-or-signup {
+            line-height: 0;
+            margin: 10px 0px 20px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-or-signup small {
+              font-size: 11px;
+              line-height: 11px;
+              color: #fff;
+              text-transform: uppercase; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers a.social-login-btn {
+              border: none;
+              box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 10px 0px;
+              background: none;
+              color: #fff;
+              padding: 0;
+              line-height: 0;
+              outline: 0;
+              overflow: hidden;
+              border-radius: 2px;
+              margin: 0px 10px 0px 0px;
+              height: 34px;
+              width: 34px;
+              position: relative; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers a.social-login-btn span.icon {
+                width: 15px;
+                height: 15px;
+                line-height: 0px;
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                right: 0;
+                margin: auto; }
+                body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers a.social-login-btn span.icon svg {
+                  width: 15px;
+                  height: 15px;
+                  fill: #fff; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers a.social-login-btn.twitter {
+                background: #64ccf2; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers a.social-login-btn.facebook {
+                background: #507cc0; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.oauth-login-providers a.social-login-btn.google {
+                background: #df4931; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement {
+            display: block;
+            line-height: 0px;
+            max-width: 350px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-header {
+              width: 100%;
+              line-height: 0px;
+              margin-bottom: 20px; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-header span {
+                font-size: 11px;
+                line-height: 16px;
+                color: #fff; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-header a {
+                font-size: 11px;
+                line-height: 16px;
+                color: #fff;
+                font-weight: 500;
+                text-decoration: underline; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-body {
+              width: 100%;
+              line-height: 0px;
+              border-top: 1px solid rgba(230, 236, 240, 0.55);
+              padding-top: 20px; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-body a {
+                font-size: 11px;
+                line-height: 16px;
+                color: #fff;
+                font-weight: 500;
+                opacity: 0.9;
+                text-transform: uppercase; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-footer {
+              display: none; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form button.btn-custom {
+            background: #fff;
+            height: 46px;
+            color: #5b7083;
+            display: inline-block;
+            width: auto;
+            border-radius: 1px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-right: 10px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form button.btn-custom.d-none {
+              display: inline-block !important;
+              color: #fff;
+              border-color: #fff;
+              background: transparent;
+              margin-right: 0px; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form label.input-label {
+            display: none; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form input.form-control {
+            border: none;
+            border-radius: 1px;
+            height: 40px;
+            max-width: 350px; }
+      body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer {
+        width: 100%;
+        display: block;
+        margin-top: 20px;
+        border-top: 1px solid rgba(230, 236, 240, 0.55);
+        padding-top: 20px; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          padding: 0;
+          margin: 0;
+          line-height: 0px;
+          list-style-type: none; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item {
+            line-height: 0px;
+            margin-right: 10px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item > a {
+              font-size: 11px;
+              color: #fff;
+              line-height: 20px;
+              opacity: 0.7; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item.dropdown > a {
+              text-decoration: none; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item:last-child {
+              margin-left: auto;
+              margin-right: 0px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item.dropdown a.dropdown-toggle {
+              text-decoration: none; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item.dropdown a.dropdown-toggle span.language-banner {
+                line-height: 11px;
+                margin-right: 5px;
+                overflow: hidden;
+                border-radius: 2px; }
+                body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item.dropdown a.dropdown-toggle span.language-banner svg {
+                  width: 15px; }
+              body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item.dropdown a.dropdown-toggle span.language-name {
+                line-height: 11px; }
+            body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer ul.footer-nav li.footer-nav-item.dropdown a.dropdown-item {
+              text-decoration: none; }
+body.cl-app-guest div.modal div.auth-modal-window {
+  padding: 20px; }
+  body.cl-app-guest div.modal div.auth-modal-window div.form-title {
+    width: 100%;
+    display: block;
+    line-height: 0;
+    text-align: center;
+    margin-bottom: 25px; }
+    body.cl-app-guest div.modal div.auth-modal-window div.form-title div.logo {
+      width: 100%;
+      display: block;
+      text-align: center;
+      margin-bottom: 5px; }
+      body.cl-app-guest div.modal div.auth-modal-window div.form-title div.logo a {
+        text-decoration: none;
+        line-height: 0; }
+        body.cl-app-guest div.modal div.auth-modal-window div.form-title div.logo a img {
+          width: 50px;
+          height: 50px; }
+    body.cl-app-guest div.modal div.auth-modal-window div.form-title h4 {
+      color: #14171a;
+      font-size: 20px;
+      line-height: 20px;
+      font-weight: 700;
+      margin: 0 0 10px 0;
+      padding: 0; }
+    body.cl-app-guest div.modal div.auth-modal-window div.form-title p {
+      font-size: 12px;
+      color: #5b7083;
+      padding: 0;
+      margin: 0;
+      line-height: 20px; }
+  body.cl-app-guest div.modal div.auth-modal-window label.tos-agree span {
+    font-size: 11px;
+    color: #5b7083;
+    line-height: 16px; }
+  body.cl-app-guest div.modal div.auth-modal-window label.tos-agree a {
+    font-size: 11px;
+    color: #1ca1f3;
+    line-height: 16px; }
+  body.cl-app-guest div.modal div.auth-modal-window div.form-group div.cell-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between; }
+    body.cl-app-guest div.modal div.auth-modal-window div.form-group div.cell-row div.cell-50 {
+      max-width: calc(50% - 10px);
+      min-width: calc(50% - 10px);
+      width: calc(50% - 10px);
+      flex-basis: calc(50% - 10px); }
+
+/*# sourceMappingURL=style.master.css.map */

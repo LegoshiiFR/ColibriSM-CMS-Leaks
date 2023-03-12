@@ -1,0 +1,193 @@
+body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container {
+  width: 100%;
+  display: block;
+  padding: 15px; }
+  body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup {
+    display: block;
+    border: 1px solid #e6ecf0;
+    padding: 20px;
+    border-radius: 10px; }
+    body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body {
+      display: block;
+      width: 100%; }
+      body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-title {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-title div.icon {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 10px; }
+          body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-title div.icon span {
+            width: 50px;
+            height: 50px;
+            min-width: 40px; }
+            body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-title div.icon span svg {
+              width: 100%;
+              stroke: #1ca1f3;
+              stroke-width: 0.8; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-title h1 {
+          font-size: 22px;
+          line-height: 32px;
+          color: #1ca1f3;
+          text-align: center;
+          font-weight: 700;
+          text-transform: uppercase; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-title p {
+          font-size: 13px;
+          line-height: 18px;
+          color: #1ca1f3;
+          text-align: center; }
+      body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar {
+          width: 100%;
+          display: block; }
+          body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner {
+            width: 100%;
+            display: block; }
+            body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner div.avatar-imgholder {
+              width: 150px;
+              height: 150px;
+              border: none;
+              overflow: hidden;
+              border-radius: 10em; }
+              body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner div.avatar-imgholder img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                padding: 0;
+                margin: 0; }
+            body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner div.avatar-placeholder {
+              width: 150px;
+              height: 150px;
+              border: none;
+              box-shadow: none;
+              line-height: 0; }
+              body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner div.avatar-placeholder button.upload-avatar {
+                background-color: #1ca1f3;
+                border: none;
+                line-height: 0px;
+                padding: 0px;
+                width: 100%;
+                height: 100%;
+                border-radius: 10em;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                cursor: pointer;
+                justify-content: center;
+                align-items: center;
+                transition: visibility 0.1s linear,opacity 0.1s linear;
+                box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 10px 0px;
+                outline: 0; }
+                body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner div.avatar-placeholder button.upload-avatar svg {
+                  width: 50px;
+                  height: 50px;
+                  stroke: #fff;
+                  stroke-width: 1;
+                  display: inline-block; }
+                body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-avatar div.startup-avatar-inner div.avatar-placeholder button.upload-avatar:disabled {
+                  cursor: wait !important; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-info {
+          display: block;
+          width: 100%; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested {
+          display: block;
+          width: 100%; }
+          body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list {
+            display: block;
+            width: 100%;
+            max-height: 400px;
+            overflow-x: hidden;
+            overflow-y: auto;
+            margin-bottom: 20px; }
+            body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item {
+              width: 100%;
+              display: flex;
+              flex-direction: row;
+              flex-wrap: nowrap;
+              line-height: 0px;
+              border-bottom: 1px solid #e6ecf0;
+              padding: 10px 15px; }
+              body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item div.avatar {
+                width: 40px;
+                height: 40px;
+                overflow: hidden;
+                min-width: 40px;
+                max-width: 40px;
+                border-radius: 10em; }
+                body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item div.avatar img {
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover; }
+              body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item div.user-info-holder {
+                flex: 1;
+                padding: 0 0 0 10px;
+                line-height: 0px; }
+                body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item div.user-info-holder h4 {
+                  font-size: 13px;
+                  padding: 0;
+                  margin: 0;
+                  line-height: 13px;
+                  font-weight: 700;
+                  color: #14171a;
+                  white-space: nowrap; }
+                body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item div.user-info-holder a {
+                  display: block;
+                  text-decoration: none;
+                  color: #5b7083;
+                  font-size: 13px;
+                  line-height: 20px;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                  max-width: 140px; }
+                body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item div.user-info-holder p {
+                  font-size: 13px;
+                  line-height: 18px;
+                  padding: 0;
+                  margin: 5px 0 0 0;
+                  padding-right: 40px;
+                  word-wrap: break-word;
+                  max-width: 100%;
+                  overflow: hidden;
+                  word-break: break-all; }
+              body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item:hover, body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item:active {
+                background: #f5f8fa; }
+              body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-content div.startup-suggested div.suggested-list div.suggested-list-item:last-child {
+                border-bottom: none; }
+      body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-ctrls {
+        width: 100%;
+        display: block; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-ctrls p {
+          padding: 0;
+          margin: 0 0 20px 0;
+          font-size: 13px;
+          line-height: 20px;
+          color: #14171a;
+          text-transform: uppercase;
+          text-align: center; }
+        body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-ctrls button.btn-text {
+          border: none;
+          border-radius: 0px;
+          color: #5b7083;
+          font-size: 13px;
+          line-height: 13px;
+          font-weight: 500;
+          background: transparent;
+          transition: all 0.27s ease-in-out;
+          margin-top: 15px;
+          box-shadow: none; }
+          body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-ctrls button.btn-text:hover, body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-ctrls button.btn-text:active, body.cl-app-start_up main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-startup-container div.startup div.startup-body div.startup-body-ctrls button.btn-text:focus {
+            background: transparent;
+            border: none;
+            outline: 0;
+            box-shadow: none;
+            color: #1ca1f3; }
+
+/*# sourceMappingURL=style.master.css.map */

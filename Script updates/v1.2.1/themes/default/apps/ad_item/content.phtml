@@ -1,0 +1,30 @@
+<div class="timeline-container" data-app="advertisements">
+	<div class="timeline-header" data-el="tl-header">
+		<div class="lp">
+			<div class="nav-link-holder">
+				<a href="<?php echo cl_link('ads'); ?>">
+					<?php echo cl_translate('Advertisement'); ?>
+				</a>
+			</div>
+		</div>
+		<div class="cp">
+			<a href="<?php echo cl_link('/'); ?>">
+				<img src="{%config site_logo%}" alt="Logo">
+			</a>
+		</div>
+		<div class="rp">
+			<div class="nav-link-holder">
+				<span class="go-back" onclick="SMColibri.go_back();">
+					<?php echo cl_ikon('arrow-left'); ?>
+				</span>
+			</div>
+		</div>
+	</div>
+	<div class="timeline-posts-container">
+		<div class="timeline-posts-ls">
+			<?php foreach ($cl["ads_ls"] as $cl['li']): ?>
+				<?php echo cl_template("timeline/ad"); ?>
+			<?php endforeach; ?>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBK,wJAAW;EACV,YAAY,ECSJ,OAAO;EDJZ,kNAAG;IACF,MAAM,ECKJ,OAAO;EDDX,uYAAK;IACJ,KAAK,ECHD,OAAO;EDWT,0RAAoB;IACnB,UAAU,ECbL,OAAO;EDoBf,gPAAuB;IACtB,YAAY,ECnBR,OAAO;IDsBV,6QAAO;MACN,KAAK,EAAE,IAAI;IAGZ,uQAAC;MACA,KAAK,EAAE,eAAe;IAGvB,uQAAC;MACA,KAAK,EChCJ,OAAO;IDoCV,+eAAgB;MACd,UAAU,EAAE,kBAA0B;EAO1C,kMAAC;IACA,KAAK,EC1CF,OAAO;ED6CX,gNAAe;IACd,KAAK,EC9CF,OAAO",
+"sources": ["../../../scss/apps/start_up/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

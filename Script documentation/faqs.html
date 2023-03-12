@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ColibriSM - Documentation</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ColibriSM - The Ultimate Modern Social Media Sharing Platform">
+    <meta name="author" content="Mansur Altamirov (Mansur_TL)">   
+    <link rel="shortcut icon" href="favicon.png">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">        
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/lightbox/dist/ekko-lightbox.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+</head> 
+
+<body class="body-purple">
+    <div class="page-wrapper">
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Colibri</span><span class="text-bold">SM</span>
+                        </a>
+                    </h1>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">FAQs</li>
+                </ol>
+            </div>
+        </header>
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><span aria-hidden="true" class="icon icon_lifesaver"></span> FAQs</h1>
+                </div>
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="general" class="doc-section">
+                                <h2 class="section-title">General</h2>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> What PHP framework ColibriSM is built on?</h3>
+                                    <div class="answer">
+                                        ColibriSM does not use any types of frameworks, the script is full pure PHP code,
+                                        with the exception of third-party libraries SDK and other
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i>  When is the next update coming up? what is the new features?</h3>
+                                    <div class="answer">
+                                        There is no specified date for every new update.
+                                        Developers do this at their discretion, but ColibriSM is regularly updated and improved.
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> Which host provider do you recommend for ColibriSM?</h3>
+                                    <div class="answer">
+                                        We recommend you to use Godaddy, Hostwinds, Bluehost
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> Can I use this platform in more than one domain?</h3>
+                                    <div class="answer">
+                                        With one purchase code you can use it on one domain name. You need to get new license for each domain name, please check Envato Help Page for more information about licenses 
+                                        <a href="https://codecanyon.net/licenses/standard">http://codecanyon.net/licenses/standard</a>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i>  Why I get 500 internal service error?</h3>
+                                    <div class="answer">
+                                        This may cuase due folder permissions error, Web server issue, please contact your host provider and let them fix it for you.
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i>  Why do I get 404, when I open any page?</h3>
+                                    <div class="answer">
+                                        <ul class="list">
+                                            <li>
+                                                1. Please make sure that the .htaccess file is uploaded to your server and updated to latest version.
+                                            </li>
+                                            <li>
+                                                2. If the file is exists, but you still face this issue, please contact your host provide, and let them enable mod_rewrite.
+                                            </li>
+                                            <li>
+                                                3. If you are using a VPS with Ubuntu Linux installed, please follow this <a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite-for-apache-on-ubuntu-14-04">guide</a>.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i>  Why am I getting an error while uploading a video or image</h3>
+                                    <div class="answer">
+                                        <p>
+                                            There may be several reasons for this
+                                        </p>
+                                        <ul>
+                                            <li>
+                                                1. The upload folder has no write rights
+                                            </li>
+                                            <li>
+                                                2. The (core/libs/ffmpeg/ffmpeg) file has no rights for execution
+                                            </li>
+                                            <li>
+                                                3. The PHP <code>exec()</code> function is disabled by your hosting provider
+                                            </li>
+                                            <li>
+                                                4. PHP has the limit of uploaded files and request size (Look php.ini file configurations)
+                                            </li>
+                                            <li>
+                                                5. PHP has the limit of uploaded files and request size (Look php.ini file configurations)
+                                            </li>
+                                        </ul>
+                                        <p>
+                                            Sometimes it happens, so you have a system (ffmpeg) installed on your server and it conflicts with the one that comes with this script, it crashes, in such case we recommend that you use the one that is installed on your server. You can specify the path to the binary file in the Admin panel -> Settings -> FFMPEG binary. As shown below
+                                        </p>
+                                        <div class="screen-shot-cont">
+                                            <img src="./assets/images/img-12.png" alt="Screenshot">
+                                        </div>
+                                        <p>
+                                            If your server already has system (ffmpeg) installed as we said, then just specify the path to it in this field
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i>  Why is sending emails not working?</h3>
+                                    <div class="answer">
+                                        <p>
+                                            This problem occurs due to the SMTP settings, for example, the wrong port number or the type of encryption.
+
+                                            After making sure that your SMTP credentials as hostname username and password are correct, try the following options
+                                        </p>
+                                        <ul class="list">
+                                            <li>
+                                                1. Try using TLS with 587
+                                            </li>
+                                            <li>
+                                                2. Or try SSL with 465
+                                            </li>
+                                        </ul>
+
+                                        <p>
+                                            If your SMTP still doesn't work, please contact us for technical support
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="how_it_works" class="doc-section">
+                                <h2 class="section-title">How it works</h2>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> What is ColibriSM script?</h3>
+                                    <div class="answer">
+                                        <p>
+                                            ColibriSM is a modern platform that allows you to share media content, share news and events, as well as follow the content you are interested in.
+                                        </p>
+                                        <p>
+                                            In simple terms, this is an analogue of such social networks as Twitter, Intagram, Reddit
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            
+                            <section id="features" class="doc-section">
+                                <h2 class="section-title">Features</h2>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i>  Where can I access Admin panel?</h3>
+                                    <div class="answer">
+                                        Log in to the site using your credentials, that is, the email and password that you specified during installation, and then visit yoursite.com/admin_panel
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> Where can I change the language texts?</h3>
+                                    <div class="answer">
+                                        First, let's figure out where to find the files and texts for the languages of the site
+
+                                        <p>
+                                            So open the folder <b>core/langs</b> and see the following:
+                                        </p>
+                                        <div class="screen-shot-cont">
+                                            <img src="./assets/images/img-10.png" alt="Screenshot">
+                                        </div>
+                                        <p>
+                                            Open the file with the name of the language you want to edit. For example <b>english.json</b>
+                                        </p>
+                                        <p>
+                                            We find there the text that we want to change, for example (Login) to (Sign in)
+                                        </p>
+
+                                        <p>
+                                            Copy the key and value 
+                                            <code class="js">
+                                                "login": "Login"
+                                            </code>
+
+                                            and go to the folder <b>custom</b> and open a file there with the corresponding name of the language that we want to change, in our case it was <b>english.json</b>
+                                        </p>
+
+                                        <p>
+                                            We remove if there is a comment and put the key and the value in the same format as shown below:
+                                        </p>
+                                        <div class="screen-shot-cont">
+                                            <img src="./assets/images/img-11.png" alt="Screenshot">
+                                        </div>
+                                        <p>
+                                            However, keep in mind that the keys must match the originals exactly, and when editing text, do not remove special expressions like <b>{@some_value@}</b>
+                                        </p>
+
+                                        <p>
+                                            You do the same for other languages.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> Where can I modify the HTML tamplates?</h3>
+                                    <div class="answer">
+                                        All that relates to the layout can be found in the folder ./themes/[theme_name]/apps/&lt;app_name&gt; respectively.
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> Where can I edit the CSS styles?</h3>
+                                    <div class="answer">
+                                        <p>
+                                            For simplicity, we have divided all parts of this project into conditional parts that we call applications. <br>
+                                            Each of which has its own separate styles, JS code, PHP code and everything that it needs to function
+                                        </p>
+                                        <p>
+                                            For example, the home page is an application, the profile page is an application, the error page is also an application, and they all have separate dependencies that I mentioned above
+                                        </p>
+
+                                        <p>
+                                            All styles for pages (Applications) are located in the folder: <b>themes/default/statics/css/apps/</b>
+                                        </p>
+                                        <h6>
+                                            Let's say you want to change the styles for your home page
+                                        </h6>
+
+                                        <p>
+                                            To do this, you need to go to the folder as shown below: <b>themes/default/statics/css/apps/home</b>.
+                                        </p>
+                                        <div class="screen-shot-cont">
+                                            <img src="./assets/images/img-9.png" alt="Screenshot">
+                                        </div>
+                                        <p>
+                                            This file <b>(style.custom.css)</b> is the one that is intended for the custom css code. After you write your code there, save the file.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> Where can I write custom JS code?</h3>
+                                    <div class="answer">
+                                        <p> So that you can add new JS scripts without losing them when updating, you need to put your code in the following file: themes/default/statics/js/custom.js</p>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> How can I change the logo and favicon?</h3>
+                                    <div class="answer">
+                                        Open the themes/[theme_name]/statics/img folder and replace these [logo.png, favicon.png] files with yours, respectively
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> How can I change the background images of the Welcome page?</h3>
+                                    <div class="answer">
+                                        <p>
+                                            In order to replace the background images of the welcome page, you need to place them in the folder: <b>themes/default/statics/img/welcomewp/</b>
+                                        </p>
+
+                                        <p>Please note that the system by default expects 5 background images, which should look like this:</p>
+                                        <ul>
+                                            <li>1-1920x1080.jpeg</li>
+                                            <li>2-1920x1080.jpeg</li>
+                                            <li>3-1920x1080.jpeg</li>
+                                            <li>4-1920x1080.jpeg</li>
+                                            <li>5-1920x1080.jpeg</li>
+                                        </ul>
+                                        <p>
+                                            The image size must be 1920x1080 and the names and extensions must match exactly as shown in the list above.
+
+                                            However, if you want a more flexible configuration of this slider and remove these restrictions, then you need to edit the following file: <b>themes/default/apps/guest/content.phtml</b>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> How can I edit the built-in pages ? </h3>
+                                    <div class="answer">
+                                        <div>
+                                            <div>
+                                                To edit the (About us) page, open the following file: <b>./themes/[theme name]/apps/about_us/src/source.phtml</b>
+                                                and paste the previously created HTML content of this page into it, and then save!
+                                            </div>
+                                            <br>
+                                            <div>
+                                                To edit the (Terms of Use) page, open the following file: <b>./themes/[theme name]/apps/terms/src/source.phtml</b>
+                                                and paste the previously created HTML content of this page into it, and then save!
+                                            </div>
+                                            <br>
+                                            <div>
+                                                To edit the (Privacy policy) page, open the following file: <b>./themes/[theme name]/apps/privacy_policy/src/source.phtml</b>
+                                                and paste the previously created HTML content of this page into it, and then save!
+                                            </div>
+                                            <br>
+                                            <div>
+                                                To edit the (Cookies) page, open the following file: <b>./themes/[theme name]/apps/cookies_policy/src/source.phtml</b>
+                                                and paste the previously created HTML content of this page into it, and then save!
+                                            </div>
+                                            <br>
+                                            <div>
+                                                To edit the (F.A.Qs) page, open the following file: <b>./themes/[theme name]/apps/faqs/src/source.phtml</b>
+                                                and paste the previously created HTML content of this page into it, and then save!
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div>
+                                            <small style="color:#3aa0f2;">
+                                                This editing method was chosen by the author, because HTML markup is sometimes unpredictably huge, depending on the specific owner of the site, so experience has shown that storing huge pages in a database and even encoded ones is not the best option
+                                            </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> How the advertising system works?</h3>
+                                    <div class="answer">
+                                        <p>
+                                            Initially, this system can be disabled or enabled on the admin panel.
+                                        </p>
+                                        <p>
+                                            If the system is enabled, then users can create their own ads and run them.
+                                            An ad conversion is a click of user on the target link of the ad itself.
+
+                                            <div class="screen-shot-cont">
+                                                <img src="./assets/images/img-8.png" alt="Screenshot">
+                                            </div>
+                                        </p>
+                                        <p>
+                                            For each user conversion, the advertiser will be charged money that the administrator can define in the admin panel.
+                                            It is important to note that ads will not be shown if the user's wallet does not have sufficient funds.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question"><i class="fas fa-question-circle"></i> How the affiliate program function works?</h3>
+                                    <div class="answer">
+                                        <p>
+                                            This system also can be disabled or enabled on the admin panel.
+                                        </p>
+                                        <p>
+                                            If the system is enabled, then users can make money by attracting users to your site.
+                                        </p>
+                                        <ol>
+                                            <li>
+                                                A user shares a link to your site that includes a user ID. E.g. <a href="https://sm-colibri.ru?ref=mansur_admin">https://sm-colibri.ru?ref=mansur_admin</a>
+                                            </li>
+                                            <li>
+                                                A person follows the link and registers on your site.
+                                            </li>
+                                            <li>
+                                                And as a result, the user who is his referral receives a bonus, which is equal to $0.10 by default
+                                            </li>
+                                            <li>
+                                                And finally, the user can request his money, which he earned through this affiliate program, if his earnings are not less than $ 50
+                                            </li>
+                                        </ol>
+
+                                        <p>
+                                            <b>
+                                                It is very important to note that the affiliate program will only work if the user registration confirmation system is enabled
+                                            </b>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="ssl-security" class="doc-section">
+                                <h2 class="section-title">HTTPS / SSL Security</h2>
+                                <div class="section-block">
+                                    <h3 class="question">
+                                        How can I install a SSL?
+                                    </h3>
+                                    <div class="answer">
+                                        After you bought and configured your web server to use ssl certificat,
+                                        go to ./core/settings.php file, find $site_url, replace your site url to https version.
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question">
+                                        How can I redirect (force) my website to use a SSL version?
+                                    </h3>
+                                    <div class="answer">
+                                        <div>
+                                            Open .htaccess file, under "RewriteEngine On", copy and paste the code below:
+                                        </div>
+                                        <br>
+                                        <pre><code>
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP:X-Forwarded-Proto} !https
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+                                            </code></pre>
+                                    </div>
+                                    
+                                </div>
+                            </section>
+                            <section id="script-update" class="doc-section">
+                                <h2 class="section-title">Script update</h2>
+                                <div class="section-block">
+                                    <h3 class="question">
+                                        Ho to update my ColibriSM website?
+                                    </h3>
+                                    <div class="answer">
+                                        If you have missed one or two or v1.x.x updates, 
+                                        and you want to update your site to latest version, 
+                                        you have to update your site version by version manually. E.g.
+                                        
+                                        <p>
+                                            Before you apply the latest updates to your site, 
+                                            you must install previous updates, more precisely, 
+                                            all versions of the update, from your current version to the latest version. 
+                                            For example, your current version is: <b>[v1.0]</b>, and the latest version of the script is: <b>[v1.0.4]</b>,
+                                            in such cases, you must install these previous versions <b>(v1.0.1, v1.0.2, v1.0.3)</b>, before installing the latest version <b>[v1.0.4]</b>
+                                        </p>
+
+                                        <hr>
+
+                                        <h6>
+                                            If you did everything as described above, then before starting the update, 
+                                            download the latest version of the script from here <a href="https://codecanyon.net/downloads">CodeCanyon - Downloads</a> 
+                                        </h6>
+
+                                        <p>
+                                            Once you have downloaded the latest version of the script, you can find the update files in "Script updates" folder, as shown below: 
+                                        </p>
+                                        <div class="screen-shot-cont">
+                                            <img src="./assets/images/img-7.png" alt="Avatar">
+                                        </div>
+                                        <br>
+
+                                        <h6>
+                                            Select the version of the update and unzip it wherever convenient for you. For example to the desktop
+                                        </h6>
+                                        <p>
+                                            Upload and overwrite to your server all files <b>(Select everything, files & folder)</b> which are in the update folder that you selected and unzipped as indicated above
+                                        </p>
+                                        <h6>
+                                            Once the files are uploaded and overwritten, open and run http://www.your-colibri-script.com/update.php (if update.php file exists)
+                                        </h6>
+                                        <p>
+                                            If you do everything carefully, as described above, then your script will be successfully updated without any problems.
+
+                                            However, if you have any problems with updates, then contact us for technical support: <a href="mailto:highexpresstore@gmail.com">highexpresstore@gmail.com</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </section>
+                            <section id="tech-support" class="doc-section">
+                                <h2 class="section-title">Customers support</h2>
+                                <div class="section-block">
+                                    <h3 class="question">
+                                        I have a problem for which here is no answer, what to do?
+                                    </h3>
+                                    <div class="answer">
+                                        If you need support, or if you're facing any problems, 
+                                        please E-mail us at <a href="mailto:highexpresstore@gmail.com">highexpresstore@gmail.com</a>
+                                        Please note that our respond can take up to 2 business days.
+                                        <p>
+                                            You can find additional information on my account at <a href="https://codecanyon.net/user/mansur_tl">CodeCanyon - Mansur_TL</a>
+                                        </p>
+                                        <div>
+                                            <b>
+                                                Please do not forget to attach a purchasecode to your message, otherwise technical support will ignore your request
+                                            </b>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-block">
+                                    <h3 class="question">
+                                        What does the support include?
+                                    </h3>
+                                    <div class="answer">
+                                        <p>
+                                            You can contact our support center with the following questions.
+                                        </p>
+                                        <ol class="list">
+                                            <li>
+                                                Technical questions about ColibriSM features
+                                            </li>
+                                            <li>
+                                                Assistance with reported bugs and issues
+                                            </li>
+                                            <li>
+                                                Help with included 3rd party assets. E.g. (Social Login, etc.)
+                                            </li>
+                                        </ol>
+                                        <small style="color:  #2196f3; display: block;">
+                                            Please note that all requests other than those listed below will be ignored.
+                                        </small>
+                                    </div>
+                                </div>
+                            </section>                   
+                        </div>
+                    </div>
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#general">General</a>
+                                <a class="nav-link scrollto" href="#how_it_works">How it works</a>
+                                <a class="nav-link scrollto" href="#features">Features</a>
+                                <a class="nav-link scrollto" href="#ssl-security">HTTPS / SSL Security</a>
+                                <a class="nav-link scrollto" href="#script-update">Script update</a>
+                                <a class="nav-link scrollto" href="#tech-support">Support</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div> 
+    <footer class="footer text-center">
+        <div class="container">   
+            <small class="copyright">&copy; 2020 ColibriSM All rights reserved</small>  
+        </div>
+    </footer>    
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>  
+    <script type="text/javascript" src="assets/plugins/lightbox/dist/ekko-lightbox.min.js"></script>   
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                                
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html> 

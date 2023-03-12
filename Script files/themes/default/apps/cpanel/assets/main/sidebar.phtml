@@ -1,0 +1,254 @@
+<div class="overlay"></div>
+<aside class="acp-main-left-sidebar" id="acp-main-left-sidebar">
+    <div class="sb-header">
+        <b>{%config name%}</b>
+    </div>
+    <div class="admin-info">
+        <div class="user-info">
+            <div class="avatar">
+                <img src="<?php echo($me['avatar']); ?>" alt="Avatar">
+            </div>
+            <div class="uname">
+                <h5>
+                    <span class="user-name-holder <?php if ($me['verified'] == '1') {echo('verified-badge');} ?>">
+                        <?php echo($me['name']); ?>
+                    </span>
+                </h5>
+                <a href="<?php echo($me['url']); ?>">
+                    <?php echo($me['username']); ?>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-list-header">
+        <span>
+            Basic navigation
+        </span>
+    </div>
+    <ul class="menu-list">
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'dashboard') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/dashboard'); ?>">
+                <i class="material-icons">dashboard</i>
+                <span>
+                    Dashboard
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'gen_settings') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/gen_settings'); ?>">
+                <i class="material-icons">settings</i>
+                <span>
+                    Settings
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'email_settings') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/email_settings'); ?>">
+                <i class="material-icons">alternate_email</i>
+                <span>
+                    E-mail settings
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'oauth_settings') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/oauth_settings'); ?>">
+                <i class="material-icons">swap_horizontal_circle</i>
+                <span>
+                    Social login
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'users') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/users'); ?>">
+                <i class="material-icons">supervised_user_circle</i>
+                <span>
+                    Users
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'publications') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/publications'); ?>">
+                <i class="material-icons">video_library</i>
+                <span>
+                    Publications
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'themes') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/themes'); ?>">
+                <i class="material-icons">color_lens</i>
+                <span>
+                    Themes
+                </span>
+            </a>
+        </li>
+        
+        <li class="menu-list-item">
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="material-icons">assignment_late</i>
+                <span>
+                    Individual tickets
+                </span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/account_verification'); ?>">
+                        Account verification
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-list-item">
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="material-icons">import_export</i>
+                <span>
+                    APIs
+                </span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/payment_gateways'); ?>">
+                        Payment gateways
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-list-item">
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="material-icons">payment</i>
+                <span>
+                    Advertising
+                </span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/ads_settings'); ?>">
+                        Settings
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/manage_ads'); ?>">
+                        Manage ads
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-list-item">
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="material-icons">group_work</i>
+                <span>
+                    Affiliates
+                </span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/affiliate_settings'); ?>">
+                        Settings
+                    </a>
+                    <a href="<?php echo cl_link('admin_panel/affiliate_payouts'); ?>">
+                        Payouts
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-list-item">
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="material-icons">report_problem</i>
+                <span>
+                    Reports
+                </span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/account_reports'); ?>">
+                        Account reports
+                    </a>
+                </li>
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/post_reports'); ?>">
+                        Publication reports
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-list-item">
+            <a class="menu-toggle" href="javascript:void(0);">
+                <i class="material-icons">delete_forever</i>
+                <span>
+                    Database cleaning
+                </span>
+            </a>
+            <ul class="ml-menu">
+                <li>
+                    <a href="<?php echo cl_link('admin_panel/delete_swifts'); ?>">
+                        Remove expired swifts
+                    </a>
+                    <a href="<?php echo cl_link('admin_panel/delete_spam_accounts'); ?>">
+                        Remove spam accounts
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'google_ads') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/google_ads'); ?>">
+                <i class="material-icons">monetization_on</i>
+                <span>
+                    Google ads
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'aws3') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/aws3'); ?>">
+                <i class="material-icons">cloud</i>
+                <span>
+                    AWS3 Storage
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'push_notifications') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/push_notifications'); ?>">
+                <i class="material-icons">notifications_none</i>
+                <span>
+                    Push notifications
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'changelogs') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/changelogs'); ?>">
+                <i class="material-icons">update</i>
+                <span>
+                    Changelogs
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'backups') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/backups'); ?>">
+                <i class="material-icons">backup</i>
+                <span>
+                    Backup
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item <?php if($cl["cp_section"] == 'sitemap') {echo('active');} ?>">
+            <a href="<?php echo cl_link('admin_panel/sitemap'); ?>">
+                <i class="material-icons">map</i>
+                <span>
+                    Sitemap
+                </span>
+            </a>
+        </li>
+        <li class="menu-list-item">
+            <a href="https://www.colibri-sm.ru/docs/index.html">
+                <i class="material-icons">help</i>
+                <span>
+                    Documentation
+                </span>
+            </a>
+        </li>
+    </ul>
+    <div class="sb-footer">
+        <small>
+            &copy; {%config name%}, <?php echo date('Y') ?>.
+        </small>
+    </div>
+</aside>

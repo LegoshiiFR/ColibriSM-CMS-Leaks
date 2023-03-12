@@ -1,0 +1,85 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-ads{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.main-ads--settings-container{
+					div.main-ads--settings-container-inner{
+						div.account--ads-list-navbar{
+							div.account--ads-list-navbar-inner{
+								border-color: $dark_border;
+
+								a{
+									button.navbar-item-btn{
+										color: $dark_grey;
+
+										&:hover,&:active,&:focus{
+											background: $dark_accent_bg;
+										}
+									}
+								}
+							}
+						}
+
+						div.account--ads-list-container{
+							div.upsert-ads-form-container{
+								div.form-group{
+									div.ad-cover-dropzone div.ad-cover-dropzone-inner{
+										border-color: $dark_grey;
+
+										div.ad-cover-upload{
+											div.txt-label{
+												color: $dark_grey;
+											}
+										}
+									}
+
+									&.tos-agreement{
+										label span{
+											color: $dark_grey;
+										}
+									}
+								}
+							}
+						}
+					}
+
+					div.feature-system-off-page{
+						div.pl-message{
+							h4{
+								color: #fff;
+							}
+
+							p{
+								color: $dark_grey;
+							}
+						}
+					}
+				}
+
+				div.empty-user-timeline{
+					div.pl-message{
+						h4{
+							color: #fff;
+						}
+
+						p{
+							color: $dark_grey;
+						}
+					}
+				}
+			}
+		}
+	}
+}

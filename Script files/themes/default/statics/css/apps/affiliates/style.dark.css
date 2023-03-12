@@ -1,0 +1,26 @@
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.affiliates--settings-header h4 {
+  color: #fff; }
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.affiliates--settings-header p {
+  color: #93b7d8; }
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.affiliates--settings-body h5 {
+  color: #fff; }
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.affiliates--settings-footer div.new-payout-request p {
+  color: #93b7d8; }
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.affiliates--settings-footer div.payments-info-nav span {
+  color: #93b7d8; }
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.feature-system-off-page div.pl-message h4 {
+  color: #fff; }
+body.cl-app-affiliates main.main-content-container div.main-content-container-inner div.timeline-container div.main-affiliates--settings-container div.feature-system-off-page div.pl-message p {
+  color: #93b7d8; }
+body.cl-app-affiliates div.modal.how-it-works div.modal-body div.list-item div.bp {
+  color: #93b7d8; }
+body.cl-app-affiliates div.modal.payout-history div.payouts-history-ls div.payouts-history-ls-item {
+  background: #1a2e3b; }
+  body.cl-app-affiliates div.modal.payout-history div.payouts-history-ls div.payouts-history-ls-item div.payout-info b {
+    color: #fff; }
+  body.cl-app-affiliates div.modal.payout-history div.payouts-history-ls div.payouts-history-ls-item div.payout-info span {
+    color: #93b7d8; }
+    body.cl-app-affiliates div.modal.payout-history div.payouts-history-ls div.payouts-history-ls-item div.payout-info span.time {
+      color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

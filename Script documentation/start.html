@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Getting started - ColibriSM</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ColibriSM - The Ultimate Modern Social Media Sharing Platform">
+    <meta name="author" content="Mansur Altamirov (Mansur_TL)">   
+    <link rel="shortcut icon" href="favicon.png">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">     
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">     
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">  
+</head> 
+<body class="body-green">
+    <div class="page-wrapper">   
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">Colibri</span><span class="text-bold">SM</span>
+                        </a>
+                    </h1>
+                </div>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol>
+            </div>
+        </header>
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> Quick Start</h1>
+                </div>
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Uploading files</h3>
+                                    <p>
+                                        To install ColibriSM, first of all you need to upload the files that are in the `Script files` folder to your server  
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h6>How to upload ColibriSM to server?</h6>
+                                            <ul class="list" style="list-style-type: none;">
+                                                <li>
+                                                    Upload all files & folders located inside `Script files` folder to your server.
+                                                    <small style="color: #2196f3; display: block;">
+                                                        Please note that you do not need to upload the `Script files` folder itself, but only its contents, including folders, as shown below:
+                                                    </small>
+                                                </li>
+                                                <li class="screen-shot-cont">
+                                                    <img src="./assets/images/img-1.png" alt="Screenshot">
+                                                </li>
+                                                <li>Open your browser, (Google Chrome is recommended).</li>
+                                                <li>Go to http://www.your-site.com/install</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="step2"  class="section-block">
+                                    <h3 class="block-title">Installing script</h3>
+                                    <p>
+                                        The ColibriSM installation process itself is very simple
+                                    </p>
+                                    <div class="row">
+                                        <div class="col-md-12 col-12">
+                                            <h6>How to install ColibriSM?</h6>
+                                            <ul class="list">
+                                                <li>
+                                                    Before we start the installation, please make sure you have the following extensions installed on your server
+                                                    <ul>
+                                                        <li>PHP 5.5 +</li>
+                                                        <li>MySQLi Extension</li>
+                                                        <li>GD Library</li>
+                                                        <li>PHP MB-string</li>
+                                                        <li>PHP Zip</li>
+                                                        <li>cURL Module</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 col-12">
+                                            <h6>Getting started installation</h6>
+                                            <p>
+                                                After you have checked all the ColibriSM requirements that are listed above are present in your server, go to the address http(s)://your-site.com/install 
+                                            </p>
+                                            <div class="screen-shot-cont">
+                                                <img src="./assets/images/img-2.png" alt="Screen shot">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-md-12 col-12">
+                                            <h6>
+                                                On the page with this form, you need to fill it with the following data
+                                            </h6>
+                                            <ul style="list-style-type: circle;">
+                                                <li><b>SQL Host name:</b> Your MySQL host name, e.g: localhost</li>
+                                                <li><b>SQL Username:</b> Your MySQL username.</li>
+                                                <li><b>SQL Password:</b> Your MySQL user password.</li>
+                                                <li><b>SQL Database:</b> Your MySQL database name.</li>
+                                                <li><b>Site URL:</b> Your website URL address with which your site will work</li>
+                                                <li><b>Site Name:</b> Your site name, max 32 characters.</li>
+                                                <li><b>Site Title:</b> Your site title, max 55 characters.</li>
+                                                <li><b>Site E-mail:</b> Your site email address. E.g. yoursitename@gmail.com etc.</li>
+                                                <li>
+                                                    <b>Admin Password:</b> Choose your admin password.
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                           After you fill out the form with the data, click on the install button and wait until the installation process is complete without leaving the page!
+                                           <span style="color: #2196f3;">Please note that the installation process may take several minutes.</span>
+                                        </p>
+                                        <h6>
+                                            After the installation is complete, you will get a page that looks like this:
+                                        </h6>
+                                        <div class="screen-shot-cont">
+                                           <img src="./assets/images/img-3.png" alt="Screen shot">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="section-block" id="nginx">
+                                    <h3 class="block-title">Nginx</h3>
+                                    <p>
+                                        However if your server is using Nginx, please follow these instructions below:
+                                    </p>
+                                    <ol>
+                                        <li>
+                                            Open your server's root nginx.conf file, most of the time It's located it in: /etc/nginx/nginx.conf
+                                        </li>
+                                        <li>
+                                            <div>
+                                                Open the home directory of the script, you should be able to find this file (nginx.conf):
+                                            </div> 
+                                            <br>
+                                            <div class="screen-shot-cont">
+                                                <img src="./assets/images/img-6.png" alt="Screen shot">
+                                            </div>
+                                        </li>
+
+                                        <li>
+                                            Open the located file, and copy its content to your root nginx.conf file: /etc/nginx/nginx.conf
+                                        </li>
+                                        <li>
+                                            If you find it something difficult to do, please contact your hosting provider, and they will do it for you easily.
+                                        </li>
+                                    </ol>
+
+                                </div>
+                                <div id="waht-is-next"  class="section-block">
+                                    <h3 class="block-title">What is next?</h3>
+                                    <p>
+                                        If you did everything as indicated above, then your site should be installed and ready to run, but before you do this you need to configure oAuth (Login via Facebook, Twitter or Google) login system
+                                    </p>
+
+
+                                    <h6>
+                                        Here is an example of how to do it
+                                    </h6>
+                                    <ol>
+                                        <li>
+                                            Login to your site
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <p>
+                                                    Go to Contol panel
+                                                </p>
+                                                <div class="screen-shot-cont">
+                                                    <img src="./assets/images/img-5.png" alt="Screen shot">
+                                                </div>
+                                                <small class="d-block col-blue">
+                                                    Or open this link (http://your-site-domain.com/admin_panel) replacing the "your-site-domain.com" with your domain
+                                                </small>
+                                            </div>
+                                            <br>
+                                            <p>
+                                                The oAuth configuration page looks like this
+                                            </p>
+                                            <div class="screen-shot-cont">
+                                                <img src="./assets/images/img-4.png" alt="Screen shot">
+                                            </div>
+                                            <br>
+                                            <h5>
+                                                Callback urls for each provider should be like below
+                                            </h5>
+                                            <ul>
+                                                <li>
+                                                    https://www.YOUR-SITE.COM/oauth/twitter
+                                                </li>
+                                                <li>
+                                                    https://www.YOUR-SITE.COM/oauth/google
+                                                </li>
+                                                <li>
+                                                    https://www.YOUR-SITE.COM/oauth/facebook
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                </div>
+                                <div class="callout-block callout-danger">
+                                    <div class="icon-holder">
+                                        <i class="fa fa-exclamation-triangle"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h4 class="callout-title">Important!</h4>
+                                        <p>After the installation is finished, please make sure to delete the folder "install" and "colibri-db.sql" file from your script's root folder</p>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#step1">Uploading files</a>
+                                    <a class="nav-link scrollto" href="#step2">Installing script</a>
+                                </nav>
+                                <a class="nav-link scrollto" href="#nginx">Nginx</a>
+                                <a class="nav-link scrollto" href="#waht-is-next">What is next?</a>
+                                <a class="nav-link" href="faqs.html">FAQs</a>
+                                <a class="nav-link" href="license.html">License</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>              
+            </div>
+        </div>
+    </div> 
+    <footer class="footer text-center">
+        <div class="container">   
+            <small class="copyright">&copy; 2021 ColibriSM All rights reserved</small>  
+        </div>
+    </footer>
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+</body>
+</html> 

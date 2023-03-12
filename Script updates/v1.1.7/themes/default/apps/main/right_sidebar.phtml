@@ -1,0 +1,129 @@
+<div class="right-sb-container sidebar" id="right-sb-container" data-app="right-sidebar">
+	<div class="sidebar__inner">
+		<div class="main-search-bar-container">
+			<form class="form" id="vue-main-search-app" v-on:submit="search_onsubmit" autocomplete="off">
+				<div class="input-holder">	
+					<input v-model="search_query" v-on:input="search" type="text" class="form-control" placeholder="<?php echo cl_translate("Search for people, hashtags.."); ?>">
+					<a href="#">
+						<?php echo cl_ikon('search'); ?>
+					</a>
+					<span class="spinner-icon" v-if="searching">
+						<?php echo cl_ikon('spinner-icon'); ?>
+					</span>
+					<span v-on:click="cancel" class="clear-result" v-else-if="search_result">
+						<?php echo cl_ikon('close'); ?>
+					</span>
+				</div>
+				<div class="search-result-holder" v-show="search_result">
+					<div class="search-result-body">
+						<ul class="result-list" data-an="result"></ul>
+					</div>
+					<div class="search-result-footer" v-bind:class="{'disabled': (advanced_search != true) }">
+						<a v-bind:href="search_page_url" data-spa="true">
+							<?php echo cl_translate('Advanced search'); ?>
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="topical-posts-container">
+			<ul class="list-group">
+				<li class="list-group-item main">
+					<h4><?php echo cl_translate("Hot topics for you"); ?></h4>
+				</li>
+				<?php if (not_empty($cl['hot_topics'])): ?>
+					<?php foreach ($cl['hot_topics'] as $row): ?>
+						<li class="list-group-item">
+							<a href="<?php echo($row['url']); ?>" data-spa="true">
+								<?php echo($row['hashtag']); ?>
+							</a>
+							<span>(<?php echo($row['total']); ?> <?php echo cl_translate('Posts'); ?>)</span>
+						</li>
+					<?php endforeach; ?>
+					<li class="list-group-item show-more">
+						<a href="<?php echo cl_link("trending"); ?>" data-spa="true">
+							<?php echo cl_translate("Show more"); ?>
+						</a>
+					</li>
+				<?php else: ?>
+					<li class="list-group-item items-placeholder">
+						<div class="icon">
+							<?php echo cl_ikon('hash'); ?>
+						</div>
+						<h5>
+							<?php echo cl_translate("Here will be a (#hashtag) list of the most relevant topics and events"); ?>
+						</h5>
+					</li>
+				<?php endif; ?>
+			</ul>
+		</div>
+
+		<div class="follow-suggestion-container">
+			<ul class="list-group">
+				<li class="list-group-item main">
+					<h4>
+						<?php echo cl_translate("Who to follow"); ?>
+					</h4>
+				</li>
+				<?php if (not_empty($cl['follow_suggestion'])): ?>
+					<?php foreach ($cl['follow_suggestion'] as $row): ?>
+						<li class="list-group-item">
+							<div class="flex-cr">
+								<div class="avatar">
+									<img src="<?php echo($row['avatar']); ?>" alt="avatar">
+								</div>
+								<div class="user-info-holder">
+									<h4>
+										<span class="user-name-holder <?php if ($row['verified'] == '1') {echo('verified-badge');} ?>">
+											<?php echo cl_croptxt($row['name'], 10, '..'); ?>
+										</span>
+									</h4>
+									<a href="<?php echo($row['url']); ?>" data-spa="true">
+										<?php echo($row['username']); ?>
+									</a>
+
+									<?php if ($row['follow_privacy'] == "approved"): ?>
+										<?php if (not_empty($row['follow_requested'])): ?>
+											<button onclick="SMColibri.req_follow(this);" class="btn btn-custom main-inline md" data-action="unfollow" data-id="<?php echo($row['id']); ?>">
+												<?php echo cl_translate("Pending"); ?>
+											</button>
+										<?php else: ?>
+											<button onclick="SMColibri.req_follow(this);" class="btn btn-custom main-outline md" data-action="follow" data-id="<?php echo($row['id']); ?>">
+												<?php echo cl_translate("Follow"); ?>
+											</button>
+										<?php endif; ?>
+									<?php else: ?>
+										<button onclick="SMColibri.follow(this);" class="btn btn-custom sm main-outline" data-action="follow" data-id="<?php echo($row['id']); ?>">
+											<?php echo cl_translate("Follow"); ?>
+										</button>
+									<?php endif; ?>
+								</div>
+							</div>
+						</li>
+					<?php endforeach; ?>
+				
+					<li class="list-group-item show-more">
+						<a href="<?php echo cl_link("suggested"); ?>" data-spa="true">
+							<?php echo cl_translate("Show more"); ?>
+						</a>
+					</li>
+				<?php else: ?>
+					<li class="list-group-item items-placeholder">
+						<div class="icon">
+							<?php echo cl_ikon('people'); ?>
+						</div>
+						<h5>
+							<?php echo cl_translate("Here will be a list of the most recommended people to follow"); ?>
+						</h5>
+					</li>
+				<?php endif; ?>
+			</ul>
+		</div>
+		<?php echo cl_template('main/footer'); ?>
+		<?php if (not_empty($cl["gads_vert"])): ?>
+			<div class="cl-google-ads">
+				<?php echo $cl["gads_vert"]; ?>
+			</div>
+		<?php endif; ?>
+	</div>
+</div>

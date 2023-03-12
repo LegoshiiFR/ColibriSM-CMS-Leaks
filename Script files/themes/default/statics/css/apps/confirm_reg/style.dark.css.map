@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBK,wHAAE;EACD,KAAK,EAAE,IAAI;AAGZ,uHAAC;EACA,KAAK,ECSC,OAAO",
+"sources": ["../../../scss/apps/confirm_reg/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

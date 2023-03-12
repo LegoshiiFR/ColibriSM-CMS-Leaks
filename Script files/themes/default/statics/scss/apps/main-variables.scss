@@ -1,0 +1,39 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+$border: rgb(230, 236, 240);
+$blue: #1ca1f3;
+$black: #14171a;
+$svg_col: #373737;
+$grey: #5b7083;
+$grey2: #b6b6b6;
+$link: #1b95e0;
+$pl_holder: #5b7083;
+$btn_shadow: rgba(0, 0, 0, 0.15) 0px 1px 10px 0px;
+$el_hovbg: #f5f8fa;
+$red: #f6546a;
+$green: #35c85f;
+$orange: #ffa500;
+$border_rad1: 10px;
+$border_rad2: 5px;
+
+$dark_bg: #15212b;
+$dark_accent_bg: #1a2e3b;
+$dark_color: #96abbb;
+$dark_border: #586d7b;
+$dark_hovbg: #24455a;
+$dark_grey: #93b7d8;
+$dark_input_bg: #253341;
+$dark_box_shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+$dark_ikon_color: #8899a6;
+
+@import "mixins/functions";
+@import "mixins/variables";
+@import "mixins/_breakpoints";

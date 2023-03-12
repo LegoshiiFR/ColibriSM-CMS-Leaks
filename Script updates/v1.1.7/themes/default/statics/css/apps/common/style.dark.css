@@ -1,0 +1,416 @@
+main.main-content-container {
+  background: #15212b; }
+  main.main-content-container div.main-content-container-inner div.left-sb-container {
+    background: #15212b; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.user-info div.uname h5 {
+      color: #fff; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.user-info div.uname a {
+      color: #93b7d8; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.account-stats div.stat-holder span {
+      color: #93b7d8; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.account-stats div.stat-holder b {
+      color: #fff; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.sidebar-v-nav-wrapper {
+      border-color: #586d7b; }
+      main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.sidebar-v-nav-wrapper ul.sidebar-v-nav li.sidebar-v-nav-item span.icon svg * {
+        stroke: #fff; }
+      main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.sidebar-v-nav-wrapper ul.sidebar-v-nav li.sidebar-v-nav-item span.nav-item-holder > a {
+        color: #fff; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.mobile-sb-footer div.main-footer ul.footer-nav li.footer-nav-item > a {
+      color: #93b7d8 !important; }
+    main.main-content-container div.main-content-container-inner div.left-sb-container div.sidebar__inner div.publish-post-btn {
+      border-color: #586d7b; }
+  main.main-content-container div.main-content-container-inner div.right-sb-container {
+    background: #15212b; }
+    main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input {
+      background: #253341;
+      border: none;
+      color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input::placeholder {
+        color: #5b7083;
+        font-size: 12px; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input:active, main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input:hover, main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input:focus {
+        box-shadow: none;
+        outline: none;
+        border: 1px solid #1ca1f3;
+        background: #253341; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input:active + a svg, main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input:hover + a svg, main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.input-holder input:focus + a svg {
+          stroke: #1ca1f3;
+          opacity: 1; }
+    main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder {
+      background: #15212b;
+      box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item {
+        border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item.htag a span.hash {
+          color: #93b7d8;
+          border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item.htag a span.hashtag-info b.tag {
+          color: #fff; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item.htag a span.hashtag-info span.total {
+          color: #93b7d8; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item.user a div.user-info div.uname b.name {
+          color: #fff; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item.user a div.user-info div.uname span.username {
+          color: #93b7d8; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item:hover, main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-body ul.result-list li.htag-list-item:active {
+          background: #1a2e3b; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-footer {
+        border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-search-bar-container form div.search-result-holder div.search-result-footer a {
+          color: #fff; }
+    main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li {
+      background: #1a2e3b;
+      border-color: #586d7b; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li > a {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li > span {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li.main h4 {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li.show-more a {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li.items-placeholder h5 {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.topical-posts-container ul.list-group li.items-placeholder div.icon svg {
+        stroke: #8899a6; }
+    main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li {
+      background: #1a2e3b;
+      border-color: #586d7b; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li div.flex-cr div.user-info-holder h4 {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li div.flex-cr div.user-info-holder a {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li.main h4 {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li.show-more a {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li.items-placeholder h5 {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.follow-suggestion-container ul.list-group li.items-placeholder div.icon svg {
+        stroke: #8899a6; }
+    main.main-content-container div.main-content-container-inner div.right-sb-container div.sidebar__inner div.main-footer ul.footer-nav li.footer-nav-item > a {
+      color: #93b7d8; }
+  main.main-content-container div.main-content-container-inner div.timeline-container-wrapper {
+    background: #15212b;
+    border-color: #586d7b; }
+    main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-header {
+      border-color: #586d7b; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-header div.lp div.nav-link-holder a {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-header div.rp div.nav-link-holder span.go-back svg {
+        stroke: #fff; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-header div.rp div.nav-link-holder a svg {
+        stroke: #fff; }
+    main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item {
+      border-color: #586d7b; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-header div.publication-repost svg {
+        stroke: #8899a6; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-header div.publication-repost a {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-target div.post-reply span {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.lp a b {
+        color: #fff; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.lp a b span {
+          color: #fff; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.lp a > span {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.rp span.posted-time time {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.rp span.posted-time svg {
+        stroke: #8899a6; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-text p.pub-text {
+        color: #f3f3f3; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.lozad-preloader {
+        background: #1a2e3b;
+        border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.lozad-preloader div.icon svg * {
+          stroke: #8899a6; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-image {
+        border-color: #586d7b; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data {
+        background: #1a2e3b;
+        border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-image, main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-icon {
+          border-color: #586d7b !important; }
+          main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-image div.og-icon-holder, main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-icon div.og-icon-holder {
+            background: #1a2e3b !important; }
+            main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-image div.og-icon-holder svg, main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-icon div.og-icon-holder svg {
+              stroke: #8899a6; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-url-data h5 {
+          color: #fff; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-og-data div.publication-og-data-inner div.og-url-data p {
+          color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-poll-data div.publication-poll-data-inner div.poll-option-bar div.bar-text p {
+        color: #fff; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-poll-data div.publication-poll-data-inner div.poll-option-bar div.bar-num b {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-footer-ctrls button.ctrls-item span.icon svg *, main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-footer-ctrls button.ctrls-item a.icon svg * {
+        stroke: #8899a6; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-footer-ctrls button.ctrls-item span.num {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.blocked-user {
+        border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-list-item-content div.publication-data div.blocked-user p {
+          color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-placeholder {
+        border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-placeholder div.icon svg {
+          stroke: #8899a6; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-placeholder p {
+          color: #93b7d8; }
+          main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item div.post-placeholder p a {
+            color: #fff; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.lp span.ad-badge svg {
+        stroke: #8899a6; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publisher-info div.lp span.ad-badge span {
+        color: #93b7d8; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content {
+        background: #1a2e3b;
+        border: 1px solid #586d7b; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-text h4 {
+          color: #fff; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.publication-text p {
+          color: #93b7d8; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.lozad-preloader {
+          border-color: #586d7b; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.publication-image div.ad-target-ctrls div.ad-target-ctrls-inner div.lp span {
+          color: #93b7d8; }
+        main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.publication-image div.ad-target-ctrls div.ad-target-ctrls-inner div.rp button.target-url-btn {
+          background: transparent;
+          border-color: #586d7b;
+          color: #93b7d8; }
+          main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.publication-image div.ad-target-ctrls div.ad-target-ctrls-inner div.rp button.target-url-btn:hover, main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.publication-image div.ad-target-ctrls div.ad-target-ctrls-inner div.rp button.target-url-btn:active, main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item.post-ad-item div.post-list-item-content div.publication-data div.publication-data-inner div.publication-content div.lozad-media div.publication-image div.ad-target-ctrls div.ad-target-ctrls-inner div.rp button.target-url-btn:focus {
+            background: transparent; }
+      main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.timeline-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.post-list-item:hover {
+        background: #1a2e3b; }
+    main.main-content-container div.main-content-container-inner div.timeline-container-wrapper div.spa-preloader {
+      background: #15212b; }
+
+div.mobile-bottom-navbar {
+  border-color: #586d7b;
+  background: #1a2e3b; }
+  div.mobile-bottom-navbar div.mobile-bottom-navbar-inner button.navbar-ctrl svg {
+    color: #8899a6; }
+
+div.timeline-pubbox-container > div.rp form div.input-holder textarea {
+  background: #15212b;
+  border: none;
+  color: #fff; }
+  div.timeline-pubbox-container > div.rp form div.input-holder textarea::placeholder {
+    color: #93b7d8; }
+div.timeline-pubbox-container > div.rp form div.cl-emoticons {
+  border-color: #586d7b;
+  background: #1a2e3b; }
+  div.timeline-pubbox-container > div.rp form div.cl-emoticons div.emoticons-group-nav {
+    border-color: #586d7b;
+    background: #1a2e3b; }
+div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__hashtags {
+  background: #1a2e3b; }
+  div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__hashtags div.input-autocomplete__hashtags-list div.hashtag-list-item {
+    border-color: #586d7b; }
+    div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__hashtags div.input-autocomplete__hashtags-list div.hashtag-list-item p {
+      color: #96abbb; }
+      div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__hashtags div.input-autocomplete__hashtags-list div.hashtag-list-item p span {
+        color: #93b7d8; }
+    div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__hashtags div.input-autocomplete__hashtags-list div.hashtag-list-item:hover, div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__hashtags div.input-autocomplete__hashtags-list div.hashtag-list-item:focus {
+      background: #24455a; }
+div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames {
+  background: #1a2e3b; }
+  div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames div.input-autocomplete__username-list div.username-list-item {
+    border-color: #586d7b; }
+    div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames div.input-autocomplete__username-list div.username-list-item div.avatar {
+      border-color: #586d7b; }
+    div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames div.input-autocomplete__username-list div.username-list-item div.username {
+      color: #fff; }
+      div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames div.input-autocomplete__username-list div.username-list-item div.username span:last-child {
+        color: #96abbb; }
+    div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames div.input-autocomplete__username-list div.username-list-item:hover, div.timeline-pubbox-container > div.rp form div.input-autocomplete div.input-autocomplete__usernames div.input-autocomplete__username-list div.username-list-item:focus {
+      background: #24455a; }
+div.timeline-pubbox-container > div.rp form div.preview-og-holder {
+  background: #1a2e3b;
+  border-color: #586d7b; }
+  div.timeline-pubbox-container > div.rp form div.preview-og-holder div.preview-og-holder-inner div.og-image {
+    border-color: #586d7b;
+    background: #1a2e3b; }
+    div.timeline-pubbox-container > div.rp form div.preview-og-holder div.preview-og-holder-inner div.og-image div.og-icon-holder {
+      background: #1a2e3b; }
+      div.timeline-pubbox-container > div.rp form div.preview-og-holder div.preview-og-holder-inner div.og-image div.og-icon-holder svg * {
+        stroke: #8899a6; }
+  div.timeline-pubbox-container > div.rp form div.preview-og-holder div.preview-og-holder-inner div.og-url-data h5 {
+    color: #fff; }
+  div.timeline-pubbox-container > div.rp form div.preview-og-holder div.preview-og-holder-inner div.og-url-data p {
+    color: #93b7d8; }
+div.timeline-pubbox-container > div.rp form div.preview-video-holder div.video-player {
+  border-color: #586d7b; }
+div.timeline-pubbox-container > div.rp form div.preview-poll-holder {
+  background: #1a2e3b;
+  border-color: #586d7b; }
+  div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs {
+    border-color: #586d7b; }
+    div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input {
+      background: #253341;
+      border-color: #586d7b;
+      color: #fff; }
+      div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input::placeholder {
+        color: #93b7d8; }
+      div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input:hover, div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input:focus, div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input:active {
+        border-bottom: 2px solid #1ca1f3;
+        background: #253341; }
+        div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input:hover + small, div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input:focus + small, div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item input:active + small {
+          display: inline-block; }
+    div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-inputs div.data-input-item small {
+      color: #93b7d8; }
+  div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-title h5 {
+    color: #fff; }
+  div.timeline-pubbox-container > div.rp form div.preview-poll-holder div.poll-data-title button.cancel-poll svg * {
+    stroke: #fff; }
+div.timeline-pubbox-container > div.rp form div.post-ctrls-holder button.ctrl-item.text-length small {
+  color: #93b7d8; }
+div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-gifs-loader {
+  background: #1a2e3b;
+  border-color: #586d7b; }
+  div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-gifs-loader div.search-bar-holder input {
+    background: #1a2e3b;
+    color: #fff; }
+    div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-gifs-loader div.search-bar-holder input::placeholder {
+      color: #93b7d8; }
+  div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-gifs-loader div.search-bar-holder button svg *, div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-gifs-loader div.search-bar-holder a svg * {
+    stroke: #fff; }
+div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-original-gif {
+  border-color: #586d7b; }
+  div.timeline-pubbox-container > div.rp form div.preview-gifs-holder div.preview-original-gif div.gif-preloader {
+    background: #1a2e3b; }
+div.timeline-pubbox-container > div.rp form div.preview-images-holder div.preview-images-list div.preview-images-list-item div.li-inner-content {
+  border-color: #586d7b; }
+div.timeline-pubbox-container > div.rp form div.post-privacy-holder {
+  border-color: #586d7b; }
+
+.dropdown div.dropdown-menu, .dropleft div.dropdown-menu, .dropright div.dropdown-menu, .dropup div.dropdown-menu {
+  background: #15212b;
+  box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px; }
+  .dropdown div.dropdown-menu a.dropdown-item, .dropleft div.dropdown-menu a.dropdown-item, .dropright div.dropdown-menu a.dropdown-item, .dropup div.dropdown-menu a.dropdown-item {
+    color: #fff; }
+    .dropdown div.dropdown-menu a.dropdown-item:hover, .dropdown div.dropdown-menu a.dropdown-item:active, .dropdown div.dropdown-menu a.dropdown-item.active, .dropleft div.dropdown-menu a.dropdown-item:hover, .dropleft div.dropdown-menu a.dropdown-item:active, .dropleft div.dropdown-menu a.dropdown-item.active, .dropright div.dropdown-menu a.dropdown-item:hover, .dropright div.dropdown-menu a.dropdown-item:active, .dropright div.dropdown-menu a.dropdown-item.active, .dropup div.dropdown-menu a.dropdown-item:hover, .dropup div.dropdown-menu a.dropdown-item:active, .dropup div.dropdown-menu a.dropdown-item.active {
+      background: #1a2e3b !important; }
+  .dropdown div.dropdown-menu div.dropdown-divider, .dropleft div.dropdown-menu div.dropdown-divider, .dropright div.dropdown-menu div.dropdown-divider, .dropup div.dropdown-menu div.dropdown-divider {
+    border-color: #586d7b; }
+  .dropdown div.dropdown-menu.dropdown-icons a.dropdown-item span.flex-item.dropdown-item-icon svg, .dropleft div.dropdown-menu.dropdown-icons a.dropdown-item span.flex-item.dropdown-item-icon svg, .dropright div.dropdown-menu.dropdown-icons a.dropdown-item span.flex-item.dropdown-item-icon svg, .dropup div.dropdown-menu.dropdown-icons a.dropdown-item span.flex-item.dropdown-item-icon svg {
+    stroke: #8899a6; }
+
+div.modal div.modal-content {
+  box-shadow: rgba(136, 153, 166, 0.2) 0px 0px 15px, rgba(136, 153, 166, 0.15) 0px 0px 3px 1px;
+  background: #15212b; }
+  div.modal div.modal-content div.modal-header {
+    border-color: #586d7b; }
+    div.modal div.modal-content div.modal-header div.main---mh--block h5 {
+      color: #fff; }
+    div.modal div.modal-content div.modal-header div.main---mh--block span.dismiss-modal svg {
+      stroke: #fff; }
+  div.modal div.modal-content div.modal-footer {
+    border-color: #586d7b; }
+  div.modal div.modal-content div.post-likes-container div.post-likes-ls div.post-likes-list-item {
+    border-bottom: 1px solid #586d7b; }
+    div.modal div.modal-content div.post-likes-container div.post-likes-ls div.post-likes-list-item div.user-info-holder h4 {
+      color: #fff; }
+    div.modal div.modal-content div.post-likes-container div.post-likes-ls div.post-likes-list-item div.user-info-holder a {
+      color: #93b7d8; }
+    div.modal div.modal-content div.post-likes-container div.post-likes-ls div.post-likes-list-item div.user-info-holder p {
+      color: #93b7d8; }
+    div.modal div.modal-content div.post-likes-container div.post-likes-ls div.post-likes-list-item:hover, div.modal div.modal-content div.post-likes-container div.post-likes-ls div.post-likes-list-item:active {
+      background: #1a2e3b; }
+  div.modal div.modal-content div.post-likes-container div.post-likes-ls-empty div.pl-message {
+    line-height: 0px;
+    width: 100%;
+    margin-bottom: 50px; }
+    div.modal div.modal-content div.post-likes-container div.post-likes-ls-empty div.pl-message h4 {
+      color: #fff; }
+    div.modal div.modal-content div.post-likes-container div.post-likes-ls-empty div.pl-message p {
+      color: #93b7d8; }
+      div.modal div.modal-content div.post-likes-container div.post-likes-ls-empty div.pl-message p a {
+        color: #1b95e0; }
+div.modal div.auth-modal-window div.form-title h4 {
+  color: #fff !important; }
+div.modal div.auth-modal-window div.form-title p {
+  color: #93b7d8 !important; }
+div.modal div.auth-modal-window label.tos-agree span {
+  color: #93b7d8; }
+div.modal.confirm-actions-modal div.modal-dialog div.modal-body h4, div.modal.info-popup-modal div.modal-dialog div.modal-body h4 {
+  color: #fff; }
+div.modal.confirm-actions-modal div.modal-dialog div.modal-body p, div.modal.info-popup-modal div.modal-dialog div.modal-body p {
+  color: #93b7d8; }
+div.modal.upload-progress-bar div.progress-bar-title h3 {
+  color: #fff; }
+div.modal.upload-progress-bar div.progress-bar-state div.progress-bar-bg {
+  background: #1a2e3b; }
+div.modal.share-post-modal div.social-media-links a.link-item {
+  border-color: #586d7b; }
+div.modal.share-post-modal div.raw-link p {
+  color: #93b7d8; }
+div.modal.share-post-modal div.raw-link div.link-input input {
+  background: #253341;
+  color: #fff; }
+  div.modal.share-post-modal div.raw-link div.link-input input::placeholder {
+    color: #93b7d8; }
+  div.modal.share-post-modal div.raw-link div.link-input input:hover, div.modal.share-post-modal div.raw-link div.link-input input:focus, div.modal.share-post-modal div.raw-link div.link-input input:active {
+    border-bottom: 2px solid #1ca1f3;
+    background: #253341; }
+div.modal.report-modal div.modal-content div.modal-body div.form-group div.radio-box-holder div.radio-box div.lp div.icon svg {
+  stroke: #93b7d8; }
+div.modal.report-modal div.modal-content div.modal-body div.form-group div.radio-box-holder div.radio-box div.lp div.icon.selected svg {
+  stroke: #1ca1f3; }
+div.modal.report-modal div.modal-content div.modal-body div.form-group div.radio-box-holder div.radio-box div.rp span {
+  color: #96abbb; }
+
+div.modal-backdrop {
+  background-color: rgba(91, 112, 131, 0.4); }
+
+form div.form-group label {
+  color: #93b7d8; }
+form div.form-group input.form-control {
+  background: #253341 !important;
+  border-color: #586d7b !important;
+  color: #fff; }
+  form div.form-group input.form-control::placeholder {
+    color: #93b7d8; }
+  form div.form-group input.form-control:hover, form div.form-group input.form-control:focus, form div.form-group input.form-control:active {
+    border-bottom: 2px solid #1ca1f3;
+    background: #253341 !important; }
+form div.form-group textarea.form-control {
+  background: #253341;
+  border-color: #586d7b;
+  color: #fff; }
+  form div.form-group textarea.form-control::placeholder {
+    color: #93b7d8; }
+  form div.form-group textarea.form-control:hover, form div.form-group textarea.form-control:focus, form div.form-group textarea.form-control:active {
+    border-bottom: 2px solid #1ca1f3;
+    background: #253341; }
+form div.form-group div.vue-dropdown-select {
+  background: #253341 !important; }
+  form div.form-group div.vue-dropdown-select button.dropdown-toggle {
+    color: #93b7d8;
+    border-color: #586d7b !important; }
+    form div.form-group div.vue-dropdown-select button.dropdown-toggle:hover, form div.form-group div.vue-dropdown-select button.dropdown-toggle:focus, form div.form-group div.vue-dropdown-select button.dropdown-toggle:active {
+      border-bottom: 2px solid #1ca1f3 !important;
+      background: #253341 !important;
+      color: #93b7d8; }
+
+input[type="checkbox"].filled-in:not(:checked) + label:after {
+  border-color: #586d7b !important; }
+
+input[type="checkbox"]:checked + label:before {
+  border-right: 2px solid #586d7b !important;
+  border-bottom: 2px solid #586d7b !important; }
+
+input[type="checkbox"]:checked + label:after {
+  background: #15212b !important;
+  border-color: #586d7b !important; }
+
+div.main-preloader-holder {
+  background: #15212b; }
+
+.waitMe_container .waitMe {
+  background: rgba(0, 0, 0, 0.2) !important; }
+
+/*# sourceMappingURL=style.dark.css.map */

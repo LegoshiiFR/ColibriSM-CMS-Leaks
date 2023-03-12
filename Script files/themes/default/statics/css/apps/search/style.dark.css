@@ -1,0 +1,43 @@
+body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-navbar {
+  border-color: #586d7b; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-navbar a button.navbar-item-btn {
+    color: #93b7d8; }
+    body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-navbar a button.navbar-item-btn:hover, body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-navbar a button.navbar-item-btn:active, body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-navbar a button.navbar-item-btn:focus {
+      background: #1a2e3b; }
+body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-form-wrapper form div.keyword-input {
+  border-color: #586d7b; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-form-wrapper form div.keyword-input input {
+    background: #253341;
+    color: #fff;
+    border-color: #586d7b; }
+    body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-form-wrapper form div.keyword-input input::placeholder {
+      color: #93b7d8; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-form-wrapper form div.keyword-input span svg {
+    stroke: #8899a6; }
+body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link {
+  border-color: #586d7b; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link span.hash {
+    color: #93b7d8;
+    border-color: #586d7b; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link span.hashtag-info b.tag {
+    color: #fff; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link span.hashtag-info span.total {
+    color: #93b7d8; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link:hover, body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link:active, body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.hashtags-list div.hashtags-list-item a.link:focus {
+    background: #1a2e3b; }
+body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.people-list div.people-list-item {
+  border-color: #586d7b; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.people-list div.people-list-item div.user-info-holder h4 {
+    color: #fff; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.people-list div.people-list-item div.user-info-holder > a {
+    color: #93b7d8; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.people-list div.people-list-item div.user-info-holder p {
+    color: #f3f3f3; }
+  body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.people-list div.people-list-item:hover, body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.people-list div.people-list-item:active {
+    background: #1a2e3b; }
+body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.search-empty-result div.pl-message h4 {
+  color: #fff; }
+body.cl-app-search main.main-content-container div.main-content-container-inner div.timeline-container div.vue-app-body div.main--search-area-content div.search-result-container div.search-empty-result div.pl-message p {
+  color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

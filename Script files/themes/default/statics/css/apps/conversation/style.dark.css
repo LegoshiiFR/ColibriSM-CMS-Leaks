@@ -1,0 +1,48 @@
+body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.timeline-header div.lp div.profile-name-holder h5 {
+  color: #fff; }
+body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.timeline-header div.lp div.profile-name-holder span {
+  color: #93b7d8; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.timeline-header div.lp div.profile-name-holder span svg {
+    stroke: #8899a6; }
+body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--search-form-wrapper form {
+  border-color: #586d7b; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--search-form-wrapper form div.keyword-input input {
+    background: #253341;
+    border-color: #586d7b;
+    color: #fff; }
+    body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--search-form-wrapper form div.keyword-input input::placeholder {
+      color: #93b7d8; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--search-form-wrapper form div.keyword-input span.icon svg {
+    stroke: #93b7d8; }
+body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-list-wrapper div.conversation--messages-list {
+  background: #15212b; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-list-wrapper div.conversation--messages-list div.conversation--messages-list-item div.message-data div.message-media a.image-wrapper {
+    border-color: #586d7b; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-list-wrapper div.conversation--messages-list div.conversation--messages-list-item div.message-data div.message-time time {
+    color: #93b7d8; }
+body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper {
+  border-color: #586d7b; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper form.form div.message-inputs-holder div.message-input input {
+    color: #fff;
+    border-color: #586d7b;
+    background: #253341; }
+    body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper form.form div.message-inputs-holder div.message-input input::placeholder {
+      color: #93b7d8; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.conversation--messages-search-results {
+    background: #1a2e3b; }
+    body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.conversation--messages-search-results div.fc-row div.lp b {
+      color: #fff; }
+    body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.conversation--messages-search-results div.fc-row div.lp span {
+      color: #93b7d8; }
+    body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.conversation--messages-search-results div.fc-row div.rp button.sr-ctrls svg {
+      stroke: #8899a6; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.ghost-form div.message-inputs-holder div.message-input input {
+    border: none;
+    background: #253341; }
+    body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.ghost-form div.message-inputs-holder div.message-input input::placeholder {
+      color: #93b7d8; }
+  body.cl-app-conversation main.main-content-container div.main-content-container-inner div.timeline-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.conversation--messages-form-wrapper div.ghost-form div.message-inputs-holder button.btn-inline-controls {
+    border: none;
+    background: #253341; }
+
+/*# sourceMappingURL=style.dark.css.map */

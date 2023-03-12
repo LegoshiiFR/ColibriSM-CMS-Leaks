@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAkBM,kJAAE;EACD,KAAK,EAAE,IAAI;AAGZ,iJAAC;EACA,KAAK,ECMA,OAAO",
+"sources": ["../../../scss/apps/err404/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

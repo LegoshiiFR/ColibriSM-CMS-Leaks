@@ -1,0 +1,19 @@
+body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link {
+  border-color: #586d7b; }
+  body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link span.hash {
+    color: #93b7d8;
+    border-color: #586d7b; }
+  body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link span.hashtag-info b.tag {
+    color: #fff; }
+  body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link span.hashtag-info span.total {
+    color: #93b7d8; }
+  body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link:hover, body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link:active, body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link:focus {
+    background: #1a2e3b; }
+    body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link:hover span.icon svg, body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link:active span.icon svg, body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list div.hashtags-list-item a.link:focus span.icon svg {
+      stroke: #1ca1f3; }
+body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list-placeholder div.pl-message h4 {
+  color: #fff; }
+body.cl-app-trending main.main-content-container div.main-content-container-inner div.timeline-container div.main--trending-hashtags-container div.hashtags-list-placeholder div.pl-message p {
+  color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

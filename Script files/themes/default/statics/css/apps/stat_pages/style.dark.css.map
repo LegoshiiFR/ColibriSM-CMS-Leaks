@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAgBI,gIAAqB;EACpB,KAAK,EAAE,OAAO",
+"sources": ["../../../scss/apps/stat_pages/style.dark.scss"],
+"names": [],
+"file": "style.dark.css"
+}

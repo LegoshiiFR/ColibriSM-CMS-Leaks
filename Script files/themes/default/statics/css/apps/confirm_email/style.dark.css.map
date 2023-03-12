@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAiBK,4GAAE;EACD,KAAK,EAAE,IAAI;AAGZ,2GAAC;EACA,KAAK,ECSC,OAAO",
+"sources": ["../../../scss/apps/confirm_email/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

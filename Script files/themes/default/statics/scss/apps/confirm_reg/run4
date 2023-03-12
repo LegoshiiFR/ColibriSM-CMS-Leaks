@@ -1,0 +1,1 @@
+scss --watch style.dark.scss:../../../css/apps/confirm_reg/style.dark.css

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAkBM,yLAAuB;EACtB,YAAY,ECQL,OAAO;EDLb,iNAAE;IACD,KAAK,EAAE,IAAI;EAGZ,gNAAC;IACA,KAAK,ECEF,OAAO;EDCX,gNAAC;IACA,KAAK,EAAE,OAAO;EAIhB,iYAAgB;IACd,UAAU,ECXF,OAAO",
+"sources": ["../../../scss/apps/suggested/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

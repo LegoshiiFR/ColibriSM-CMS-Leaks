@@ -1,0 +1,12 @@
+body.cl-app-suggested main.main-content-container div.main-content-container-inner div.timeline-container div.suggested--people-list-container div.suggested-list div.suggested-list-item {
+  border-color: #586d7b; }
+  body.cl-app-suggested main.main-content-container div.main-content-container-inner div.timeline-container div.suggested--people-list-container div.suggested-list div.suggested-list-item div.user-info-holder h4 {
+    color: #fff; }
+  body.cl-app-suggested main.main-content-container div.main-content-container-inner div.timeline-container div.suggested--people-list-container div.suggested-list div.suggested-list-item div.user-info-holder a {
+    color: #93b7d8; }
+  body.cl-app-suggested main.main-content-container div.main-content-container-inner div.timeline-container div.suggested--people-list-container div.suggested-list div.suggested-list-item div.user-info-holder p {
+    color: #f3f3f3; }
+  body.cl-app-suggested main.main-content-container div.main-content-container-inner div.timeline-container div.suggested--people-list-container div.suggested-list div.suggested-list-item:hover, body.cl-app-suggested main.main-content-container div.main-content-container-inner div.timeline-container div.suggested--people-list-container div.suggested-list div.suggested-list-item:active {
+    background: #1a2e3b; }
+
+/*# sourceMappingURL=style.dark.css.map */

@@ -1,0 +1,91 @@
+<form class="form" id="cl-login-vue-app" v-on:submit="submit_form($event)" autocomplete="off">
+	<div class="form-group">
+		<label class="input-label">
+			<?php echo cl_translate("Email address"); ?>
+		</label>
+		<input name="email" v-model.trim.lazy="$v.email.$model" type="text" class="form-control" placeholder="<?php echo cl_translate("Email address or username"); ?>">
+		<div class="invalid-main-feedback" v-if="is_valid_email">
+			{{invalid_feedback_email}}
+		</div>
+	</div>
+	<div class="form-group">
+		<label class="input-label">
+			<?php echo cl_translate("Password"); ?>
+		</label>
+		<input name="password" v-model.trim="$v.password.$model" type="password" class="form-control" placeholder="<?php echo cl_translate("Password"); ?>">
+		<div class="invalid-main-feedback" v-if="is_valid_password">
+			{{invalid_feedback_pass}}
+		</div>
+		<div v-else-if="unsuccessful_attempt" class="form-group invalid-main-feedback mb-20">
+			<?php echo cl_translate("A user with such credentials is not found. Check the data entered and try again."); ?>
+		</div>
+	</div>
+	<div class="form-group">
+		<button v-if="submitting" disabled="true" type="button" class="btn btn-custom main-inline lg btn-block">
+			<?php echo cl_translate("Please wait"); ?>
+		</button>
+		<button v-else-if="done" disabled="true" type="button" class="btn btn-custom main-inline lg btn-block">
+			<?php echo cl_translate("Done! Please wait.."); ?>
+		</button>
+		<button  v-else v-bind:disabled="($v.$invalid == true)" class="btn btn-custom main-inline lg btn-block">
+			<?php echo cl_translate("Login"); ?>
+		</button>
+		<button onclick="CLAuth.signup();" class="d-none btn btn-custom main-outline lg" type="button">
+			<?php echo cl_translate("Sign up"); ?>
+		</button>
+	</div>
+	<?php if (in_array("on", array($cl["config"]["facebook_oauth"], $cl["config"]["google_oauth"], $cl["config"]["twitter_oauth"]))): ?>
+		<div class="form-group login-or-signup">
+			<small><?php echo cl_translate("Or continue with"); ?></small>
+		</div>
+		<div class="form-group oauth-login-providers">
+			<?php if ($cl["config"]["facebook_oauth"] == "on"): ?>
+				<a href="<?php echo cl_link('oauth/facebook'); ?>" class="social-login-btn facebook">
+					<span class="icon">
+						<?php echo cl_ikon('logos/logo-facebook'); ?>
+					</span>
+				</a>
+			<?php endif; ?>
+			<?php if ($cl["config"]["twitter_oauth"] == "on"): ?>
+				<a href="<?php echo cl_link('oauth/twitter'); ?>" class="social-login-btn twitter">
+					<span class="icon">
+						<?php echo cl_ikon('logos/logo-twitter'); ?>
+					</span>
+				</a>
+			<?php endif; ?>
+			<?php if ($cl["config"]["google_oauth"] == "on"): ?>
+				<a href="<?php echo cl_link('oauth/google'); ?>" class="social-login-btn google">
+					<span class="icon">
+						<?php echo cl_ikon('logos/logo-google'); ?>
+					</span>
+				</a>
+			<?php endif; ?>
+		</div>
+	<?php endif; ?>
+
+	<div class="form-group tos-agreement no-mb">
+		<div class="block-header">
+			<span>
+				<?php echo cl_translate("By continuing, you agree to {@site_name@}",array(
+					"site_name" => $cl["config"]["name"]
+				)); ?>
+			</span>
+			<a href="<?php echo cl_link('terms_of_use'); ?>"><?php echo cl_translate("Terms of Use"); ?></a>
+			<a href="<?php echo cl_link('privacy_policy'); ?>"><?php echo cl_translate("Privacy policy"); ?></a>
+		</div>
+		<div class="block-body">
+			<a href="javascript:void(0);" onclick="CLAuth.forgot_pass();">
+				<?php echo cl_translate("Forgot your password?"); ?>
+			</a>
+		</div>
+		<div class="block-footer">
+			<span>
+				<?php echo cl_translate("Don't have an account?"); ?>
+			</span>
+			<a href="javascript:void(0);" onclick="CLAuth.signup();">
+				<?php echo cl_translate("Sign up"); ?>
+			</a>
+		</div>
+	</div>
+	<input type="hidden" class="d-none" value="<?php echo fetch_or_get($cl['csrf_token'],'none'); ?>" name="hash">
+</form>

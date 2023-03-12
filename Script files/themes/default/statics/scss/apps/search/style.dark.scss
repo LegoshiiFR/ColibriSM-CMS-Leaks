@@ -1,0 +1,127 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-search{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.vue-app-body{
+					div.main--search-area-navbar{
+						border-color: $dark_border;
+
+						a{
+							button.navbar-item-btn{
+								color: $dark_grey;
+
+								&:hover,&:active,&:focus{
+									background: $dark_accent_bg;
+								}
+							}
+						}
+					}
+
+					div.main--search-form-wrapper{
+						form{
+							div.keyword-input{
+								border-color: $dark_border;
+
+								input{
+									background: $dark_input_bg;
+									color: #fff;
+									border-color: $dark_border;
+
+									&::placeholder{
+										color: $dark_grey;
+									}
+								}
+
+								span{
+									svg{
+										stroke: $dark_ikon_color;
+									}
+								}
+							}
+						}
+					}
+
+					div.main--search-area-content{
+						div.search-result-container{
+
+							div.hashtags-list{
+								div.hashtags-list-item{
+									a.link{
+										border-color: $dark_border;
+
+										span.hash{
+											color: $dark_grey;
+											border-color: $dark_border;
+										}
+
+										span.hashtag-info{
+											b.tag{
+												color: #fff;
+											}
+											
+											span.total{
+												color: $dark_grey;
+											}
+										}
+
+										&:hover,&:active,&:focus{
+											background: $dark_accent_bg;
+										}
+									}
+								}
+							}
+
+							div.people-list{
+								div.people-list-item{
+									border-color: $dark_border;
+
+									div.user-info-holder{
+										h4{
+											color: #fff;
+										}
+
+										& > a{
+											color: $dark_grey;
+										}
+
+										p{
+											color: #f3f3f3;
+										}
+									}
+
+									&:hover,&:active{
+							 			background: $dark_accent_bg;
+							 		}
+								}
+							}
+
+							div.search-empty-result{
+								div.pl-message{
+									h4{
+										color: #fff;
+									}
+
+									p{
+										color: $dark_grey;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

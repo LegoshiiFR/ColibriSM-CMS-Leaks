@@ -1,0 +1,1138 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+
+body{
+	div.popover{
+		div.popover-body{
+			padding: 1px;
+			margin: 0;
+			border: none;
+			box-shadow: none;
+
+			div.user-info-lbox{
+				background: $dark_accent_bg;
+				box-shadow: $dark_box_shadow;
+
+				div.user-info-lbox__inner{
+
+
+					div.user-info-lbox__user-data{
+						border-bottom: 1px solid $dark_border;
+
+						div.user-info-lbox__avatar{
+							div.avatar{
+								border-color: $dark_border;
+							}
+						}
+
+						div.user-info-lbox__info{
+							div.name{
+								a{
+									h4{
+										color: #fff;
+									}
+
+									span{
+										color: $dark_grey;
+									}
+								}
+							}
+
+							div.stats{
+								div.stat-holder{
+									span{
+										color: $dark_grey;
+									}
+
+									b{
+										color: #fff;
+									}
+								}
+							}
+
+							div.about{
+								p{
+									color: $dark_color;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+main.main-content-container{
+	background: $dark_bg;
+
+	div.main-content-container-inner{
+		div.left-sb-container{
+			background: $dark_bg;
+
+			div.sidebar__inner{
+				div.user-info{
+					div.uname{
+						h5{
+							color: #fff;
+						}
+
+						a{
+							color: $dark_grey;
+						}
+					}
+				}
+
+				div.account-stats{
+					div.stat-holder{
+						span{
+							color: $dark_grey;
+						}
+
+						b{
+							color: #fff;
+						}
+					}
+				}
+
+				div.sidebar-v-nav-wrapper{
+					border-color: $dark_border;
+
+					ul.sidebar-v-nav{
+						li.sidebar-v-nav-item{
+							span.icon{
+								svg{
+									*{
+										stroke: #fff;
+									}
+								}
+							}
+
+							span.nav-item-holder {
+								& > a{
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+
+				div.follow-suggestion{
+					div.follow-suggestion__header{
+						h4{
+							color: $dark_grey;
+						}
+					}
+
+					div.follow-suggestion__body{
+						div.follow-suggestion__item{
+							div.flex-cr{
+								div.user-info-holder{
+									h4{
+										color: #fff;
+									}
+
+									a{
+										color: $dark_grey;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				div.mobile-sb-footer{
+					div.main-footer{
+						ul.footer-nav{
+							li.footer-nav-item > a{
+								color: $dark_grey !important;
+							}
+						}
+					} 
+				}
+
+				div.publish-post-btn{
+					border-color: $dark_border;
+				}
+			}
+		}
+
+		div.right-sb-container{
+			background: $dark_bg;
+
+			div.sidebar__inner{
+				div.main-search-bar-container{
+					form{
+						div.input-holder{
+							input{
+								background: $dark_input_bg;
+								border: none;
+								color: #fff;
+
+								&::placeholder{
+									color: $grey;
+									font-size: 12px;
+								}
+
+								&:active,&:hover,&:focus{
+									box-shadow: none;
+									outline: none;
+									border: 1px solid $blue;
+									background: $dark_input_bg;
+
+									& + a svg{
+										stroke: $blue;
+										opacity: 1;
+									}
+								}
+							}
+						}
+
+						div.search-result-holder{
+							background: $dark_bg;
+							box-shadow: $dark_box_shadow;
+
+							div.search-result-body{
+								ul.result-list{
+									li.htag-list-item{
+										border-color: $dark_border;
+
+										&.htag{
+											a{
+												span.hash{
+													color: $dark_grey;
+													border-color: $dark_border;
+												}
+
+												span.hashtag-info{
+													b.tag{
+														color: #fff;
+													}
+
+													span.total{
+														color: $dark_grey;
+													}
+												}
+											}
+										}
+
+										&.user{
+											a{
+												div.user-info{
+													div.uname{
+														b.name{
+															color: #fff;
+														}
+
+														span.username{
+															color: $dark_grey;
+														}
+													}
+												}
+											}
+										}
+
+										&:hover, &:active{
+											background: $dark_accent_bg;
+										}
+									}
+								}
+							}
+
+							div.search-result-footer{
+								border-color: $dark_border;
+
+								a{
+									color: #fff;
+								}
+							}
+						}
+					}
+				}
+
+				div.topical-posts-container{
+					ul.list-group{
+						li{
+							background: $dark_accent_bg;
+							border-color: $dark_border;
+
+							& > a{
+								color: #fff;
+							}
+
+							& > span{
+								color: $dark_grey;
+							}
+
+							&.main{
+								h4{
+									color: #fff;
+								}
+							}
+
+							&.show-more{
+								a{
+									color: $dark_grey;
+								}
+							}
+
+							&.items-placeholder{
+								h5{
+									color: #fff;
+								}
+
+								div.icon{
+									svg{
+										stroke: $dark_ikon_color;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				div.main-footer{
+					ul.footer-nav{
+						li.footer-nav-item{
+							& > a{
+								color: $dark_grey;
+							}
+						}
+					}
+				}
+			}
+		}
+
+		div.timeline-container-wrapper{
+			background: $dark_bg;
+			border-color: $dark_border;
+
+			div.timeline-container-inner{
+				div.timeline-container{
+					div.timeline-header{
+						border-color: $dark_border;
+						background: $dark_bg;
+
+						div.lp{
+							div.nav-link-holder{
+								a{
+									color: #fff;
+								}
+							}
+						}
+
+						div.rp{
+							div.nav-link-holder{
+								span.go-back{
+									svg{
+										stroke: #fff;
+									}
+								}
+
+								a{
+									svg{
+										stroke: #fff;
+									}
+								}
+							}
+						}
+					}
+
+					div.timeline-posts-container{
+						div.timeline-posts-ls{
+							div.post-list-item{
+								border-color: $dark_border;
+
+								div.post-list-item-header{
+									div.publication-repost{
+										svg{
+											stroke: $dark_ikon_color;
+										}
+
+										a{
+											color: $dark_grey;
+										}
+									}
+								}
+
+								div.post-list-item-content{
+									div.publication-data{
+										div.publication-data-inner{
+											div.publication-target{
+												div.post-reply{
+													span{
+														color: $dark_grey;
+													}
+												}
+											}
+
+											div.publisher-info{
+												div.lp{
+													a{
+														b{
+															color: #fff;
+															
+															span{
+																color: #fff;
+															}
+														}
+
+														& > span{
+															color: $dark_grey;
+														}
+													}
+												}
+
+												div.rp{
+													span.posted-time{
+														time{
+															color: $dark_grey;
+														}
+
+														svg{
+															stroke: $dark_ikon_color;
+														}
+													}
+												}
+											}
+
+											div.publication-content{
+												div.publication-text{
+													p.pub-text{
+														color: #f3f3f3;
+													}
+												}
+
+												div.lozad-media{
+													div.lozad-preloader{
+														background: $dark_accent_bg;
+														border-color: $dark_border;
+
+														div.icon{
+															svg{
+																*{
+																	stroke: $dark_ikon_color;
+																}
+															}
+														}
+													}
+												}
+
+												div.publication-image{
+													border-color: $dark_border;
+												}
+
+												div.publication-og-data{
+													background: $dark_accent_bg;
+													border-color: $dark_border;
+
+													div.publication-og-data-inner{
+														div.og-image, div.og-icon{
+															border-color: $dark_border !important;
+
+															div.og-icon-holder{
+																background: $dark_accent_bg !important;
+
+																svg{
+																	stroke: $dark_ikon_color;
+																}
+															}
+														}
+
+														div.og-url-data{
+															h5{
+																color: #fff;
+															}
+
+															p{
+																color: $dark_grey;
+															}
+														}
+													}
+												}
+
+												div.publication-poll-data{
+													div.publication-poll-data-inner{
+														div.poll-option-bar{
+															div.bar-text{
+																p{
+																	color: #fff;
+																}
+															}
+
+															div.bar-num{
+																b{
+																	color: $dark_grey;
+																}
+															}
+														}
+													}
+												}
+											}
+
+											div.publication-footer-ctrls{
+												button.ctrls-item{
+													span.icon, a.icon{
+														svg{
+															*{
+																stroke: $dark_ikon_color;
+															}
+														}
+													}
+
+													span.num{
+														color: $dark_grey;
+													}
+												}
+											}
+										}
+
+										div.blocked-user{
+											border-color: $dark_border;
+
+											p{
+												color: $dark_grey;
+											}
+										}
+									}
+								}
+
+								div.post-placeholder{
+									border-color: $dark_border;
+
+									div.icon{
+										svg{
+											stroke: $dark_ikon_color;
+										}
+									}
+
+									p{
+										color: $dark_grey;
+
+										a{
+											color: #fff;
+										}
+									}
+								}
+
+								&.post-ad-item{
+									div.post-list-item-content{
+										div.publication-data{
+											div.publication-data-inner{
+												div.publisher-info{
+													div.lp{
+														span.ad-badge{
+															svg{
+																stroke: $dark_ikon_color;
+															}
+
+															span{
+																color: $dark_grey;
+															}
+														}
+													}
+												}
+
+												div.publication-content{
+													background: $dark_accent_bg;
+													border: 1px solid $dark_border;
+
+													div.publication-text{
+														h4{
+															color: #fff;
+														}
+
+														p{
+															color: $dark_grey;
+														}
+													}
+
+													div.lozad-media{
+														div.lozad-preloader{
+															border-color: $dark_border;
+														}
+
+														div.publication-image{
+															
+															div.ad-target-ctrls{
+																div.ad-target-ctrls-inner{
+																	div.lp{
+																		span{
+																			color: $dark_grey;
+																		}
+																	}
+
+																	div.rp{
+																		button.target-url-btn{
+																			background: transparent;
+																			border-color: $dark_border;
+																			color: $dark_grey;
+
+																			&:hover, &:active, &:focus{
+																				background: transparent;
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+
+								&:hover{
+									background: $dark_accent_bg;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			div.spa-preloader{
+				background: $dark_bg;
+			}
+		}
+	}
+}
+
+div.mobile-bottom-navbar{
+	border-color: $dark_border;
+	background: $dark_accent_bg;
+
+	div.mobile-bottom-navbar-inner{
+		button.navbar-ctrl{
+			svg{
+				color: $dark_ikon_color;
+			}
+		}
+	}
+}
+
+div.timeline-pubbox-container{
+	& > div.rp{
+		form{
+			div.input-holder{
+				textarea{
+					background: $dark_bg;
+					border: none;
+					color: #fff;
+
+					&::placeholder{
+						color: $dark_grey;
+					}
+				}
+			}
+
+			div.cl-emoticons{
+				border-color: $dark_border;
+				background: $dark_accent_bg;
+
+				div.emoticons-group-nav{
+					border-color: $dark_border;
+					background: $dark_accent_bg;
+				}
+			}
+
+			div.input-autocomplete{
+				div.input-autocomplete__hashtags{
+					background: $dark_accent_bg;
+
+					div.input-autocomplete__hashtags-list{
+						div.hashtag-list-item{
+							border-color: $dark_border;
+
+							p{
+								color: $dark_color;
+
+								span{
+									color: $dark_grey;
+								}
+							}
+
+							&:hover, &:focus{
+								background: $dark_hovbg;
+							}
+						}
+					}
+				}
+
+				div.input-autocomplete__usernames{
+					background: $dark_accent_bg;
+
+					div.input-autocomplete__username-list{
+						div.username-list-item{
+							border-color: $dark_border;
+
+							div.avatar{
+								border-color: $dark_border;
+							}
+
+							div.username{
+								color: #fff;
+								span{
+									&:last-child{
+										color: $dark_color;
+									}
+								}
+							}
+
+							&:hover, &:focus{
+								background: $dark_hovbg;
+							}
+						}
+					}
+				}
+			}
+
+			div.preview-og-holder{
+				background: $dark_accent_bg;
+				border-color: $dark_border;
+
+				div.preview-og-holder-inner{
+					div.og-image{
+						border-color: $dark_border;
+						background: $dark_accent_bg;
+
+						div.og-icon-holder{
+							background: $dark_accent_bg;
+
+							svg{
+								*{
+									stroke: $dark_ikon_color;
+								}
+							}
+						}
+					}
+
+					div.og-url-data{
+						h5{
+							color: #fff;
+						}
+
+						p{
+							color: $dark_grey;
+						}
+					}
+				}
+			}
+
+			div.preview-video-holder{
+				div.video-player{
+					border-color: $dark_border;
+				}
+			}
+
+			div.preview-poll-holder{
+				background: $dark_accent_bg;
+				border-color: $dark_border;
+
+				div.poll-data-inputs{
+					border-color: $dark_border;
+
+					div.data-input-item{
+						input{
+							background: $dark_input_bg;
+							border-color: $dark_border;
+							color: #fff;
+
+							&::placeholder{
+								color: $dark_grey;
+							}
+
+							&:hover,&:focus,&:active{
+								border-bottom: 2px solid $blue;
+								background: $dark_input_bg;
+
+								& + small{
+									display: inline-block;
+								}
+							}
+						}
+
+						small{
+							color: $dark_grey;
+						}
+					}
+				}
+
+				div.poll-data-title{
+					h5{
+						color: #fff;
+					}
+
+					button.cancel-poll{
+						svg{
+							*{
+								stroke: #fff;
+							}
+						}
+					}
+				}
+			}
+
+			div.post-ctrls-holder{
+				button.ctrl-item{
+					&.text-length{
+						small{
+							color: $dark_grey;
+						}
+					}
+				}
+			}
+
+			div.preview-gifs-holder{
+				div.preview-gifs-loader{
+					background: $dark_accent_bg;
+					border-color: $dark_border;
+
+					div.search-bar-holder{
+						input{
+							background: $dark_accent_bg;
+							color: #fff;
+
+							&::placeholder{
+								color: $dark_grey;
+							}
+						}
+
+						button, a{
+							svg{
+								*{
+									stroke: #fff;
+								}
+							}
+						}
+					}
+				}
+
+				div.preview-original-gif{
+					border-color: $dark_border;
+
+					div.gif-preloader{
+						background: $dark_accent_bg;
+					}
+				}
+			}
+
+			div.preview-images-holder{
+				div.preview-images-list{
+					div.preview-images-list-item{
+						div.li-inner-content{
+							border-color: $dark_border;
+						}
+					}
+				}
+			}
+
+			div.post-privacy-holder{
+				border-color: $dark_border;
+			}
+		}
+	}
+}
+
+.dropdown, .dropleft, .dropright, .dropup{
+	div.dropdown-menu{
+		background: $dark_bg;
+		box-shadow: $dark_box_shadow;
+
+		a.dropdown-item{
+			color: #fff;
+
+			&:hover, &:active, &.active{
+				background: $dark_accent_bg !important;
+			}
+		}
+
+		div.dropdown-divider{
+			border-color: $dark_border;
+		}
+
+		&.dropdown-icons{
+			a.dropdown-item{
+				span.flex-item{
+					&.dropdown-item-icon{
+						svg{
+							stroke: $dark_ikon_color;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+div.modal{
+	div.modal-content{
+		box-shadow: $dark_box_shadow;
+		background: $dark_bg;
+
+		div.modal-header{
+			border-color: $dark_border;
+
+			div.main---mh--block{
+				h5{
+					color: #fff;
+				}
+
+				span.dismiss-modal{
+					svg{
+						stroke: #fff;
+					}
+				}
+			}
+		}
+
+		div.modal-footer{
+			border-color: $dark_border;
+		}
+
+
+		div.post-likes-container{
+
+			div.post-likes-ls{
+				div.post-likes-list-item{
+					border-bottom: 1px solid $dark_border;
+
+					div.user-info-holder{
+			 			h4{
+			 				color: #fff;
+			 			}
+
+			 			a{
+			 				color: $dark_grey;
+			 			}
+
+			 			p{
+			 				color: $dark_grey;
+			 			}
+			 		}
+
+			 		&:hover,&:active{
+			 			background: $dark_accent_bg;
+			 		}
+				}
+			}
+
+			div.post-likes-ls-empty{
+
+
+		 		div.pl-message{
+					line-height: 0px;
+					width: 100%;
+					margin-bottom: 50px;
+
+					h4{
+						color: #fff;
+					}
+
+					p{
+						color: $dark_grey;
+
+						a{
+							color: $link;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.auth-modal-window{
+		div.form-title{
+			h4{
+				color: #fff !important;
+			}
+
+			p{
+				color: $dark_grey !important;
+			}
+		}
+
+		label.tos-agree{
+			span{
+				color: $dark_grey;
+			}
+		}
+	}
+
+	&.confirm-actions-modal, &.info-popup-modal{
+		div.modal-dialog{
+			div.modal-body{
+				h4{
+					color: #fff;
+				}
+
+				p{
+					color: $dark_grey;
+				}
+			}
+		}
+	}
+
+	&.upload-progress-bar{
+		div.progress-bar-title{
+			h3{
+				color: #fff;
+			}
+		}
+
+		div.progress-bar-state{
+			div.progress-bar-bg{
+				background: $dark_accent_bg;
+			}
+		}
+	}
+
+	&.share-post-modal{
+		div.social-media-links{
+			a.link-item{
+				border-color: $dark_border;
+			}
+		}
+
+		div.raw-link{
+			p{
+				color: $dark_grey;
+			}
+
+			div.link-input{
+				input{
+					background: $dark_input_bg;
+					color: #fff;
+
+					&::placeholder{
+						color: $dark_grey;
+					}
+
+					&:hover,&:focus,&:active{
+						border-bottom: 2px solid $blue;
+						background: $dark_input_bg;
+					}
+				}
+			}
+		}
+	}
+
+	&.report-modal{
+		div.modal-content{
+			div.modal-body{
+				div.form-group{
+					div.radio-box-holder{
+						div.radio-box{
+							div.lp{
+								div.icon{
+									svg{
+										stroke: $dark_grey;
+									}
+									
+									&.selected svg{
+										stroke: $blue;
+									}
+								}
+							}
+
+							div.rp span{
+								color: $dark_color;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+div.modal-backdrop{
+	background-color: rgba(91, 112, 131, 0.4);
+}
+
+form{
+	div.form-group{
+		label{
+			color: $dark_grey;
+		}
+
+		input.form-control{
+			background: $dark_input_bg !important;
+			border-color: $dark_border !important;
+			color: #fff;
+
+			&::placeholder{
+				color: $dark_grey;
+			}
+
+			&:hover,&:focus,&:active{
+				border-bottom: 2px solid $blue;
+				background: $dark_input_bg !important;
+			}
+		}
+
+		textarea.form-control{
+			background: $dark_input_bg;
+			border-color: $dark_border;
+			color: #fff;
+
+			&::placeholder{
+				color: $dark_grey;
+			}
+
+			&:hover,&:focus,&:active{
+				border-bottom: 2px solid $blue;
+				background: $dark_input_bg;
+			}
+		}
+
+		div.vue-dropdown-select{
+			background: $dark_input_bg !important;
+
+			button.dropdown-toggle{
+				color: $dark_grey;
+				border-color: $dark_border !important;
+
+				&:hover,&:focus,&:active{
+					border-bottom: 2px solid $blue !important;
+					background: $dark_input_bg !important;
+					color: $dark_grey;
+				}
+			}
+		}
+	}
+}
+
+input[type="checkbox"].filled-in:not(:checked) + label:after{
+	border-color: $dark_border !important;
+}
+
+input[type="checkbox"]:checked + label:before{
+	border-right: 2px solid $dark_border !important;
+    border-bottom: 2px solid $dark_border !important;
+}
+
+input[type="checkbox"]:checked + label:after{
+	background: $dark_bg !important;
+	border-color: $dark_border !important;
+}
+
+div.main-preloader-holder{
+	background: $dark_bg;
+}
+
+
+.waitMe_container .waitMe{
+	background: rgba(0, 0, 0, 0.20) !important;
+}

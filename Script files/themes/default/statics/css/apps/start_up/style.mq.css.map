@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAYA,0BAA2B;EAMrB,wJAAW;IACV,aAAa,EAAE,GAAG;IAClB,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,GAAG",
+"sources": ["../../../scss/apps/start_up/style.mq.scss"],
+"names": [],
+"file": "style.mq.css"
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>
+		<?php echo $cl["account_data"]["user"]["name"]; ?>
+	</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="{%config theme_url%}/statics/css/libs/bootstrap-v4.0.0.min.css?v={%config version%}">
+	<link rel="stylesheet" href="{%config theme_url%}/statics/css/libs/animate.min.css?v={%config version%}">
+	<link rel="stylesheet" href="{%config theme_url%}/statics/css/libs/materialize.css?v={%config version%}">
+	<link rel="stylesheet" href="{%config theme_url%}/statics/css/libs/material_icon_fonts/material_icon.css?v={%config version%}">
+	<link rel="stylesheet" href="{%config theme_url%}/statics/css/apps/info/style.master.css?v={%config version%}">
+	<link rel="stylesheet" href="{%config theme_url%}/statics/css/libs/jquery.fancybox.css?v={%config version%}">
+	<link rel="icon" href="{%config site_favicon%}" type="image/png">
+	<script src="{%config theme_url%}/statics/js/libs/jquery-3.5.1.min.js?v={%config version%}"></script>
+	<script src="{%config theme_url%}/statics/js/libs/popper.1.12.9.min.js?v={%config version%}"></script>
+	<script src="{%config theme_url%}/statics/js/libs/bootstrap.v4.0.0.min.js?v={%config version%}"></script>
+	<script src="{%config theme_url%}/statics/js/libs/afterglow/afterglow.min.js?v={%config version%}"></script>
+	<script src="{%config theme_url%}/statics/js/master.script.js?v={%config version%}"></script>
+	<script src="{%config theme_url%}/statics/js/libs/jquery-plugins/jquery.fancybox.min.js?v={%config version%}"></script>
+</head>
+<body>
+	<main class="main-content-container">
+		<div class="row">
+			<div class="col-sm-3"></div>
+			<div class="col-sm-6 col-12">
+				<div class="user-data-container">
+					<div class="user-data-section">
+						<div class="user-data-body">
+							<div class="user-cover">
+								<img src="<?php echo $cl["account_data"]["user"]["cover"]; ?>" alt="IMG">
+								<div class="user-avatar">
+									<img src="<?php echo $cl["account_data"]["user"]["avatar"]; ?>" alt="IMG">
+								</div>
+							</div>
+							<div class="user-name">
+								<a href="<?php echo $cl["account_data"]["user"]["url"]; ?>">
+									<h3>
+										<?php echo $cl["account_data"]["user"]["name"]; ?>
+									</h3>
+								</a>
+
+								<?php if (not_empty($cl["account_data"]["user"]["about"])): ?>
+									<p>
+										<?php echo $cl["account_data"]["user"]["about"]; ?>
+									</p>
+								<?php endif ?>
+							</div>
+							<?php if (not_empty($cl["account_data"]["user_info"])): ?>
+								<div class="user-info">
+									<table class="table table-bordered">
+										<tr>
+											<td>
+												<span class="info-label">
+													E-mail
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<?php echo $cl["account_data"]["user"]["email"]; ?>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Joined date
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<?php echo $cl["account_data"]["user"]["joined"]; ?>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													IP
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<?php echo $cl["account_data"]["user"]["ip_address"]; ?>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Verified
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<?php if ($cl["account_data"]["user"]["verified"] == 1): ?>
+														<span class="badge badge-primary">YES</span>
+													<?php else: ?>
+														<span class="badge badge-dark">NO</span>
+													<?php endif; ?>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Total posts
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<b><?php echo cl_number($cl["account_data"]["user"]["posts"]); ?></b>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Total followers
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<b><?php echo cl_number($cl["account_data"]["user"]["followers"]); ?></b>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Total following
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<b><?php echo cl_number($cl["account_data"]["user"]["following"]); ?></b>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Website
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<a href="<?php echo cl_number($cl["account_data"]["user"]["website"]); ?>">
+														<?php echo $cl["account_data"]["user"]["website"]; ?>
+													</a>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Wallet
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<span class="badge badge-success">
+														<?php echo cl_money($cl["account_data"]["user"]["wallet"]); ?>
+													</span>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Affiliate bonuses
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<b><?php echo$cl["account_data"]["user"]["aff_bonuses"]; ?></b>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Country
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<?php echo $cl["account_data"]["user"]["country_name"]; ?>
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<td>
+												<span class="info-label">
+													Language
+												</span>
+											</td>
+											<td>
+												<span class="info-value">
+													<?php echo $cl["languages"][$cl["account_data"]["user"]["language"]]; ?>
+												</span>
+											</td>
+										</tr>
+									</table>
+								</div>
+							<?php endif; ?>
+						</div>
+					</div>
+					<?php if (not_empty($cl["account_data"]["user_info"])): ?>
+						<?php if (not_empty($cl["account_data"]["user"]["wallet_history"])): ?>
+							<div class="user-data-section">
+								<div class="user-data-header">
+									<h3>User wallet history - (<?php echo count($cl["account_data"]["user"]["wallet_history"]); ?>)</h3>
+								</div>
+								<div class="user-data-body">
+									<div class="user-wallet-history">
+										<?php foreach ($cl["account_data"]["user"]["wallet_history"] as $row): ?>
+											<div class="history-record">
+												<div class="lp">
+													<div class="icon">
+														<?php echo cl_ikon('arrow-left-bottom'); ?>
+													</div>
+												</div>
+												<div class="mp">
+													<div class="amount">
+														<span class="col-green">
+															+<?php echo cl_money($row['amount']); ?>
+														</span>
+													</div>
+													<div class="trans-info">
+														<p>
+															Account replenishment via paypal
+														</p>
+													</div>
+												</div>
+												<div class="rp">
+													<time><?php echo $row['time']; ?></time>
+												</div>
+											</div>
+										<?php endforeach; ?>
+									</div>
+								</div>
+							</div>
+						<?php endif ?>
+					<?php endif; ?>
+
+					<?php if (not_empty($cl["account_data"]["following"])): ?>
+						<div class="user-data-section">
+							<div class="user-data-header">
+								<h3>List of people I follow - (<?php echo count($cl["account_data"]["following"]); ?>)</h3>
+							</div>
+							<div class="user-data-body">
+								<div class="user-connections">
+									<?php foreach ($cl["account_data"]["following"] as $cl["li"]): ?>
+										<?php echo cl_template("info/includes/user_li"); ?>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
+					
+					<?php if (not_empty($cl["account_data"]["followers"])): ?>
+						<div class="user-data-section">
+							<div class="user-data-header">
+								<h3>List of people who follow me - (<?php echo count($cl["account_data"]["followers"]); ?>)</h3>
+							</div>
+							<div class="user-data-body">
+								<div class="user-connections">
+									<?php foreach ($cl["account_data"]["followers"] as $cl["li"]): ?>
+										<?php echo cl_template("info/includes/user_li"); ?>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
+
+					<?php if (not_empty($cl["account_data"]["posts"])): ?>
+						<div class="user-data-section">
+							<div class="user-data-header">
+								<h3>List of my publications and replies - (<?php echo count($cl["account_data"]["posts"]); ?>)</h3>
+							</div>
+							<div class="user-data-body">
+								<div class="posts-ls">
+									<?php foreach ($cl["account_data"]["posts"] as $cl["li"]): ?>
+										<?php echo cl_template("info/includes/post_li"); ?>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
+					
+					<?php if (not_empty($cl["account_data"]["bookmarks"])): ?>
+						<div class="user-data-section">
+							<div class="user-data-header">
+								<h3>List of my bookmarks - (<?php echo count($cl["account_data"]["bookmarks"]); ?>)</h3>
+							</div>
+							<div class="user-data-body">
+								<div class="posts-ls">
+									<?php foreach ($cl["account_data"]["bookmarks"] as $cl["li"]): ?>
+										<?php echo cl_template("info/includes/post_li"); ?>
+									<?php endforeach; ?>
+								</div>
+							</div>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+			<div class="col-sm-3"></div>
+		</div>
+	</main>
+
+	<script>
+		jQuery(document).ready(function($) {
+			$("a.fbox-media").fancybox({
+				arrows: true,
+				i18n: {
+				    en: {
+				    	ERROR: "The requested content could not be loaded. <br/> Please try again later.",
+				    }
+				}
+			});
+
+			if ($('video[data-el="colibrism-video"]').length) {
+				$('video[data-el="colibrism-video"]').each(function(index, el) {
+					if ($(el).hasClass('afterglow') != true) {
+						$(el).width("100%").height("100%").addClass('afterglow');
+					}
+				}).promise().done(function() {
+					afterglow.init();
+				});
+			}
+		});
+	</script>
+</body>
+</html>
+

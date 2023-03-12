@@ -1,0 +1,22 @@
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-navbar div.account--ads-list-navbar-inner {
+  border-color: #586d7b; }
+  body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-navbar div.account--ads-list-navbar-inner a button.navbar-item-btn {
+    color: #93b7d8; }
+    body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-navbar div.account--ads-list-navbar-inner a button.navbar-item-btn:hover, body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-navbar div.account--ads-list-navbar-inner a button.navbar-item-btn:active, body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-navbar div.account--ads-list-navbar-inner a button.navbar-item-btn:focus {
+      background: #1a2e3b; }
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-container div.upsert-ads-form-container div.form-group div.ad-cover-dropzone div.ad-cover-dropzone-inner {
+  border-color: #93b7d8; }
+  body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-container div.upsert-ads-form-container div.form-group div.ad-cover-dropzone div.ad-cover-dropzone-inner div.ad-cover-upload div.txt-label {
+    color: #93b7d8; }
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.main-ads--settings-container-inner div.account--ads-list-container div.upsert-ads-form-container div.form-group.tos-agreement label span {
+  color: #93b7d8; }
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.feature-system-off-page div.pl-message h4 {
+  color: #fff; }
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.main-ads--settings-container div.feature-system-off-page div.pl-message p {
+  color: #93b7d8; }
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.empty-user-timeline div.pl-message h4 {
+  color: #fff; }
+body.cl-app-ads main.main-content-container div.main-content-container-inner div.timeline-container div.empty-user-timeline div.pl-message p {
+  color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

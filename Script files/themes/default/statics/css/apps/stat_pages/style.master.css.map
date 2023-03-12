@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAgBI,gIAAqB;EACpB,OAAO,EAAE,SAAS;EAClB,KAAK,ECNF,OAAO",
+"sources": ["../../../scss/apps/stat_pages/style.master.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.master.css"
+}

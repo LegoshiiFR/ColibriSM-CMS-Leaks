@@ -1,0 +1,447 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-guest{
+	main.main-content-container{
+		div.main-content-container-inner{
+			display: block !important;
+			margin-left: auto;
+			margin-right: 0px !important;
+			max-width: 55vw !important;
+
+			div.timeline-container-wrapper{
+				display: block !important;
+				max-width: 100% !important;
+				min-width: 100% !important;
+				border: none;
+			}
+
+			div.welcome-page-container{
+				display: block;
+				width: 100%;
+				box-shadow: $btn_shadow;
+
+				div.carousel.welcome-page-slider{
+					position: fixed;
+					width: 45vw;
+					height: 100vh;
+					left: 0;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+
+					&:after{
+						position: absolute;
+						left: 0;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						content: "";
+						background-color: rgba(79, 161, 243, 0.30);
+					}
+
+					div.carousel-inner{
+						width: 100%;
+						height: 100%;
+
+						div.carousel-item{
+							width: 100%;
+							height: 100%;
+							background-size: cover;
+						}
+					}
+				}
+
+				div.welcome-page-content-container{
+					width: 100%;
+					display: block;
+					position: relative;
+					z-index: 2;
+					background: $blue;
+					min-height: 100vh;
+
+					div.welcome-page-content{
+						width: 100%;
+						display: block;
+						padding: 30px 100px;
+
+						div.logo{
+							width: 100%;
+							display: block;
+							margin-bottom: 35px;
+
+							a{
+								display: inline-block;
+								width: 70px;
+								min-width: 70px;
+								height: 70px;
+								background-color: #fff;
+								border-radius: 10em;
+								padding: 15px;
+								box-shadow: $btn_shadow;
+
+								img{
+									width: 100%;
+									height: 100%;
+								}
+							}
+						}
+
+						div.welcome-text{
+							display: block;
+							width: 100%;
+							margin-bottom: 70px;
+
+							h1{
+								color: #fff;
+								font-size: 32px;
+								line-height: 1.4;
+								padding: 0;
+								margin: 0 0 30px 0;
+								font-weight: bold;
+							}
+
+							p{
+								font-size: 18px;
+								line-height: 1.4;
+								color: #fff;
+								margin: 0;
+								padding: 0;
+								font-weight: 300;
+							}
+						}
+ 
+						div.login-form{
+							margin-bottom: 150px;
+
+							div.login-form-holder{
+								display: block;
+								width: 100%;
+
+								div.welcome-back{
+									width: 100%;
+									display: block;
+									margin-bottom: 20px;
+
+									h5{
+										padding: 0;
+										margin: 0;
+										font-size: 18px;
+										line-height: 24px;
+										text-transform: uppercase;
+										color: #fff;
+										font-weight: 700;
+										margin-bottom: 10px;
+									}
+
+									p{
+										font-size: 11px;
+										color: #fff;
+										padding: 0;
+										margin: 0;
+										line-height: 11px;
+										text-transform: uppercase;
+									}
+								}
+							}
+
+							div.login-or-signup{
+								line-height: 0;
+								margin: 10px 0px 20px;
+
+								small{
+									font-size: 11px;
+									line-height: 11px;
+									color: #fff;
+									text-transform: uppercase;
+								}
+							}
+
+							div.oauth-login-providers{
+								display: flex;
+								flex-direction: row;
+								flex-wrap: nowrap;
+								align-items: center;
+
+								a.social-login-btn{	
+									border: none;
+									box-shadow: $btn_shadow;
+									background: none;
+									color: #fff;
+									padding: 0;
+									line-height: 0;
+									outline: 0;
+									overflow: hidden;
+									border-radius: 2px;
+									margin: 0px 10px 0px 0px;
+									height: 34px;
+									width: 34px;
+									position: relative;
+
+									span.icon{
+										width: 15px;
+										height: 15px;
+										line-height: 0px;
+										overflow: hidden;
+										position: absolute;
+										left: 0;
+										top: 0;
+										bottom: 0;
+										right: 0;
+										margin: auto;
+										svg{
+											width: 15px;
+											height: 15px;
+											fill: #fff;
+										}
+									}
+
+									&.twitter{
+										background: #64ccf2;
+									}
+
+									&.facebook{
+										background: #507cc0;
+									}
+
+									&.google{
+										background: #df4931;
+									}
+								}
+							}
+
+							div.tos-agreement{
+								display: block;
+								line-height: 0px;
+								max-width: 350px;
+
+								div.block-header{
+									width: 100%;
+									line-height: 0px;
+									margin-bottom: 20px;
+
+									span{
+										font-size: 11px;
+										line-height: 16px;
+										color: #fff;
+									}
+
+									a{
+										font-size: 11px;
+										line-height: 16px;
+										color: #fff;
+										font-weight: 500;
+										text-decoration: underline;
+									}
+								}
+
+								div.block-body{
+									width: 100%;
+									line-height: 0px;
+									border-top: 1px solid rgba(230, 236, 240, 0.55);
+									padding-top: 20px;
+
+									a{
+										font-size: 11px;
+										line-height: 16px;
+										color: #fff;
+										font-weight: 500;
+										opacity: 0.9;
+										text-transform: uppercase;
+									}
+								}
+
+								div.block-footer{
+									display: none;
+								}
+							}
+							
+							button.btn-custom{
+								background: #fff;
+								height: 46px;
+								color: $grey;
+								display: inline-block;
+								width: auto;
+								border-radius: 1px;
+								padding-left: 40px;
+								padding-right: 40px;
+								margin-right: 10px;
+
+								&.d-none{
+									display: inline-block !important;
+									color: #fff;
+									border-color: #fff;
+									background: transparent;
+									margin-right: 0px;
+								}
+							} 
+
+							label.input-label{
+								display: none;
+							}
+
+							input.form-control{
+								border: none;
+								border-radius: 1px;
+								height: 40px;
+								max-width: 350px;
+							}
+						}
+					}
+
+					div.welcome-footer{
+						width: 100%;
+						display: block;
+						margin-top: 20px;
+						border-top: 1px solid rgba(230, 236, 240, 0.55);
+						padding-top: 20px;
+
+						ul.footer-nav{
+							width: 100%;
+							display: flex;
+							flex-direction: row;
+							flex-wrap: wrap;
+							padding: 0;
+							margin: 0;
+							line-height: 0px;
+							list-style-type: none;
+
+							li.footer-nav-item{
+								line-height: 0px;
+								margin-right: 10px;
+
+								& > a{
+									font-size: 11px;
+									color: #fff;
+									line-height: 20px;
+									opacity: 0.7;
+								}
+
+								&.dropdown > a {
+									text-decoration: none;
+								}
+
+								&:last-child{
+									margin-left: auto;
+									margin-right: 0px;
+								}
+
+								&.dropdown{
+									a.dropdown-toggle{
+										text-decoration: none;
+
+										span.language-banner{
+											line-height: 11px;
+											margin-right: 5px;
+											overflow: hidden;
+											border-radius: 2px;
+
+											svg{
+												width: 15px;
+											}
+										}
+
+										span.language-name{
+											line-height: 11px;
+										}
+									}
+									
+									a.dropdown-item{
+										text-decoration: none;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.modal{
+		div.auth-modal-window{
+			padding: 20px;
+
+			div.form-title{
+				width: 100%;
+				display: block;
+				line-height: 0;
+				text-align: center;
+				margin-bottom: 25px;
+
+				div.logo{
+					width: 100%;
+					display: block;
+					text-align: center;
+					margin-bottom: 5px;
+
+					a{
+						text-decoration: none;
+						line-height: 0;
+						img{
+							width: 50px;
+							height: 50px;
+						}
+					}
+				}
+
+				h4{
+					color: $black;
+					font-size: 20px;
+					line-height: 20px;
+					font-weight: 700;
+					margin: 0 0 10px 0;
+					padding: 0;
+				}
+
+				p{
+					font-size: 12px;
+					color: $grey;
+					padding: 0;
+					margin: 0;
+					line-height: 20px;
+				}
+			}
+
+			label.tos-agree{
+				span{
+					font-size: 11px;
+					color: $grey;
+					line-height: 16px;
+				}
+
+				a{
+					font-size: 11px;
+					color: $blue;
+					line-height: 16px;
+				}
+			}
+
+			div.form-group{
+				div.cell-row{
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: nowrap;
+					justify-content: space-between;
+
+					div.cell-50{
+						max-width: calc(50% - 10px);
+						min-width: calc(50% - 10px);
+						width: calc(50% - 10px);
+						flex-basis: calc(50% - 10px);
+					}
+				}
+			}
+		}
+	}
+}

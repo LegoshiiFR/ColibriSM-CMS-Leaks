@@ -1,0 +1,36 @@
+body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-itemset-title {
+  border-color: #586d7b;
+  background: #1a2e3b; }
+  body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-itemset-title h4 {
+    color: #fff; }
+body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item {
+  border-color: #586d7b; }
+  body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item div.lp span.preview-label {
+    color: #fff; }
+  body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item div.lp span.preview-value {
+    color: #93b7d8; }
+  body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item div.rp svg {
+    stroke: #8899a6; }
+  body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item:hover, body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item:active, body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item:focus {
+    background: #1a2e3b; }
+    body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item:hover b, body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item:active b, body.cl-app-settings main.main-content-container div.main-content-container-inner div.timeline-container div.main--profile-settings-container div.profile-settings-nav div.nav-list-item:focus b {
+      color: #1ca1f3; }
+body.cl-app-settings div.modal div.popup-modal-form div.form-group div.file-select-zone-wrapper div.file-select-zone {
+  border-color: #586d7b;
+  background: #1a2e3b; }
+  body.cl-app-settings div.modal div.popup-modal-form div.form-group div.file-select-zone-wrapper div.file-select-zone button {
+    color: #93b7d8; }
+body.cl-app-settings div.modal div.popup-modal-form div.form-group div.chekbox-block-item {
+  border-color: #586d7b; }
+  body.cl-app-settings div.modal div.popup-modal-form div.form-group div.chekbox-block-item span.switch-label {
+    color: #fff; }
+  body.cl-app-settings div.modal div.popup-modal-form div.form-group div.chekbox-block-item p.form-info-label {
+    color: #93b7d8; }
+body.cl-app-settings div.modal div.accoun-blocks-ls div.accoun-blocks-list-item {
+  border-color: #586d7b; }
+  body.cl-app-settings div.modal div.accoun-blocks-ls div.accoun-blocks-list-item div.user-info-holder div.user-info-holder-inner div.lp h4 {
+    color: #fff; }
+  body.cl-app-settings div.modal div.accoun-blocks-ls div.accoun-blocks-list-item div.user-info-holder div.user-info-holder-inner div.lp a {
+    color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

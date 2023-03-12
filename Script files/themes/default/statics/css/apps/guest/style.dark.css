@@ -1,0 +1,28 @@
+body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container {
+  background: #15212b; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.logo a {
+    background-color: #1a2e3b; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text h1, body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text p {
+    color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.login-or-signup small {
+    color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-header span, body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-header a {
+    color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-body {
+    border-color: #586d7b; }
+    body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form div.tos-agreement div.block-body a {
+      color: #93b7d8; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form button.btn-custom.main-inline {
+    color: #fff;
+    background: #1ca1f3; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form button.btn-custom.main-outline {
+    border-color: #1ca1f3;
+    color: #1ca1f3;
+    background: transparent; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form input.form-control {
+    border-bottom: 2px solid #586d7b;
+    background: #1a2e3b !important; }
+  body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-footer {
+    border-color: #586d7b; }
+
+/*# sourceMappingURL=style.dark.css.map */

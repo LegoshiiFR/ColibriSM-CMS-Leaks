@@ -1,0 +1,95 @@
+<div class="timeline-container">
+	<div class="timeline-container-inner">
+		<div class="timeline-header">
+			<div class="lp">
+				<div class="nav-link-holder">
+					<a href="<?php echo cl_link('chats'); ?>" data-spa="true">
+						<?php echo cl_translate('Messages'); ?>
+					</a> 
+				</div>
+			</div>
+			<div class="cp">
+				<a href="<?php echo cl_link('/'); ?>">
+					<img src="{%config site_logo%}" alt="Logo">
+				</a>
+			</div>
+			<div class="rp">
+				<div class="nav-link-holder">
+					<span class="go-back" onclick="SMColibri.go_back();">
+						<?php echo cl_ikon('arrow-left'); ?>
+					</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="vue-app-body" id="vue-chats-app">
+			<div class="vue-app-body-inner">
+				<div class="chat--search-form-wrapper">
+					<form class="form" autocomplete="off">
+						<div class="keyword-input">
+							<input v-model="search_query" v-on:input="search_chats($event)" type="text" placeholder="<?php echo cl_translate('Search for contacts, enter username..'); ?>">
+							<span class="icon">
+								<?php echo cl_ikon('search'); ?>
+							</span>
+							<span v-if="searching" class="spinner-icon" v-if="search_inquiries">
+								<?php echo cl_ikon('spinner-icon'); ?>
+							</span>
+						</div>
+					</form>
+				</div>
+
+				<div class="chat--contacts-list-wrapper">
+					<?php if (not_empty($cl["chats"])): ?>
+						<div v-show="display_chats" class="chat--contacts-list" data-an="contacts-list">
+							<?php foreach ($cl["chats"] as $cl['li']): ?>
+								<?php echo cl_template('chats/includes/list_item'); ?>
+							<?php endforeach; ?>
+						</div>
+						<div v-show="(display_chats != true)" class="empty-search-result">
+							<div class="icon">
+								<?php echo cl_ikon('search'); ?>
+							</div>
+							<div class="pl-message">
+								<h4>
+									<?php echo cl_translate("Nothing found!"); ?>
+								</h4>
+								<p>
+									<?php echo cl_translate("Could not find anything in your chats history for your search query {@search_query@}. Please try again by typing other keywords.", array(
+										"search_query" => cl_html_el('b', '{{search_query}}', array('class' => 'seach-query'))
+									)); ?>
+								</p>
+							</div>
+						</div>
+					<?php else: ?>
+						<div class="empty-chats-list">
+							<div class="icon">
+								<?php echo cl_ikon('chat-alt'); ?>
+							</div>
+							<div class="pl-message">
+								<h4>
+									<?php echo cl_translate("No chats yet!"); ?>
+								</h4>
+								<p>
+									<?php echo cl_translate("Oops! It looks like you don't have any chat history yet. To start chatting with a user, open his profile page, then click on the button with {@svg_icon@} to start chatting",array(
+										"svg_icon" => cl_html_el("span", cl_ikon("chat-alt"))
+									)); ?>
+								</p>
+							</div>
+							<div class="c2action-single">
+								<a href="<?php echo cl_link('/'); ?>" data-spa="true">
+									<button class="btn btn-custom main-outline lg">
+										<?php echo cl_translate("Go to the homepage"); ?>
+									</button>
+								</a>
+							</div>
+						</div>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+
+		<?php echo cl_template("main/includes/inline_statics/app_statics"); ?>
+		<?php echo cl_template('chats/scripts/app_master_script'); ?>
+	</div>
+</div>
+

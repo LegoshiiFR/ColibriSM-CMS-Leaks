@@ -1,0 +1,93 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-affiliates{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.main-affiliates--settings-container{
+					div.affiliates--settings-header{
+						h4{
+							color: #fff;
+						}
+
+						p{
+							color: $dark_grey;
+						}
+					}
+
+					div.affiliates--settings-body{
+						h5{
+							color: #fff;
+						}
+					}
+
+					div.affiliates--settings-footer{
+						div.new-payout-request{
+							p{
+								color: $dark_grey;
+							}
+						}
+
+						div.payments-info-nav{
+							span{
+								color: $dark_grey;
+							}
+						}
+					}
+
+					div.feature-system-off-page{
+						div.pl-message{
+							h4{
+								color: #fff;
+							}
+
+							p{
+								color: $dark_grey;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.modal.how-it-works{
+		div.modal-body{
+			div.list-item div.bp{
+				color: $dark_grey;
+			}
+		}
+	}
+
+	div.modal.payout-history{
+		div.payouts-history-ls{
+			div.payouts-history-ls-item{
+				background: $dark_accent_bg;
+
+				div.payout-info{
+					b{
+						color: #fff;
+					}
+
+					span{
+						color: $dark_grey;
+
+						&.time{
+							color: $dark_grey;
+						}
+					}
+				}
+			}
+		}
+	}
+}

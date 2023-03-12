@@ -1,0 +1,124 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-home{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.main-timeline-pubbox-wrapper{
+					border-color: $dark_border;
+				}
+
+				div.timeline-swifts-holder{
+					border-color: $dark_border;
+					background: $dark_bg;
+
+					div.timeline-swifts-cr{
+						&.owl-carousel{
+							div.owl-stage-outer{
+								div.owl-stage{
+									div.owl-item{
+										div.swift-item{
+											div.swift-item-body{
+												div.avatar{
+													border-color: $dark_border;
+
+													img{
+														border-color: $dark_bg;
+													}
+												}
+											}
+
+											div.swift-item-footer{
+												span{
+													color: $dark_grey;
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+
+				div.empty-user-timeline{
+					div.pl-message{
+						h4{
+							color: #fff;
+						}
+
+						p{
+							color: $dark_border;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.modal.modal-swift-pubbox{
+		div.modal-body{
+			form{
+
+				div.input-holder{
+					textarea{
+						background: $dark_bg;
+						border-color: $dark_border;
+						color: #fff;
+
+						&::placeholder{
+							color: $dark_grey;
+						}
+
+						&:hover,&:focus,&:active{
+							border: none;
+							background: $dark_bg;
+						}
+					}
+				}
+
+				div.cl-emoticons{
+					border-color: $dark_border;
+					background: $dark_accent_bg;
+
+					div.emoticons-group-nav{
+						background: $dark_accent_bg;
+						border-color: $dark_border;
+					}
+				}
+
+				div.preview-image-holder{
+					div.preview-image-inner{
+						border-color: $dark_border;
+					}
+				}
+
+				div.preview-video-holder{
+					div.video-player{
+						border-color: $dark_border;
+					}
+				}
+
+				div.swift-ctrls-holder{
+					button.ctrl-item{
+						&.text-length{
+							small{
+								color: $dark_grey;
+							} 
+						}
+					}
+				}
+			}
+		}
+	}
+}

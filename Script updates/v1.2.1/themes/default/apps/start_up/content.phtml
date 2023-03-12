@@ -1,0 +1,238 @@
+<div class="timeline-container" data-app="start_up">
+	<div class="timeline-header" data-el="tl-header">
+		<div class="lp">
+			<div class="nav-link-holder">
+				<a href="<?php echo cl_link("start_up"); ?>" data-spa="true">
+					<?php echo cl_translate("Completion"); ?>
+				</a>
+			</div>
+		</div>
+		<div class="cp">
+			<a href="<?php echo cl_link('/'); ?>">
+				<img src="{%config site_logo%}" alt="Logo">
+			</a>
+		</div>
+		<div class="rp">
+			<div class="nav-link-holder">
+				<a href="<?php echo cl_link("about_us"); ?>" data-spa="true">
+					<?php echo cl_ikon('info'); ?>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<div class="main--profile-startup-container">
+		<div class="vue-app-body" id="vue-startup-app">
+			<div class="startup">
+				
+				<div v-if="progstat.avatar == 0" class="startup-body">
+					<div class="startup-body-title">
+						<div class="icon">
+							<span>
+								<?php echo cl_ikon("coffee"); ?>
+							</span>
+						</div>
+						<h1>
+							<?php echo cl_translate("Welcome!"); ?>
+						</h1>
+						<p>
+							<?php echo cl_translate("There are only a few steps left before registration is complete. Once you enter the required information about your profile, your account is ready to use."); ?>
+						</p>
+					</div>
+					<div class="startup-body-content">
+						<div class="startup-avatar">
+							<div class="startup-avatar-inner">
+								<div class="d-flex align-items-center justify-content-center">
+									<div class="avatar-imgholder" v-if="avatar.src">
+										<img v-bind:src="avatar.src" alt="Avatar">
+									</div>
+									<div class="avatar-placeholder" v-else>
+										<button class="upload-avatar" v-on:click="select_avatar" v-bind:disabled="fe_state.submitting">
+											<?php echo cl_ikon('person-add'); ?>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="startup-body-ctrls">
+						<p v-if="avatar.src">
+							<?php echo cl_translate("It looks just fine! Now it remains to fill in the necessary information about you"); ?>
+						</p>
+						<p v-else>
+							<?php echo cl_translate("Let's start by uploading your profile avatar"); ?>
+						</p>
+						<div class="ctrls">
+							<button v-if="avatar.src" v-on:click="save_avatar" class="btn btn-custom main-inline lg btn-block">
+								<?php echo cl_translate("Save and continue"); ?>
+							</button>
+							<button v-else v-on:click="save_avatar" class="btn btn-custom main-inline lg btn-block">
+								<?php echo cl_translate("Skip and continue"); ?>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div v-else-if="progstat.info == 0" class="startup-body">
+					<div class="startup-body-title">
+						<div class="icon">
+							<span>
+								<?php echo cl_ikon("new"); ?>
+							</span>
+						</div>
+						<h1>
+							<?php echo cl_translate("Almost ready!"); ?>
+						</h1>
+						<p>
+							<?php echo cl_translate("You are just one step away from completing the registration, it remains to fill in the basic information about you and the account will be ready"); ?>
+						</p>
+					</div>
+					<div class="startup-body-content">
+						<div class="startup-info">
+							<form class="form">
+                				<div class="row">
+                					<div class="col-sm-6 col-12">
+                						<div class="form-group">
+	                						<label>
+			                					<?php echo cl_translate("First name"); ?>	
+			                				</label>
+							                <input name="fname" v-model.trim="$v.info.user_data.fname.$model" type="text" class="form-control" placeholder="<?php echo cl_translate("Enter your first name"); ?>">
+							                <div class="invalid-main-feedback" v-if="is_valid_fname">
+												{{info.fe_feedback.invalid_fname }}
+											</div>
+										</div>
+                					</div>
+                					<div class="col-sm-6 col-12">
+                						<div class="form-group">
+	                						<label>
+			                					<?php echo cl_translate("Last name"); ?>	
+			                				</label>
+							                <input name="lname" v-model.trim="$v.info.user_data.lname.$model" type="text" class="form-control" placeholder="<?php echo cl_translate("Enter your last name"); ?>">
+							                <div class="invalid-main-feedback" v-if="is_valid_lname">
+												{{info.fe_feedback.invalid_lname}}
+											</div>
+										</div>
+                					</div>
+                				</div>
+	                			<div class="form-group">
+		                            <label>
+		                                <?php echo cl_translate("About you"); ?>
+
+		                                <small class="col-grey">({{info.user_data.bio.length}})</small> 
+		                            </label>
+		                            <textarea v-model.trim="$v.info.user_data.bio.$model" name="bio" class="form-control" placeholder="<?php echo cl_translate("Please enter here about yourself"); ?>" rows="3"></textarea>
+		                            <div class="invalid-main-feedback" v-if="is_valid_bio">
+										{{info.fe_feedback.invalid_bio}}
+									</div>
+		                        </div>
+		                        <div class="form-group">
+		                        	<label>
+		                                <?php echo cl_translate("Choose your country"); ?>
+		                            </label>
+                        			<div class="dropdown vue-dropdown-select">
+		                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                                    {{sdds.countries[info.user_data.country]}}
+		                                </button>
+		                                <div class="dropdown-menu">
+		                                    <a v-for="(v,k) in sdds.countries" v-on:click="info.user_data.country = k" class="dropdown-item" href="javascript:void(0);">
+		                                        {{v}}
+		                                    </a>
+		                                </div>
+		                            </div>
+		                        </div>
+		                        <div class="form-group">
+		                        	<label>
+		                                <?php echo cl_translate("Select your gender"); ?>   
+		                            </label>
+		                            <div class="dropdown vue-dropdown-select">
+		                                <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                                    <span v-if="info.user_data.gender">
+		                                    	{{sdds.genders[info.user_data.gender]}}
+		                                    </span>
+		                                    <span v-else>
+		                                    	<?php echo cl_translate("Nothing selected"); ?>
+		                                    </span>
+		                                </button>
+		                                <div class="dropdown-menu">
+		                                    <a v-for="(v,k) in sdds.genders" v-on:click="info.user_data.gender = k" class="dropdown-item" href="javascript:void(0);">
+		                                        {{v}}
+		                                    </a>
+		                                </div>
+		                            </div>
+		                        </div>
+							</form>
+						</div>
+					</div>
+					<div class="startup-body-ctrls">
+						<div class="ctrls">
+							<button v-if="fe_state.submitting" disabled="true" type="button" class="btn btn-custom main-inline lg btn-block">
+		                        <?php echo cl_translate("Please wait"); ?>
+		                    </button>
+							<button v-else v-on:click="save_info" v-bind:disabled="is_invalid_form" class="btn btn-custom main-inline lg btn-block">
+								<?php echo cl_translate("Save and continue"); ?>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div v-else-if="progstat.follow == 0" class="startup-body">
+					<div class="startup-body-title">
+						<div class="icon">
+							<span>
+								<?php echo cl_ikon("ok-circle"); ?>
+							</span>
+						</div>
+						<h1>
+							<?php echo cl_translate("Let's get started!"); ?>
+						</h1>
+						<p>
+							<?php echo cl_translate("Congratulations, your account has been successfully created and ready to use. But first, we would recommend you to subscribe to the most popular users"); ?>
+						</p>
+					</div>
+					<div class="startup-body-content">
+						<div class="startup-suggested">
+							<div class="suggested-list">
+								<?php foreach ($cl["suggestions"] as $cl["li"]): ?>
+									<div class="suggested-list-item">
+										<div class="avatar">
+											<img src="<?php echo($cl['li']['avatar']); ?>" alt="Avatar">
+										</div>
+										<div class="user-info-holder">
+											<h4>
+												<span class="user-name-holder <?php if ($cl['li']['verified'] == '1') {echo('verified-badge');} ?>">
+													<?php echo cl_croptxt($cl['li']['name'], 15, '..'); ?>
+												</span>
+											</h4>
+											<a href="<?php echo($cl['li']['url']); ?>" data-spa="true">
+												<?php echo($cl['li']['username']); ?>
+											</a>
+											<?php if (not_empty($cl['li']['about'])): ?>
+												<p>
+													<?php echo cl_croptxt($cl['li']['about'], 120, '..'); ?>
+												</p>
+											<?php endif; ?>
+										</div>
+									</div>
+								<?php endforeach; ?>
+							</div>
+						</div>
+					</div>
+					<div class="startup-body-ctrls">
+						<div class="ctrls">
+							<button v-on:click="finish_startup(true)" class="btn btn-custom main-inline lg btn-block">
+								<?php echo cl_translate("Follow users & Finish!"); ?>
+							</button>
+							<button v-on:click="finish_startup(false)" class="btn btn-text btn-block">
+								<?php echo cl_translate("Or skip this step & Finish!"); ?>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<input ref="avatar-input" v-on:change="upload_avatar($event)" type="file" accept="image/*" class="hidden d-none">
+		</div>
+	</div>
+
+	<?php echo cl_template("main/includes/inline_statics/app_statics"); ?>
+	
+	<?php echo cl_template('start_up/scripts/app_master_script'); ?>
+</div>

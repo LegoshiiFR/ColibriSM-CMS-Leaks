@@ -1,0 +1,109 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-settings{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.main--profile-settings-container{
+					div.profile-settings-nav{
+						div.nav-list-itemset-title{
+							border-color: $dark_border;
+							background: $dark_accent_bg;
+
+							h4{
+								color: #fff;
+							}
+						}
+
+						div.nav-list-item{
+							border-color: $dark_border;
+
+							div.lp{
+								span.preview-label{
+									color: #fff;
+								}
+
+								span.preview-value{
+									color: $dark_grey;
+								}
+							}
+
+							div.rp{
+								svg{
+									stroke: $dark_ikon_color;
+								}
+							}
+
+							&:hover,&:active,&:focus{
+								background: $dark_accent_bg;
+
+								b{
+									color: $blue;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.modal {
+		div.popup-modal-form{
+			div.form-group{
+				div.file-select-zone-wrapper{
+					div.file-select-zone{
+						border-color: $dark_border;
+						background: $dark_accent_bg;
+
+						button{
+							color: $dark_grey;
+						}
+					}
+				}
+
+				div.chekbox-block-item{
+					border-color: $dark_border;
+					
+					span.switch-label{
+						color: #fff;
+					}
+
+					p.form-info-label{
+						color: $dark_grey;
+					}
+				}
+			}
+		}
+
+		div.accoun-blocks-ls{
+			div.accoun-blocks-list-item{
+				border-color: $dark_border;
+
+				div.user-info-holder{
+					div.user-info-holder-inner{
+						div.lp{
+							h4{
+								color: #fff;
+							}
+
+							a{
+								color: $dark_grey;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

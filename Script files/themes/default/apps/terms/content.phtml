@@ -1,0 +1,29 @@
+<div class="timeline-container" data-app="stat_pages">
+	<div class="timeline-header" data-el="tl-header">
+		<div class="lp">
+			<div class="nav-link-holder">
+				<a href="<?php echo cl_link('terms_of_use'); ?>">
+					<?php echo cl_translate('Terms of Use'); ?>
+				</a>
+			</div>
+		</div>
+		<div class="cp">
+			<a href="<?php echo cl_link('/'); ?>">
+				<img src="{%config site_logo%}" alt="Logo">
+			</a>
+		</div>
+		<div class="rp">
+			<div class="nav-link-holder">
+				<span class="go-back" onclick="SMColibri.go_back();">
+					<?php echo cl_ikon('arrow-left'); ?>
+				</span>
+			</div>
+		</div>
+	</div>
+
+	<div class="stat-page-content">
+		<?php echo cl_template('terms/src/source'); ?>
+	</div>
+
+	<?php echo cl_template("main/includes/inline_statics/app_statics"); ?>
+</div>

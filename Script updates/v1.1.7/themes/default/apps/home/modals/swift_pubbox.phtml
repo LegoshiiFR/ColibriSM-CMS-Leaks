@@ -1,0 +1,110 @@
+<div class="modal fadeIn vh-center modal-swift-pubbox" data-an="swift-pubbox" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="main---mh--block">
+                    <h5 class="modal-title"><?php echo cl_translate('Create new swift'); ?></h5>
+                    <span class="dismiss-modal" data-dismiss="modal">
+                        <?php echo cl_ikon('close'); ?>
+                    </span>
+                </div>
+            </div>
+            <div class="modal-body">
+		        <form class="form" id="cl-new-swift-vue-app" v-on:submit="publish($event)">
+					<div class="input-holder">
+						<textarea ref="swift_text" v-on:input="textarea_resize($event)" class="autoresize" v-model.trim="text" name="swift_text" maxlength="200" placeholder="<?php echo cl_translate("Add signature to swift (Optional)"); ?>"></textarea>
+					</div>
+					<div class="cl-emoticons" v-if="emoticons_picker.status">
+						<div class="emoticons-group-nav">
+							<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'people')}" v-on:click="emoticons_picker.active_group = 'people'">
+								<span class="emoji_group_icon">
+									😄
+								</span>
+							</span>
+							<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'nature')}" v-on:click="emoticons_picker.active_group = 'nature'">
+								<span class="emoji_group_icon">
+									🐶
+								</span>
+							</span>
+							<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'objects')}" v-on:click="emoticons_picker.active_group = 'objects'">
+								<span class="emoji_group_icon">
+									🍔
+								</span>
+							</span>
+							<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'places')}" v-on:click="emoticons_picker.active_group = 'places'">
+								<span class="emoji_group_icon">
+									🏠
+								</span>
+							</span>
+							<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'symbols')}" v-on:click="emoticons_picker.active_group = 'symbols'">
+								<span class="emoji_group_icon">
+									🕓
+								</span>
+							</span>
+							<span class="emoticons-group-nav-item" v-bind:class="{'active': (emoticons_picker.active_group == 'flags')}" v-on:click="emoticons_picker.active_group = 'flags'">
+								<span class="emoji_group_icon">
+									🏁
+								</span>
+							</span>
+							<span class="emoticons-group-nav-item ml-auto" v-on:click="emoticons_picker.status = false">
+								<span class="emoji_group_icon">
+									<?php echo cl_ikon('close'); ?>
+								</span>
+							</span>
+						</div>
+						<div class="emoticons-group-ls">
+							<div class="emoticons-group" v-for="(emojies, emoji_group_name) in emoticons_picker.icons"  v-if="emoticons_picker.active_group == emoji_group_name">
+								<span v-for="(emoji_icon, emojiName) in emojies" v-bind:key="emojiName" v-on:click="emoticon_insert(emoji_icon)" v-bind:title="emojiName">
+									{{emoji_icon}}
+								</span>
+							</div>
+						</div>
+					</div>
+					<div v-if="active_media == 'image'" class="preview-image-holder">
+						<div class="preview-image-inner">
+							<img v-bind:src="image.url" alt="Image">
+							<button type="button" class="delete-preview-image" v-on:click="delete_image">
+								<?php echo cl_ikon('close'); ?>
+							</button>
+						</div>
+					</div>
+					<div v-if="active_media == 'video'" class="preview-video-holder">
+						<div class="video-player" id="preview-video">
+							<video v-bind:poster="video.poster" data-el="colibrism-video" width="550" height="300" controls="true" type="video/mp4">
+								<source type="video/mp4" v-bind:src="video.source"/>
+							</video>
+						</div>
+						<button type="button" class="delete-preview-video" v-on:click="delete_video">
+							<?php echo cl_ikon('close'); ?>
+						</button>
+					</div>
+					<div class="swift-ctrls-holder">
+						<button type="button" class="ctrl-item" v-on:click="select_images" v-bind:disabled="image_ctrl != true">
+							<?php echo cl_ikon("image"); ?>
+						</button>
+						<button type="button" class="ctrl-item" v-on:click="select_video" v-bind:disabled="video_ctrl != true">
+							<?php echo cl_ikon("film"); ?>
+						</button>
+						<button v-on:click="emoticon_picker" type="button" class="ctrl-item">
+							<?php echo cl_ikon("happy-face"); ?>
+						</button>
+						<button type="button" class="ctrl-item text-length ml-auto">
+							<small v-bind:class="{'len-error': (text.length >= 200) }">
+								{{text.length}}/200
+							</small>
+						</button>
+					</div>
+					<div class="swift-publisher">
+						<button v-bind:disabled="valid_form != true" type="submit" class="btn-custom main-inline lg btn-block">
+							<?php echo cl_translate("Publish"); ?>
+						</button>
+					</div>
+
+					<input type="file" class="d-none" data-an="images-input" accept="image/*" v-on:change="upload_images($event)">
+					<input type="file" class="d-none" data-an="video-input" accept="video/*" v-on:change="upload_video($event)">
+					<input type="hidden" class="d-none" value="<?php echo fetch_or_get($cl['csrf_token'],'none'); ?>" name="hash">
+				</form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAmBO,8LAAM;EACL,YAAY,ECON,OAAO;EDLb,wMAAS;IACR,KAAK,ECMF,OAAO;IDLV,YAAY,ECGP,OAAO;EDCZ,sNAAK;IACJ,KAAK,EAAE,IAAI;EAGZ,2NAAU;IACT,KAAK,ECJH,OAAO;EDQX,ilBAAwB;IACvB,UAAU,ECbF,OAAO;IDef,2nBAAa;MACZ,MAAM,EC9BT,OAAO;ADuCP,8LAAE;EACD,KAAK,EAAE,IAAI;AAGZ,6LAAC;EACA,KAAK,EC1BD,OAAO",
+"sources": ["../../../scss/apps/trending/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

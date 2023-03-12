@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAmBO,iLAAE;EACD,KAAK,EAAE,IAAI;AAGZ,gLAAC;EACA,KAAK,ECKD,OAAO",
+"sources": ["../../../scss/apps/bookmarks/style.dark.scss","../../../scss/apps/main-variables.scss"],
+"names": [],
+"file": "style.dark.css"
+}

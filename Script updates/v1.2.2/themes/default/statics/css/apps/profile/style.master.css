@@ -1,0 +1,377 @@
+body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder {
+  display: block;
+  line-height: 0px;
+  padding: 0;
+  margin: 0; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder h5 {
+    padding: 0;
+    margin: 0;
+    line-height: 18px;
+    font-size: 14px; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder h5 span {
+      color: #14171a;
+      font-weight: 700; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder > span {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #5b7083;
+    font-weight: 400;
+    line-height: 18px; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder > span svg {
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      stroke: #5b7083; }
+body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area {
+  width: 100%;
+  display: block;
+  line-height: 0; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header {
+    width: 100%;
+    display: block;
+    position: relative; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder {
+      width: 100%;
+      display: block;
+      height: auto;
+      background: #444;
+      position: relative;
+      z-index: 10;
+      max-height: 200px;
+      overflow: hidden; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder img.cover {
+        width: 100%;
+        object-fit: cover; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder img.cover.original-cover {
+          cursor: -webkit-grab;
+          cursor: grab; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder img.cover.original-cover:active {
+            cursor: -webkit-grabbing;
+            cursor: grabbing; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder div.cover-adjustment-ctrls {
+        background-color: #1ca1f3;
+        line-height: 0px;
+        padding: 0px 10px;
+        width: 100px;
+        height: 35px;
+        border-radius: 5px;
+        z-index: 11;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        margin: auto;
+        transition: visibility 0.1s linear,opacity 0.1s linear;
+        opacity: 0;
+        visibility: hidden; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder div.cover-adjustment-ctrls button.control-btn {
+          border: none;
+          line-height: 0px;
+          padding: 0px;
+          margin: 0px 10px;
+          width: 20px;
+          height: 20px;
+          cursor: pointer;
+          outline: 0;
+          background: none;
+          box-shadow: none; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder div.cover-adjustment-ctrls button.control-btn svg {
+            width: 100%;
+            height: 100%;
+            stroke: #fff;
+            display: inline-block;
+            stroke-width: 2; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder div.cover-adjustment-ctrls button.control-btn:disabled {
+            cursor: wait !important; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-cover-holder:hover div.cover-adjustment-ctrls {
+        visibility: visible;
+        opacity: 1; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder {
+      display: inline-block;
+      padding: 0px 15px;
+      line-height: 0px;
+      position: absolute;
+      z-index: 10;
+      left: 0px;
+      bottom: -60px; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder div.profile-avatar {
+        width: 120px;
+        height: 120px;
+        border: none;
+        overflow: hidden;
+        border-radius: 10em;
+        border: 3px solid #fff;
+        box-shadow: none;
+        position: relative; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder div.profile-avatar img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          padding: 0;
+          margin: 0; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder div.profile-avatar button.upload-avatar {
+          border: none;
+          background-color: #1ca1f3;
+          line-height: 0px;
+          padding: 0px;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          visibility: hidden;
+          z-index: 13;
+          cursor: pointer;
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          top: 0px;
+          right: 0px;
+          bottom: 0px;
+          left: 0px;
+          outline: 0;
+          transition: visibility 0.1s linear,opacity 0.1s linear;
+          opacity: 0; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder div.profile-avatar button.upload-avatar svg {
+            width: 25px;
+            height: 25px;
+            stroke: #fff;
+            stroke-width: 2;
+            display: inline-block; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder div.profile-avatar button.upload-avatar:disabled {
+            cursor: wait !important; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-info-header div.profile-avatar-holder div.profile-avatar:hover button.upload-avatar {
+          visibility: visible;
+          opacity: 1; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder {
+    width: 100%;
+    border-bottom: 1px solid #e6ecf0;
+    position: relative; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-end;
+      height: 60px;
+      align-items: center;
+      padding: 0px 15px;
+      margin-bottom: 20px; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item {
+        width: 25px;
+        height: 25px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        margin-left: 20px;
+        outline: 0;
+        padding: 0px;
+        box-shadow: none; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item a.ctrl-inner, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item span.ctrl-inner {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          display: inline-block;
+          line-height: 0px;
+          outline: 0; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item a.ctrl-inner svg, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item span.ctrl-inner svg {
+            width: 25px;
+            height: 25px;
+            stroke: #1ca1f3; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item a.ctrl-inner:after, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item a.ctrl-inner:before, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item span.ctrl-inner:after, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item span.ctrl-inner:before {
+            display: none; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.ctrl-item div.dropdown-menu {
+          top: 25px !important; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-page-ctrls button.btn.btn-custom {
+        margin-left: 20px; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-name-holder {
+      width: 100%;
+      line-height: 0px;
+      display: block;
+      padding: 0px 15px;
+      margin-bottom: 10px; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-name-holder h4 {
+        font-size: 18px;
+        line-height: 22px;
+        color: #14171a;
+        padding: 0;
+        margin: 0;
+        font-weight: 700; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-name-holder a {
+        display: block;
+        color: #5b7083;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+        line-height: 18px;
+        text-decoration: none; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-description-holder {
+      width: 100%;
+      display: block;
+      line-height: 0px;
+      padding: 0px 15px;
+      margin-bottom: 15px; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile-description-holder p {
+        font-size: 13px;
+        color: #14171a;
+        font-weight: 400;
+        line-height: 18px;
+        padding: 0;
+        margin: 0;
+        word-wrap: break-word; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set {
+      width: 100%;
+      display: flex;
+      line-height: 0px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 0px 15px; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item {
+        line-height: 0px;
+        margin-right: 15px;
+        margin-bottom: 15px; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item:last-child {
+          margin-right: 0px; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item span.banner {
+          display: inline-block;
+          line-height: 0px; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item span.banner svg {
+            width: 22px;
+            height: 13px;
+            vertical-align: middle; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item span.icon {
+          display: inline-block;
+          line-height: 0px; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item span.icon svg {
+            width: 15px;
+            height: 15px;
+            stroke: #5b7083;
+            vertical-align: middle; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item span.text {
+          font-size: 12px;
+          line-height: 12px;
+          color: #5b7083;
+          display: inline-block; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--user-info-block-set div.block-item span.text a {
+            color: #1b95e0;
+            text-decoration: underline;
+            font-size: inherit;
+            line-height: inherit; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info {
+      margin-bottom: 10px;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0px 15px; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder {
+        margin-right: 25px; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder:last-child {
+          margin-right: 0px; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder span.stat-holder-inner, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner {
+          display: inline-block;
+          line-height: 0px;
+          text-decoration: none; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder span.stat-holder-inner span, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder span.stat-holder-inner b, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner span, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner b {
+            width: 100%; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder span.stat-holder-inner span, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner span {
+            font-size: 11px;
+            line-height: 20px;
+            color: #5b7083;
+            margin-left: 3px;
+            text-transform: uppercase; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder span.stat-holder-inner b, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner b {
+            font-size: 14px;
+            color: #14171a;
+            font-weight: 500;
+            line-height: 16px; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner:hover span, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner:hover b, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner:active span, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-stats-info div.stat-holder a.stat-holder-inner:active b {
+          color: #1ca1f3; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      border-top: 1px solid #e6ecf0; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar a {
+        flex: 1;
+        outline: 0; }
+        body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar a button.navbar-item-btn {
+          background: transparent;
+          font-size: 11px;
+          font-weight: 900;
+          color: #5b7083;
+          line-height: 13px;
+          box-shadow: none;
+          border: none;
+          padding: 15px 30px;
+          width: 100%;
+          cursor: pointer;
+          outline: 0;
+          text-transform: uppercase; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar a button.navbar-item-btn.active {
+            border-bottom: 2px solid #1ca1f3; }
+          body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar a button.navbar-item-btn:hover, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar a button.navbar-item-btn:active, body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-prof-info-area div.profile-main--info-holder div.profile--activity-navbar a button.navbar-item-btn:focus {
+            background: #f5f8fa; }
+body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  line-height: 0px;
+  padding: 50px;
+  overflow: hidden; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.icon {
+    line-height: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.icon svg {
+      width: 50px;
+      height: 50px;
+      stroke: #1ca1f3; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.pl-message {
+    line-height: 0px;
+    width: 100%;
+    margin-bottom: 20px; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.pl-message h4 {
+      font-size: 20px;
+      padding: 0;
+      margin: 0 0 10px 0;
+      line-height: 20px;
+      color: #14171a;
+      font-weight: 700;
+      text-align: center; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.pl-message p {
+      font-size: 13px;
+      line-height: 20px;
+      padding: 0;
+      margin: 0;
+      color: #5b7083;
+      text-align: center;
+      overflow-wrap: break-word; }
+  body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.c2action-single {
+    width: 100%;
+    line-height: 0px;
+    text-align: center; }
+    body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.c2action-single a {
+      display: inline-block;
+      line-height: 0px;
+      text-decoration: none; }
+      body.cl-app-profile main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-posts-container div.timeline-posts-ls div.empty-profile-placeholder div.c2action-single a button {
+        padding-left: 40px;
+        padding-right: 40px; }
+
+/*# sourceMappingURL=style.master.css.map */

@@ -1,0 +1,205 @@
+body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder {
+  display: block;
+  line-height: 0px;
+  padding: 0;
+  margin: 0; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder h5 {
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #14171a;
+    font-weight: 700;
+    line-height: 18px; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder span {
+    padding: 0;
+    margin: 0;
+    font-size: 13px;
+    color: #5b7083;
+    font-weight: 400;
+    line-height: 18px; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-header div.lp div.profile-name-holder span svg {
+      width: 13px;
+      height: 13px;
+      display: inline-block;
+      vertical-align: middle;
+      stroke: #5b7083; }
+body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6ecf0; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a {
+    flex: 1;
+    text-decoration: none;
+    line-height: 0px;
+    outline: 0; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a button.navbar-item-btn {
+      background: transparent;
+      font-size: 11px;
+      font-weight: 700;
+      color: #5b7083;
+      line-height: 13px;
+      box-shadow: none;
+      border: none;
+      padding: 15px 30px;
+      cursor: pointer;
+      width: 100%;
+      outline: 0;
+      text-transform: uppercase; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a button.navbar-item-btn.active {
+        border-bottom: 2px solid #1ca1f3; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a button.navbar-item-btn:hover, body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a button.navbar-item-btn:active, body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a button.navbar-item-btn:focus {
+        background: #f5f8fa; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-navbar a button.navbar-item-btn:disabled {
+        opacity: 0.5;
+        cursor: default; }
+body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container {
+  width: 100%;
+  line-height: 0px;
+  display: block; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list {
+    width: 100%;
+    line-height: 0px;
+    display: block;
+    padding: 0; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      line-height: 0px;
+      border-bottom: 1px solid #e6ecf0;
+      padding: 10px 15px; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item:first-child {
+        padding-top: 20px; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.avatar {
+        width: 40px;
+        height: 40px;
+        overflow: hidden;
+        min-width: 40px;
+        max-width: 40px;
+        border-radius: 10em; }
+        body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.avatar img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder {
+        flex: 1;
+        padding: 0 0 0 10px;
+        line-height: 0px;
+        position: relative; }
+        body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder div.user-data {
+          width: 100%;
+          display: block; }
+          body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder div.user-data h4 {
+            font-size: 13px;
+            padding: 0;
+            margin: 0;
+            line-height: 13px;
+            font-weight: 700;
+            color: #14171a;
+            white-space: nowrap; }
+          body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder div.user-data a {
+            display: block;
+            text-decoration: none;
+            color: #5b7083;
+            font-size: 13px;
+            line-height: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 140px; }
+          body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder div.user-data p {
+            font-size: 13px;
+            line-height: 18px;
+            padding: 0;
+            margin: 5px 0 0 0;
+            padding-right: 40px; }
+        body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder button.dropleft {
+          line-height: 0px;
+          background: transparent;
+          border: none;
+          box-shadow: none;
+          outline: none;
+          padding: 0;
+          margin: 0;
+          cursor: pointer; }
+          body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder button.dropleft a.icon {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 0;
+            margin: 0;
+            line-height: 0px; }
+            body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder button.dropleft a.icon svg {
+              width: 18px;
+              height: 18px; }
+              body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder button.dropleft a.icon svg * {
+                stroke: #b6b6b6; }
+            body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder button.dropleft a.icon:before, body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item div.user-info-holder button.dropleft a.icon:after {
+              display: none; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item:hover, body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.connectivity-list div.connectivity-list-item:active {
+        background: #f5f8fa; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.load-more {
+    width: 100%;
+    display: block;
+    line-height: 0;
+    padding: 20px;
+    text-align: center; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-list-container div.load-more button {
+      padding-left: 30px;
+      padding-right: 30px; }
+body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  line-height: 0px;
+  padding: 100px 50px;
+  height: calc(100vh - 120px);
+  overflow: hidden; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.icon {
+    line-height: 0px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.icon svg {
+      width: 50px;
+      height: 50px;
+      stroke: #1ca1f3; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.pl-message {
+    line-height: 0px;
+    width: 100%;
+    margin-bottom: 20px; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.pl-message h4 {
+      font-size: 20px;
+      padding: 0;
+      margin: 0 0 10px 0;
+      line-height: 20px;
+      color: #14171a;
+      font-weight: 700;
+      text-align: center; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.pl-message p {
+      font-size: 13px;
+      line-height: 20px;
+      padding: 0;
+      margin: 0;
+      color: #5b7083;
+      text-align: center;
+      overflow-wrap: break-word; }
+  body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.c2action-single {
+    width: 100%;
+    line-height: 0px;
+    text-align: center; }
+    body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.c2action-single a {
+      display: inline-block;
+      line-height: 0px;
+      text-decoration: none; }
+      body.cl-app-connections main.main-content-container div.main-content-container-inner div.timeline-container div.profile--connectivity-empty-list div.c2action-single a button {
+        padding-left: 40px;
+        padding-right: 40px; }
+
+/*# sourceMappingURL=style.master.css.map */

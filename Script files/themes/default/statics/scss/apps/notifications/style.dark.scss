@@ -1,0 +1,111 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-notifications{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.vue-app-body{
+					div.vue-app-body-inner{
+						div.profile--notifs-list-navbar{
+							div.profile--notifs-list-navbar-inner{
+								border-color: $dark_border;
+
+								a{
+									button.navbar-item-btn{
+										color: $dark_grey;
+
+										&:hover,&:active,&:focus{
+											background: $dark_accent_bg;
+										}
+									}
+								}
+							}
+						}
+
+						div.profile--notifs-list-container{
+							div.profile--notifs-list{
+								div.profile--notifs-list-item{
+									border-color: $dark_border;
+
+									div.main-flex-cr{
+										div.notifier-info-holder{
+											div.el-block-header{
+												div.notifier-name{
+													p{
+														b{
+															color: #fff;
+														}
+
+														span{
+															color: $dark_grey;
+														}
+													}
+												}
+
+												div.notif-time{
+													svg{
+														stroke: $dark_ikon_color;
+													}
+
+													time{
+														color: $dark_grey;
+													}
+												}
+											}
+										}
+									}
+
+									&:hover,&:active{
+										background: $dark_accent_bg;
+									}
+								}
+							}
+
+							div.notifications-empty-list-placeholder{
+								div.pl-message{
+									h4{
+										color: #fff;
+									}
+
+									p{
+										color: $dark_grey;
+									}
+								}
+							}
+						}
+
+						div.notifs-selection-control{
+							border-color: $dark_border;
+
+							div.notifs-selection-control-inner{
+								div.info-render{
+									span,b{
+										color: #fff;
+									}
+								}
+
+								div.action-ctrls{
+									button{
+										svg{
+											stroke: $red;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

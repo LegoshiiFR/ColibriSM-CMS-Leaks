@@ -1,0 +1,37 @@
+<script>
+	"use strict";
+
+	$(document).ready(function($) {
+		var _app  = $('[data-app="themes"]');
+
+		SMC_CPanel.PS = Object({
+			activate_theme: function(theme_name, e) {
+				$.ajax({
+					url: '<?php echo cl_link("native_api/cpanel/activate_theme"); ?>',
+					type: 'POST',
+					dataType: 'json',
+					data: {
+						theme_name: theme_name
+					},
+					beforeSend: function() {
+						SMC_CPanel.waitme(_app.find('[data-an="info-content"]'));
+						
+						$(e).attr('disabled', 'true').text("Please wait");
+					},
+				}).done(function(data) {
+					if (data.status == 200) {
+						cl_bs_notify("Your changes have been saved successfully!", 3000);
+
+						$(window).reloadPage(500);
+					}
+					else {
+						cl_bs_notify("An error occurred while processing your request. Please try again later.", 3000);
+						$(e).removeAttr('disabled').text("Activate");
+					}
+				}).always(function() {
+					SMC_CPanel.waitme(_app.find('[data-an="info-content"]'), 'hide');
+				});
+			}
+		});
+	});
+</script>

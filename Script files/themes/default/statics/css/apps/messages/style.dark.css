@@ -1,0 +1,26 @@
+body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--search-form-wrapper form div.keyword-input {
+  border-color: #586d7b; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--search-form-wrapper form div.keyword-input input {
+    background: #253341;
+    color: #fff;
+    border-color: #586d7b; }
+    body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--search-form-wrapper form div.keyword-input input::placeholder {
+      color: #96abbb; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--search-form-wrapper form div.keyword-input span.icon svg {
+    stroke: #8899a6; }
+body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item {
+  border-color: #586d7b; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item a div.chat--contacts-list-item-inner div.rp div.rp-inner-content-header b.name {
+    color: #fff; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item a div.chat--contacts-list-item-inner div.rp div.rp-inner-content-header span.uname {
+    color: #93b7d8; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item a div.chat--contacts-list-item-inner div.rp div.rp-inner-content-header span.time time {
+    color: #93b7d8; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item a div.chat--contacts-list-item-inner div.rp div.rp-inner-content-header span.time svg {
+    stroke: #8899a6; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item a div.chat--contacts-list-item-inner div.rp div.rp-inner-content-body p {
+    color: #93b7d8; }
+  body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item:hover, body.cl-app-chat main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-container-inner div.vue-app-body div.vue-app-body-inner div.chat--contacts-list-wrapper div.chat--contacts-list div.chat--contacts-list-item:active {
+    background: #1a2e3b; }
+
+/*# sourceMappingURL=style.dark.css.map */

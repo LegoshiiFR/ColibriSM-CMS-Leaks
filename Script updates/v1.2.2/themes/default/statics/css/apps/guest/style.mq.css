@@ -1,0 +1,21 @@
+@media (max-width: 1024px) {
+  body.cl-app-guest main.main-content-container div.main-content-container-inner {
+    max-width: 100% !important; }
+    body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container {
+      box-shadow: none; }
+      body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.carousel.welcome-page-slider {
+        display: none; }
+      body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content {
+        padding: 20px; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text h1 {
+          font-size: 26px;
+          margin-bottom: 20px; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.welcome-text p {
+          font-size: 13px; }
+        body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form button.btn-custom {
+          display: block;
+          width: 100%; }
+          body.cl-app-guest main.main-content-container div.main-content-container-inner div.welcome-page-container div.welcome-page-content-container div.welcome-page-content div.login-form button.btn-custom:first-child {
+            margin-bottom: 20px; } }
+
+/*# sourceMappingURL=style.mq.css.map */

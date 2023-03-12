@@ -1,0 +1,39 @@
+<div class="empty-profile-placeholder">
+	<?php if (not_empty($cl['prof_user']['is_blocked'])): ?>
+		<div class="icon">
+			<?php echo cl_ikon('pan'); ?>
+		</div>
+		<div class="pl-message">
+			<h4>
+				<?php echo cl_translate("You have blocked this user."); ?>
+			</h4>
+			<p>
+				<?php echo cl_translate("You will not see posts from this user, receive notifications, comments, messages, etc."); ?>
+			</p>
+		</div>
+		<div class="c2action-single">
+			<button onclick="SMColibri.block(this);" class="btn btn-custom main-outline lg" data-action="unblock" data-id="<?php echo($cl['prof_user']['id']); ?>">
+				<?php echo cl_translate("Unblock this user!"); ?>
+			</button>
+		</div>
+	<?php else: ?>
+		<div class="icon">
+			<?php echo cl_ikon('no-entry'); ?>
+		</div>
+		<div class="pl-message">
+			<h4>
+				<?php echo cl_translate("You are blocked!"); ?>
+			</h4>
+			<p>
+				<?php echo cl_translate("Sorry, access to this profile is denied! You have been blocked by this user"); ?>
+			</p>
+		</div>
+		<div class="c2action-single">
+			<a href="<?php echo $cl['prof_user']['url']; ?>" data-spa="true">
+				<button class="btn btn-custom main-outline lg">
+					<?php echo cl_translate("Go back!"); ?>
+				</button>
+			</a>
+		</div>
+	<?php endif; ?>
+</div>

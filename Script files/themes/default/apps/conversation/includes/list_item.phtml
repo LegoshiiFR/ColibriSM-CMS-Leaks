@@ -1,0 +1,46 @@
+<div class="conversation--messages-list-item <?php echo($cl['li']['side']); ?>" data-list-item="<?php echo($cl['li']['id']); ?>" <?php if(not_empty($cl['li']['html_attrs'])) { echo($cl['li']['html_attrs']); }; ?>>
+	<div class="message-data text-msg">
+		<?php if (empty($cl['li']['media_file'])): ?>
+			<p class="message-text">
+				<?php echo($cl['li']['message']); ?>
+			</p>
+			<div class="message-time">
+				<time><?php echo($cl['li']['time']); ?></time>
+			</div>	
+		<?php else: ?>
+			<div class="message-media">
+				<a class="image-wrapper fbox-media" data-fancybox="images" href="<?php echo($cl['li']['media_file']); ?>">
+					<img src="<?php echo($cl['li']['media_file']); ?>" alt="Image">
+				</a>
+			</div>
+			<div class="message-time">
+				<time><?php echo($cl['li']['time']); ?></time>
+			</div>	
+		<?php endif; ?>
+	</div>
+	<div class="dropdown-menu-holder dropdown">
+		<button type="button" class="dropdown-toggle" data-toggle="dropdown">
+			<?php echo cl_ikon('chevron-down'); ?>
+		</button>
+		<div class="dropdown-menu dropdown-icons">
+			<a class="dropdown-item col-red" onclick="SMColibri.PS.chat.delete_message(this);">
+				<span class="flex-item dropdown-item-icon">
+					<?php echo cl_ikon("bin"); ?>
+				</span>
+				<span class="flex-item">
+					<?php echo cl_translate("Delete message"); ?>
+				</span>
+			</a>
+			<?php if (not_empty($cl['li']['media_file'])): ?>
+				<a class="dropdown-item" download="<?php echo($cl['li']['media_name']); ?>" href="<?php echo($cl['li']['media_file']); ?>">
+					<span class="flex-item dropdown-item-icon">
+						<?php echo cl_ikon("download"); ?>
+					</span>
+					<span class="flex-item">
+						<?php echo cl_translate("Download"); ?>
+					</span>
+				</a>
+			<?php endif; ?>
+		</div>
+	</div>
+</div>

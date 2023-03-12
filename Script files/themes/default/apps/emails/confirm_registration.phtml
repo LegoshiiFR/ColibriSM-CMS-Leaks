@@ -1,0 +1,41 @@
+<div style="text-align: center;">
+	<div style="display: inline-block; min-width: 300px; max-width: 460px;">
+		<div style="font-family: Arial, Helvetica, sans-serif; line-height: 1.4; font-size: 18px; background: #fff; border-radius: 5px; border: 7px solid #e6ecf0; padding: 30px 50px;  color: #14171a;">
+			<div style="display: flex; flex-direction: row; margin-bottom: 20px;">
+				<div style="height: 50px;">
+					<a href="<?php echo cl_link('/'); ?>">
+						<img style="height: 100%;" src="{%config site_logo%}" alt="Logo">
+					</a>
+				</div>
+			</div>
+			<div>
+				<h1 style="font-size: 32px; font-weight: 700; padding: 0; margin: 0 0 35px 0;">
+					<?php echo cl_translate("Complete registration"); ?>
+				</h1>
+				<h4 style="font-size: 22px; color: #1ca1f3; padding: 0; margin: 0 0 20px 0;">
+					<?php echo cl_translate("Hello"); ?> <?php echo($cl['email_data']["name"]); ?>!
+				</h4> 
+				<p style="color: #42688a; padding: 0; margin: 0 0 20px 0;">
+					<?php echo cl_translate("Here is your activation code for your account, copy it, then on the account activation page, paste the code in the field and click the registration confirmation button!"); ?>
+				</p>
+				<div style="padding: 20px 30px; background: #e8edf1; color: #14171a; letter-spacing: 3px; margin-bottom: 30px; border-radius: 5px;">
+					<b style="font-size: 45px; display: block; text-align: center;">
+						<?php echo($cl['email_data']['code']); ?>
+					</b>
+				</div>
+				<div style="margin-bottom: 30px;">
+					<a href="<?php echo cl_link("confirm_registration"); ?>" style="text-decoration: none;">
+						<button style="font-size: 14px; font-weight: 700;  cursor: pointer; border-radius: 5px; text-transform: uppercase; padding: 20px 40px; border: none; background: #1ca1f3; color: #fff; box-shadow: none; outline: 0;">
+							<?php echo cl_translate("Go to {@site_name@}", array("site_name" => $cl["config"]["name"])); ?>
+						</button>
+					</a>
+				</div>
+			</div>
+			<p style="font-size: 14px; color: #5b7083; padding: 0; margin: 0;">
+				<span>
+					<a href="{%config site_url%}" style="color: #1b95e0;">{%config name%}</a> - <?php echo cl_translate("Support team"); ?>.
+				</span>
+			</p>
+		</div>
+	</div>
+</div>

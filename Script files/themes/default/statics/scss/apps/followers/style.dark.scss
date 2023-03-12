@@ -1,0 +1,89 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-connections{
+	main.main-content-container {
+		div.main-content-container-inner {
+			div.timeline-container{
+				div.timeline-header{
+					div.lp div.profile-name-holder{
+						h5{
+							color: #fff;
+						}
+
+						span{
+							color: $dark_grey;
+
+							svg{
+								stroke: $dark_ikon_color;
+							}
+						}
+					}
+				}
+
+				div.profile--connectivity-list-navbar{
+					border-color: $dark_grey;
+
+					a{
+						button.navbar-item-btn{
+							color: $dark_grey;
+
+							&:hover,&:active,&:focus, &.active{
+								background: $dark_accent_bg;
+							}
+						}
+					}
+				}
+
+				div.profile--connectivity-list-container{
+					div.connectivity-list{
+						div.connectivity-list-item{
+							border-color: $dark_border;
+
+							div.user-info-holder{
+								div.user-data{
+									h4{
+										color: #fff;
+									}
+
+									a{
+										color: $dark_grey;
+									}
+
+									p{
+										color: #f3f3f3;
+									}
+								}
+							}
+
+							&:hover,&:active{
+					 			background: $dark_accent_bg;
+					 		}
+						}
+					}
+				}
+
+				div.profile--connectivity-empty-list{
+					div.pl-message{
+						h4{
+							color: #fff;
+						}
+
+						p{
+							color: $dark_grey;
+						}
+					}
+				}
+			}
+		}
+	}
+}

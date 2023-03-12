@@ -1,0 +1,75 @@
+<div class="modal fade vh-center" data-app="cl-account-info" tabindex="-1" role="dialog" aria-hidden="true" data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <form class="form" id="cl-account-info-vue-app" v-on:submit="submit_form($event)">
+                <div class="modal-header">
+                    <div class="main---mh--block">
+                        <h5 class="modal-title">
+                            <?php echo cl_translate("Download my information"); ?>
+                        </h5>
+                        <span class="dismiss-modal" data-dismiss="modal">
+                            <?php echo cl_ikon('close'); ?>
+                        </span>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="popup-modal-form"> 
+                        <div class="form-group">
+                            <div class="checkbox-input">
+                                <input v-model="form_data.my_info" id="download-my-info" type="checkbox" class="filled-in chk-col-main">
+                                <label for="download-my-info" class="download-my-info">
+                                    <?php echo cl_translate("My information"); ?>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-input">
+                                <input v-model="form_data.following" id="download-following" type="checkbox" class="filled-in chk-col-main">
+                                <label for="download-following" class="download-following">
+                                    <?php echo cl_translate("List of people I follow"); ?>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-input">
+                                <input v-model="form_data.followers" id="download-followers" type="checkbox" class="filled-in chk-col-main">
+                                <label for="download-followers" class="download-followers">
+                                    <?php echo cl_translate("List of people who follow me"); ?>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-input">
+                                <input v-model="form_data.posts" id="download-posts" type="checkbox" class="filled-in chk-col-main">
+                                <label for="download-posts" class="download-posts">
+                                    <?php echo cl_translate("List of my publications and replies"); ?>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="checkbox-input">
+                                <input v-model="form_data.bookmarks" id="download-bookmarks" type="checkbox" class="filled-in chk-col-main">
+                                <label for="download-bookmarks" class="download-bookmarks">
+                                    <?php echo cl_translate("List of my bookmarks"); ?>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group no-mb">
+                            <p class="form-info-label">
+                                <?php echo cl_translate("Check the boxes in the options to select the account information you want to download"); ?>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button v-if="submitting != true" v-bind:disabled="is_invalid_form" type="submit" class="btn btn-custom main-inline md">
+                        <?php echo cl_translate("Download info"); ?>
+                    </button>
+                    <button v-else disabled="true" type="button" class="btn btn-custom main-inline md">
+                        <?php echo cl_translate("Please wait"); ?>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

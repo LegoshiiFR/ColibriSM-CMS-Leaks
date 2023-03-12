@@ -1,0 +1,38 @@
+body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.main-timeline-pubbox-wrapper {
+  border-color: #586d7b; }
+body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-swifts-holder {
+  border-color: #586d7b;
+  background: #15212b; }
+  body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-swifts-holder div.timeline-swifts-cr.owl-carousel div.owl-stage-outer div.owl-stage div.owl-item div.swift-item div.swift-item-body div.avatar {
+    border-color: #586d7b; }
+    body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-swifts-holder div.timeline-swifts-cr.owl-carousel div.owl-stage-outer div.owl-stage div.owl-item div.swift-item div.swift-item-body div.avatar img {
+      border-color: #15212b; }
+  body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.timeline-swifts-holder div.timeline-swifts-cr.owl-carousel div.owl-stage-outer div.owl-stage div.owl-item div.swift-item div.swift-item-footer span {
+    color: #93b7d8; }
+body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.empty-user-timeline div.pl-message h4 {
+  color: #fff; }
+body.cl-app-home main.main-content-container div.main-content-container-inner div.timeline-container div.empty-user-timeline div.pl-message p {
+  color: #586d7b; }
+body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.input-holder textarea {
+  background: #15212b;
+  border-color: #586d7b;
+  color: #fff; }
+  body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.input-holder textarea::placeholder {
+    color: #93b7d8; }
+  body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.input-holder textarea:hover, body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.input-holder textarea:focus, body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.input-holder textarea:active {
+    border: none;
+    background: #15212b; }
+body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.cl-emoticons {
+  border-color: #586d7b;
+  background: #1a2e3b; }
+  body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.cl-emoticons div.emoticons-group-nav {
+    background: #1a2e3b;
+    border-color: #586d7b; }
+body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.preview-image-holder div.preview-image-inner {
+  border-color: #586d7b; }
+body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.preview-video-holder div.video-player {
+  border-color: #586d7b; }
+body.cl-app-home div.modal.modal-swift-pubbox div.modal-body form div.swift-ctrls-holder button.ctrl-item.text-length small {
+  color: #93b7d8; }
+
+/*# sourceMappingURL=style.dark.css.map */

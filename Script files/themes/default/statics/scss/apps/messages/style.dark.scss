@@ -1,0 +1,93 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-chat{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.timeline-container-inner{
+					div.vue-app-body{
+						div.vue-app-body-inner{
+							div.chat--search-form-wrapper{
+								form{
+									div.keyword-input{
+										border-color: $dark_border;
+
+										input{
+											background: $dark_input_bg;
+											color: #fff;
+											border-color: $dark_border;
+
+											&::placeholder{
+												color: $dark_color;
+											}
+										}
+
+										span.icon{
+											svg{
+												stroke: $dark_ikon_color;
+											}
+										}
+									}
+								}
+							}
+
+							div.chat--contacts-list-wrapper{
+								div.chat--contacts-list{
+									div.chat--contacts-list-item{
+										border-color: $dark_border;
+
+										a{
+											div.chat--contacts-list-item-inner{
+												div.rp{
+													div.rp-inner-content-header{
+														b.name{
+															color: #fff;
+														}
+
+														span.uname{
+															color: $dark_grey;
+														}
+
+														span.time{
+															time{
+																color: $dark_grey;
+															}
+
+															svg{
+																stroke: $dark_ikon_color;
+															}
+														}
+													}
+
+													div.rp-inner-content-body{
+														p{
+															color: $dark_grey;
+														}
+													}
+												}
+											}
+										}
+
+										&:hover,&:active{
+											background: $dark_accent_bg;
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

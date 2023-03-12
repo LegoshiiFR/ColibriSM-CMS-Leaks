@@ -1,0 +1,166 @@
+// @*************************************************************************@
+// @ @author Mansur Altamirov (Mansur_TL)									 @
+// @ @author_url 1: https://www.instagram.com/mansur_tl                      @
+// @ @author_url 2: http://codecanyon.net/user/mansur_tl                     @
+// @ @author_email: highexpresstore@gmail.com                                @
+// @*************************************************************************@
+// @ ColibriSM - The Ultimate Modern Social Media Sharing Platform           @
+// @ Copyright (c) 21.03.2020 ColibriSM. All rights reserved.                @
+// @*************************************************************************@
+
+@import '../main-variables';
+
+body.cl-app-profile{
+	main.main-content-container{
+		div.main-content-container-inner{
+			div.timeline-container{
+				div.timeline-header{
+					div.lp div.profile-name-holder{
+						h5 span{
+							color: #fff !important;
+						}
+
+						& > span{
+							color: $dark_grey;
+
+							svg{
+								stroke: $dark_ikon_color;
+							}
+						}
+					}
+				}
+
+				div.timeline-prof-info-area{
+					div.profile-info-header{
+						div.profile-avatar-holder{
+							div.profile-avatar{
+								border-color: $dark_border;
+							}
+						}
+					}
+
+					div.profile-main--info-holder{
+						border-color: $dark_border;
+
+						div.profile-name-holder{
+							h4{
+								color: #fff;
+							}
+
+							a{
+								color: $dark_grey;
+							}
+						}
+
+						div.profile-description-holder{
+							p{
+								color: #f3f3f3;
+							}
+						}
+					
+						div.profile--user-info-block-set{
+							div.block-item{
+								span.icon svg{
+									stroke: $dark_grey;
+								}
+
+								span.text{
+									color: $dark_grey;
+								}
+							}
+						}
+
+						div.profile--activity-stats-info{
+							div.stat-holder{
+								span.stat-holder-inner,a.stat-holder-inner{
+									b{
+										color: #fff;
+									}
+
+									span{
+										color: $dark_grey;
+									}
+								}
+							}
+						}
+
+						div.profile--activity-navbar{
+							border-color: $dark_border;
+
+							a{
+								button.navbar-item-btn{
+									color: $dark_grey;
+
+									&:hover,&:active,&:focus{
+										background: $dark_accent_bg;
+									}
+								}
+							}
+						}
+					}
+				}
+
+				div.timeline-posts-container{
+					div.timeline-posts-ls{
+						div.empty-profile-placeholder{
+							div.pl-message{
+								h4{
+									color: #fff;
+								}
+
+								p{
+									color: $dark_grey;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	div.modal.report-profile-modal{
+		div.modal-content{
+			div.modal-header{
+				h5.modal-title{
+					color: #fff;
+				}
+
+				button svg{
+					stroke: $dark_ikon_color;
+				}
+			}
+
+			div.modal-body{
+				div.form-group{
+
+					div.radio-box-holder{
+						div.radio-box{
+							div.lp{
+								div.icon svg{
+									stroke: $dark_ikon_color;
+								}
+
+								div.icon.selected {
+									svg{
+										stroke: #fff;
+									}
+								}
+							}
+
+							div.rp span{
+								color: #fff;
+							}
+						}
+					}
+
+					div.comment-input-holder{
+						textarea{
+							border-color: $dark_border;
+						}
+					}
+				}
+			}
+		}
+	}
+}

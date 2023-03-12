@@ -1,0 +1,83 @@
+<div class="main-footer">
+	<ul class="footer-nav">
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('search'); ?>">
+				<?php echo cl_translate("Explore"); ?>
+			</a>
+		</li>
+		<?php if (not_empty($cl['is_logged'])): ?>
+			<li class="footer-nav-item">
+				<a href="<?php echo cl_link('ads'); ?>">
+					<?php echo cl_translate("Advertising"); ?>
+				</a>
+			</li>
+		<?php else: ?>
+			<li class="footer-nav-item">
+				<?php if ($cl["theme_mode"] == "N"): ?>
+					<a href="<?php echo cl_link('light_theme'); ?>">
+						<?php echo cl_translate('Light theme'); ?>
+					</a>
+				<?php else: ?>
+					<a href="<?php echo cl_link('dark_theme'); ?>">
+						<?php echo cl_translate('Dark theme'); ?>
+					</a>
+				<?php endif; ?>
+			</li>
+		<?php endif; ?>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('terms_of_use'); ?>" data-spa="true">
+				<?php echo cl_translate("Terms of use"); ?>
+			</a>
+		</li>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('privacy_policy'); ?>" data-spa="true">
+				<?php echo cl_translate("Privacy policy"); ?>
+			</a>
+		</li>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('cookies_policy'); ?>" data-spa="true">
+				<?php echo cl_translate("Cookies"); ?>
+			</a>
+		</li>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('about_us'); ?>" data-spa="true">
+				<?php echo cl_translate("About us"); ?>
+			</a>
+		</li>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('api_docs'); ?>">
+				API
+			</a>
+		</li>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('faqs'); ?>" data-spa="true">F.A.Q</a>
+		</li>
+		<li class="footer-nav-item dropdown">
+			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+				<span class="d-inline-flex flex-wn align-items-center">
+					<span class="flex-item language-banner">
+						<?php echo cl_banner($cl["langname_shortcuts"][$cl["language"]]); ?>
+					</span> 
+					<span class="flex-item language-name">
+						<?php echo cl_translate("Language"); ?>
+					</span>
+				</span>
+			</a>
+			<div class="dropdown-menu dropdown-icons">
+				<?php foreach ($cl["languages"] as $k => $v): ?>
+					<a class="dropdown-item <?php if($cl["language"] == $k) {echo('active');} ?>" href="<?php echo cl_link(cl_strf("language/%s",$k)); ?>">
+						<span class="flex-item dropdown-item-icon">
+							<?php echo cl_banner($cl["langname_shortcuts"][$k]); ?>
+						</span>
+						<span class="flex-item">
+							<?php echo($v); ?>
+						</span>
+					</a>
+				<?php endforeach; ?>
+			</div>
+		</li>
+		<li class="footer-nav-item">
+			<a href="<?php echo cl_link('about_us'); ?>">&copy; {%config name%}, Inc., <?php echo date('Y') ?>.</a>
+		</li>
+	</ul>
+</div>
