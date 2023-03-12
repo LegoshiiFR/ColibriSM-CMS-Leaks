@@ -19,7 +19,7 @@ To install ColibriSM, first of all you need to upload the files that are in the 
 ###### How to upload ColibriSM to server?
 
 *   Upload all files & folders located inside \`Script files\` folder to your server. Please note that you do not need to upload the \`Script files\` folder itself, but only its contents, including folders, as shown below:
-*   ![Screenshot](./assets/images/img-1.png)
+*   ![Screenshot](./Script%20documentation/assets/img-1.png)
 *   Open your browser, (Google Chrome is recommended).
 *   Go to http://www.your-site.com/install
 
@@ -41,7 +41,7 @@ The ColibriSM installation process itself is very simple
 
 After you have checked all the ColibriSM requirements that are listed above are present in your server, go to the address http(s)://your-site.com/install
 
-![Screen shot](./assets/images/img-2.png)
+![Screen shot](./Script%20documentation/assets/img-2.png)
 
   
 
@@ -61,7 +61,7 @@ After you fill out the form with the data, click on the install button and wait 
 
 ###### After the installation is complete, you will get a page that looks like this:
 
-![Screen shot](./assets/images/img-3.png)
+![Screen shot](./Script%20documentation/assets/img-3.png)
 
 ### Nginx
 
@@ -72,7 +72,7 @@ However if your server is using Nginx, please follow these instructions below:
     
       
     
-    ![Screen shot](./assets/images/img-6.png)
+    ![Screen shot](./Script%20documentation/assets/img-6.png)
     
 3.  Open the located file, and copy its content to your root nginx.conf file: /etc/nginx/nginx.conf
 4.  If you find it something difficult to do, please contact your hosting provider, and they will do it for you easily.
@@ -86,7 +86,7 @@ If you did everything as indicated above, then your site should be installed and
 1.  Login to your site
 2.  Go to Contol panel
     
-    ![Screen shot](./assets/images/img-5.png)
+    ![Screen shot](./Script%20documentation/assets/img-5.png)
     
     Or open this link (http://your-site-domain.com/admin\_panel) replacing the "your-site-domain.com" with your domain
     
@@ -94,7 +94,7 @@ If you did everything as indicated above, then your site should be installed and
     
     The oAuth configuration page looks like this
     
-    ![Screen shot](./assets/images/img-4.png)
+    ![Screen shot](./Script%20documentation/assets/img-4.png)
     
       
     
